@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Union Village</title>
+
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- CSS Style Sheet -->
+    <link href="css/site.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  
+  <body ng-app="unionVillage" style="padding-bottom: 30px;">
+    
+    <!-- Beginning of Header/Navbar -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+  
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><span class="union">Union</span><span class="village">Village</span></a>
+              </div>
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href='integratedVillage.html'>Integrated Health Village</a></li>
+                  <li><a href='wellnessVillage.html'>Wellness Village</a></li>
+                  <!-- Comming Soon <li><a href='floorPlans.html'>Floor Plans</a></li> -->
+                  <li><a href='location.html'>Location</a></li>
+                  <li><a href='leaseInfo.html'>Leasing Info</a></li>
+                  <li class="active"><a href='#'>Village Partners</a></li>
+                  <li><a href='ourCompany.html'>Our Company</a></li>
+                  <li><a href='photos.html'>Photos</a></li>
+                  <!--<li><a href='amenities.html'>Amenities</a></li>-->
+                  <li><a href='map.html'>Site Plan</a></li>
+                  <li><a href='press.html'>Press</a></li>
+                  <!-- COMING SOON <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="">Login</a></li>
+                      <li><a href="#">Apply</a></li>
+                      <li><a href="#">Pay Rent</a></li>
+                      <li><a href="#">Submit Service Request</a></li> 
+                    </ul>
+                  </li> -->
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="officeHours.html">Office Hours</a></li>
+                      <li><a href="drivingDirections.html">Driving Directions</a></li>
+                      <li><a href="mailto:info@unionvillage.net">Email Us</a></li>
+                      <li><a href="#">Call Us</a></li> 
+                    </ul>
+                  </li>
+                  <!--<li><a href='scheduleVisit.html'><span style="border: 1px solid blue; padding: 10px;">Schedule a Visit</span></a></li>-->
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- End of Header/Navbar -->
+    
+    <!-- Beginning of Main Body Contents -->
+    <div style="height: 100vh; width: 100%;">
+      
+      <!--<div class="row" style="height: 50%; width: 100%; margin-left: 0px; margin-top: 3%; margin-bottom: 5%;">
+        
+        <!-- Integrated Health Village Column
+        <div class="col-lg-6" style="height: 100%; padding: 5px; margin-bottom: 5%;">
+          <div style="height: 100%; width: 100%; position: relative; z-index: 1;">
+            <a href="learnMore.html">
+              <img src="img/siteplan.png" style="width: 100%; height: 100%; position: absolute; z-index: 2;">
+              <div id="overlay_text" style="position: relative; top: 0px; z-index: 3; font-size: 24px; width: 100%; background-color: rgba(87, 87, 87, 0.85)"><span style="margin-left: 5px; color: #ffffff">Integrated Health Village</span></div>
+            </a>
+          </div>
+        </div>
+        <!-- End of Integrated Health Village Column
+        
+        <!-- Wellness Center Column
+        <div class="col-lg-6" style="height: 100%; padding: 5px; margin-bottom: 5%;">
+          <div style="height: 100%; width: 100%; position: relative; z-index: 1;">
+            <a href="learnMore.html">  
+              <img src="img/wellness center.png" style="width: 100%; height: 100%; position: absolute; z-index: 2;">
+              <div id="overlay_text" style="position: relative; top: 0px; z-index: 3; font-size: 24px; width: 100%; background-color: rgba(87, 87, 87, 0.85)"><span style="margin-left: 5px; color: #ffffff">Wellness Center</span></div>
+            </a>
+          </div>
+        </div>
+        <!-- End of Wellness Center Column -->
+      
+      <!-- Maybe Add Back In?
+      <div class="row" style="text-align: left;">
+        <div class="col-lg-12" style="width: 100%; height: 100%;">
+          <p style="margin-left: 4%;">Phase 2 – UnionVillage is currently looking for developers and/or partners for Phase 2, which will include; 150+ room hotel, retail, residential, senior living, office building, and medical office building</p>
+        </div>
+      </div> -->
+      
+      <!-- Row 1 -->
+      <div class="row" style="text-align: left; text-align: center; margin-bottom: 5%; margin-top: 3%;">
+        
+        <!-- Henderson Hospital Column -->
+        <div class="col-sm-4">
+          <a href="#" data-toggle="modal" data-target="#hendersonHospitalModal" style="text-decoration: none; outline: none; color: #000000;">  
+            <img src="img/UnionPlace.png" style="width: 90%;">
+            <h5>Henderson Hospital</h5>
+          </a>
+        </div>
+        
+        <!-- Henderson Hospital Modal -->
+        <div id="hendersonHospitalModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Henderson Hospital</h4>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <img src="img/hospitalmockup.png" style="width: 80%; margin-bottom: 2%;">
+                <p>The “anchor” for UnionVillage is the hospital which has broken ground and is under construction. This new hospital will be sixth Valley Health System facility in greater Las Vegas. The hospital will offer high-demand medical care, including general surgery, emergency and specialty services. The hospital plans to open for business on October 31, 2016. This hospital is owned by Universal Health Services (NYSE: UHS), the second largest healthcare provider in the United States.</p>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Henderson Hospital Modal -->
+        
+        
+        <!-- LATCH Column -->
+        <div class="col-sm-4">
+          <a href="#" data-toggle="modal" data-target="#latchModal" style="text-decoration: none; outline: none; color: #000000;">  
+            <img src="img/UnionPlace.png" style="width: 90%;">
+            <h5>Skilled Nursing and Long Term Acute Care Hospital</h5>
+          </a>
+        </div>
+        
+        <!-- LATCH Modal -->
+        <div id="latchModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Skilled Nursing and Long Term Acute Care Hospital</h4>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <img src="img/latch overview.jpg" style="width: 80%; margin-bottom: 2%;">
+                <p>UnionVillage is proud to announce the signing of a LOI with a major subacute provide to build a state of the art Skilled Nursing Facility and Long Term Acute Care Hospital.</p>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of LATCH Modal -->
+        
+        
+        <!-- Franklin Park Senior Living Column -->
+        <div class="col-sm-4">
+          <a href="#" data-toggle="modal" data-target="#fpslModal" style="text-decoration: none; outline: none; color: #000000;">  
+            <img src="img/UnionPlace.png" style="width: 90%;">
+            <h5>Franklin Park Senior Living</h5>
+          </a>
+        </div>
+        
+        <!-- FPSL Modal -->
+        <div id="fpslModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Franklin Park Senior Living</h4>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <img src="img/fpsl overview.jpg" style="width: 80%; margin-bottom: 2%;">
+                <p>UnionVillage is also proud to announce the signing of Joint Venture Agreement with Franklin Senior Living of Austin, Texas. Franklin is the industry leader in the next big thing in Senior Living, the Wellness Village. The focus on the Wellness Village is education and the pursuit of wellness. Residents will have access to not only the finest healthcare in the State, but a state-of-the-art wellness center which will incorporate; fitness, nutrition, rehab, retail pharmacy, dental clinic, with Western and Eastern Medicine.
+                
+                <br><br>The Senior Living component of UnionVillage is scheduled to be three phases of 300 units, which will house over 1,400 seniors. The plan is to provide all three levels of senior living which are; Independent Living, Assisted Living and Memory Care Living.</p>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of FPSL Modal -->
+        
+      </div>
+      <!-- End of Row 1 -->
+      
+      
+      
+      <!-- Row 2 -->
+      <div class="row" style="text-align: left; text-align: center; margin-bottom: 5%;">
+        
+        
+        <!-- Wolff Townhome Apartments Column -->
+        <div class="col-sm-4">
+          <a href="#" data-toggle="modal" data-target="#apartmentsModal" style="text-decoration: none; outline: none; color: #000000;">
+            <img src="img/UnionPlace.png" style="width: 90%;">
+            <h5>Wolff Townhome Apartments</h5>
+          </a>
+        </div>
+        
+        <!-- Apartments Modal -->
+        <div id="apartmentsModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Wolff Townhome Apartments</h4>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <img src="img/townhome apartments overview.jpg" style="width: 80%; margin-bottom: 2%;">
+                <p>UnionVillage has recently signed a Purchase and Sale Agreement with The Wolff Company,. Founded in 1949, The Wolff Company is one of the leading investor and developer of Apartments in the US and is the largest apartment owner in Las Vegas. The Wolff Company is in escrow for 14 acres of land and is planning on immediately building 300 high end townhome/apartments. Construction should begin early 2016.</p>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Apartments Modal -->
+        
+        
+        <!-- Wellness Center Column -->
+        <div class="col-sm-4">
+          <a href="#" data-toggle="modal" data-target="#wellnessModal" style="text-decoration: none; outline: none; color: #000000;">  
+            <img src="img/UnionPlace.png" style="width: 90%;">
+            <h5>Wellness Center</h5>
+          </a>
+        </div>
+        
+        <!-- Wellness Center Modal -->
+        <div id="wellnessModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Wellness Center</h4>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <img src="img/wellness center.png" style="width: 80%; margin-bottom: 2%;">
+                <p>UnionVillage has signed a Letter of Intent with UHS to lease back 50% of the projected space in a 40,000 SF Wellness Center at UnionVillage. The Company also has a commitment of funding from Inland EB5 company, and projects construction to commence in early 2016.</p>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Wellness Center Modal -->
+        
+        
+        <!-- Dialysis Clinic Column -->
+        <div class="col-sm-4">
+          <a href="#" data-toggle="modal" data-target="#dialysisModal" style="text-decoration: none; outline: none; color: #000000;">
+            <img src="img/UnionPlace.png" style="width: 90%;">
+            <h5>Dialysis Clinic</h5>
+          </a>
+        </div>
+        
+        <!-- Dialysis Clinic Modal -->
+        <div id="dialysisModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Dialysis Clinic</h4>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <img src="img/wellness center.png" style="width: 80%; margin-bottom: 2%;">
+                <p>UnionVillage has signed a Letter of Intent with a group of physicians associated with Dr. Larry Lehrner and the Kidney Specialist of Southern Nevada, the largest Nephrology group is Nevada. The group intends to buy 1 acre of land and construct a 10,000 SF dialysis clinic adjacent to the Assisted Living Community and Skilled Nursing Facility. The building is expect to be under construction in 2016.</p>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Dialysis Clinic Modal -->
+        
+      </div>
+      <!-- End of Row 2 -->
+      
+      
+      
+      <!-- Row 3 -->
+      <div class="row" style="text-align: left; text-align: center; margin-bottom: 5%;">
+        
+        <!-- LVAC Column -->
+        <div class="col-sm-4">
+          <a href="#" data-toggle="modal" data-target="#lvacModal" style="text-decoration: none; outline: none; color: #000000;">
+            <img src="img/UnionPlace.png" style="width: 90%;">
+            <h5>Las Vegas Athletic Club</h5>
+          </a>
+        </div>
+        
+        <!-- LVAC Modal -->
+        <div id="lvacModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Las Vegas Athletic Club</h4>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <img src="img/lvac overview.jpg" style="width: 80%; margin-bottom: 2%;">
+                <p>UnionVillage has completed the sale of 10 acres to the Las Vegas Athletic Club who will soon be under construction on a 95,000 SF state-of-the-art Athletic Club. LVAC is the largest athletic club with seven (7) facilities spread throughout the great Las Vegas Area.</p>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of LVAC Modal -->
+        
+        
+        <!-- Medical Office Building Column -->
+        <div class="col-sm-4">
+          <a href="#" data-toggle="modal" data-target="#mobModal" style="text-decoration: none; outline: none; color: #000000;">
+            <img src="img/UnionPlace.png" style="width: 90%;">
+            <h5>Medical Office Building</h5>
+          </a>
+        </div>
+        
+        <!-- Medical Office Building Modal -->
+        <div id="mobModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Medical Office Building</h4>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <img src="img/mob overview.jpg" style="width: 80%; margin-bottom: 2%;">
+                <p>UHS will soon start construction on the first MOB at UnionVillage. The building is expected to be a three story building and occupy 80,000 SF. UHS has plans to build a second Medical Building in the near future which also will be 120,000 SF</p>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Medical Office Building Modal -->
+        
+        
+        <!-- Retail Column -->
+        <div class="col-sm-4">
+          <a href="#" data-toggle="modal" data-target="#retailModal" style="text-decoration: none; outline: none; color: #000000;">
+            <img src="img/UnionPlace.png" style="width: 90%;">
+            <h5>Retail</h5>
+          </a>
+        </div>
+        
+        <!-- Retail Modal -->
+        <div id="retailModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Retail</h4>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <img src="img/retail overview.jpg" style="width: 80%; margin-bottom: 2%;">
+                <p>UnionVillage has partnered with Juliet Companies to develop and lease the retail portion of the campus. Juliet will now begin in earnest to find retail opportunities on the campus</p>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Retail Modal -->
+        
+      </div>
+      <!-- End of Row 3 -->
+      
+      <div class="row" style="height: 100%; width: 100%; margin-left: 0px; text-align: center;">
+        
+        <!-- Embeded Hospital Build Video -->
+        <video width="100%" height="80%" controls>
+          <source src="vid/hospitalBuild.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        
+      </div>
+      
+    </div>
+    <!-- End of Main Body Contents -->
+  
+  <!-- Footer Starts Here -->
+  <nav class="navbar navbar-default navbar-fixed-bottom" id="foot01" style="color: #fff; text-align: right; padding-right: 5px; padding-top: 15px;">
+    <script>document.getElementById("foot01").innerHTML =
+	  "<p>&copy;  " + new Date().getFullYear() + " Union Village. All rights reserved.</p>";</script>
+  </nav>
+  <!-- Footer Ends Here -->
+    
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  
+  </body>
+  
+</html>

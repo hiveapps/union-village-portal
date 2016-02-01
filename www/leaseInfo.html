@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Union Village</title>
+
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- CSS Style Sheet -->
+    <link href="css/site.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  
+  <body ng-app="unionVillage">
+    
+    <!-- Beginning of Header/Navbar -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+  
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><span class="union">Union</span><span class="village">Village</span></a>
+              </div>
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href='integratedVillage.html'>Integrated Health Village</a></li>
+                  <li><a href='wellnessVillage.html'>Wellness Village</a></li>
+                  <!-- Comming Soon <li><a href='floorPlans.html'>Floor Plans</a></li> -->
+                  <li><a href='location.html'>Location</a></li>
+                  <li class="active"><a href='#'>Leasing Info</a></li>
+                  <li><a href='project.html'>Village Partners</a></li>
+                  <li><a href='ourCompany.html'>Our Company</a></li>
+                  <li><a href='photos.html'>Photos</a></li>
+                  <!--<li><a href='amenities.html'>Amenities</a></li>-->
+                  <li><a href='map.html'>Site Plan</a></li>
+                  <li><a href='press.html'>Press</a></li>
+                  <!-- COMING SOON <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="">Login</a></li>
+                      <li><a href="#">Apply</a></li>
+                      <li><a href="#">Pay Rent</a></li>
+                      <li><a href="#">Submit Service Request</a></li> 
+                    </ul>
+                  </li> -->
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="officeHours.html">Office Hours</a></li>
+                      <li><a href="drivingDirections.html">Driving Directions</a></li>
+                      <li><a href="mailto:info@unionvillage.net">Email Us</a></li>
+                      <li><a href="#">Call Us</a></li> 
+                    </ul>
+                  </li>
+                  <!--<li><a href='scheduleVisit.html'><span style="border: 1px solid blue; padding: 10px;">Schedule a Visit</span></a></li>-->
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- End of Header/Navbar -->
+  
+    <div style="height: 100vh; width: 100%;">
+      
+      <!-- Independent Senior Living and Assisted Living Row -->
+      <div class="row">
+        
+        <!-- Independent Senior Living Column -->
+        <div class="col-lg-6">
+          <div style="min-height: 300px; width: 90%; margin: 5%; position: relative; z-index: 1;">
+            <a href="#" data-toggle="modal" data-target="#seniorLivingModal" style="text-decoration: none; color: #ffffff;">
+              <img src="img/independent senior living.jpg" style="width: 100%; height: 100%; position: absolute; z-index: 2;">
+              <div id="overlay_text" style="position: relative; top: 0px; z-index: 3; font-size: 24px; width: 100%; background-color: rgba(87, 87, 87, 0.85)"><span style="margin-left: 5px;">Independent Senior Living</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Independent Senior Living Modal -->
+        <div id="seniorLivingModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Independent Senior Living</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                <br><br><a href="#" target="_blank">www.newlinkhere.com</a>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Independent Senior Living Modal -->
+        
+        
+        
+        <!-- Assisted Living Column -->
+        <div class="col-lg-6">
+          <div style="min-height: 300px; width: 90%; margin: 5%; position: relative; z-index: 1;">
+            <a href="#" data-toggle="modal" data-target="#assistedLivingModal" style="text-decoration: none; color: #ffffff;">
+              <img src="img/assisted living.jpg" style="width: 100%; height: 100%; position: absolute; z-index: 2;">
+              <div id="overlay_text" style="position: relative; top: 0px; z-index: 3; font-size: 24px; width: 100%; background-color: rgba(87, 87, 87, 0.85)"><span style="margin-left: 5px;">Assisted Living</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Assisted Living Modal -->
+        <div id="assistedLivingModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Assisted Living</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                <br><br><a href="#" target="_blank">www.newlinkhere.com</a>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <!-- End of Assisted Living Modal and Row -->
+      
+      
+      
+      <!-- Memory Care and Senior Apartments Row -->
+      <div class="row">
+        
+        <!-- Memory Care Column -->
+        <div class="col-lg-6">
+          <div style="min-height: 300px; width: 90%; margin: 5%; position: relative; z-index: 1;">
+            <a href="#" data-toggle="modal" data-target="#memoryCareModal" style="text-decoration: none; color: #ffffff;">
+              <img src="img/memory care.jpg" style="width: 100%; height: 100%; position: absolute; z-index: 2;">
+              <div id="overlay_text" style="position: relative; top: 0px; z-index: 3; font-size: 24px; width: 100%; background-color: rgba(87, 87, 87, 0.85)"><span style="margin-left: 5px;">Memory Care</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Memory Care Modal -->
+        <div id="memoryCareModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Memory Care</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                <br><br><a href="#" target="_blank">www.newlinkhere.com</a>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Memory Care Modal -->
+        
+        
+        
+        <!-- Senior Apartments Column -->
+        <div class="col-lg-6">
+          <div style="min-height: 300px; width: 90%; margin: 5%; position: relative; z-index: 1;">
+            <a href="#" data-toggle="modal" data-target="#seniorApartmentsModal" style="text-decoration: none; color: #ffffff;">
+              <img src="img/seniorliving.png" style="width: 100%; height: 100%; position: absolute; z-index: 2;">
+              <div id="overlay_text" style="position: relative; top: 0px; z-index: 3; font-size: 24px; width: 100%; background-color: rgba(87, 87, 87, 0.85)"><span style="margin-left: 5px;">Senior Apartments</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Senior Apartments Modal -->
+        <div id="seniorApartmentsModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Senior Apartments</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                <br><br><a href="http://www.awolff.com/" target="_blank">www.awolff.com/</a>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <!-- End of Senior Apartments Modal and Row -->
+      
+      
+      
+      <!-- Wellness Center and Townhome Apartments Row -->
+      <div class="row">
+        
+        <!-- Wellness Center Column -->
+        <div class="col-lg-6">
+          <div style="min-height: 300px; width: 90%; margin: 5%; position: relative; z-index: 1;">
+            <a href="#" data-toggle="modal" data-target="#wellnessCenterModal" style="text-decoration: none; color: #ffffff;">
+              <img src="img/wellness center.png" style="width: 100%; height: 100%; position: absolute; z-index: 2;">
+              <div id="overlay_text" style="position: relative; top: 0px; z-index: 3; font-size: 24px; width: 100%; background-color: rgba(87, 87, 87, 0.85)"><span style="margin-left: 5px;">Wellness Center</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Wellness Center Modal -->
+        <div id="wellnessCenterModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Wellness Center</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                <br><br><a href="#" target="_blank">www.newlinkhere.com</a>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Wellness Center Modal -->
+        
+        
+        
+        <!-- Townhome Apartments Column -->
+        <div class="col-lg-6">
+          <div style="min-height: 300px; width: 90%; margin: 5%; position: relative; z-index: 1;">
+            <a href="#" data-toggle="modal" data-target="#townhomeApartmentsModal" style="text-decoration: none; color: #ffffff;">
+              <img src="img/townhome apartments overview.jpg" style="width: 100%; height: 100%; position: absolute; z-index: 2;">
+              <div id="overlay_text" style="position: relative; top: 0px; z-index: 3; font-size: 24px; width: 100%; background-color: rgba(87, 87, 87, 0.85)"><span style="margin-left: 5px;">Townhome Apartments</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Townhome Apartments Modal -->
+        <div id="townhomeApartmentsModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Townhome Apartments</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                <br><br><a href="http://www.awolff.com/" target="_blank">www.awolff.com/</a>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <!-- End of Townhome Apartments Modal and Row -->
+      
+      
+      
+      <!-- Medical Office and Retail Row -->
+      <div class="row">
+        
+        <!-- Medical Office Column -->
+        <div class="col-lg-6">
+          <div style="min-height: 300px; width: 90%; margin: 5%; position: relative; z-index: 1;">
+            <a href="#" data-toggle="modal" data-target="#medicalOfficeModal" style="text-decoration: none; color: #ffffff;">
+              <img src="img/mob overview.jpg" style="width: 100%; height: 100%; position: absolute; z-index: 2;">
+              <div id="overlay_text" style="position: relative; top: 0px; z-index: 3; font-size: 24px; width: 100%; background-color: rgba(87, 87, 87, 0.85)"><span style="margin-left: 5px;">Medical Office</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Medical Office Modal -->
+        <div id="medicalOfficeModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Medical Office</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                <br><br><a href="#" target="_blank">www.newlinkhere.com</a>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of Medical Office Modal -->
+        
+        
+        
+        <!-- Retail Column -->
+        <div class="col-lg-6">
+          <div style="min-height: 300px; width: 90%; margin: 5%; position: relative; z-index: 1;">
+            <a href="#" data-toggle="modal" data-target="#unionPlaceModal" style="text-decoration: none; color: #ffffff;">
+              <img src="img/retailpromenade2.png" style="width: 100%; height: 100%; position: absolute; z-index: 2;">
+              <div id="overlay_text" style="position: relative; top: 0px; z-index: 3; font-size: 24px; width: 100%; background-color: rgba(87, 87, 87, 0.85)"><span style="margin-left: 5px;">Retail</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Retail Modal -->
+        <div id="unionPlaceModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Retail</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                <br><br><a href="#" target="_blank">www.newlinkhere.com</a>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <!-- End of Retail Modal and Row -->
+      
+      
+      
+      <!-- LVAC and ... Row -->
+      <div class="row" style="margin-bottom: 5%;">
+        
+        <!-- LVAC Column -->
+        <div class="col-lg-6">
+          <div style="min-height: 300px; width: 90%; margin: 5%; position: relative; z-index: 1;">
+            <a href="#" data-toggle="modal" data-target="#lvacModal" style="text-decoration: none; color: #ffffff;">
+              <img src="img/lvac overview.jpg" style="width: 100%; height: 100%; position: absolute; z-index: 2;">
+              <div id="overlay_text" style="position: relative; top: 0px; z-index: 3; font-size: 24px; width: 100%; background-color: rgba(87, 87, 87, 0.85)"><span style="margin-left: 5px;">Residential</span></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- LVAC Modal -->
+        <div id="lvacModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">LVAC</h4>
+              </div>
+              <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                <br><br><a href="http://www.lvac.com" target="_blank">www.lvac.com</a>
+              </div>
+              <!-- End of Modal Content -->
+              
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+              <!-- End of Modal Footer -->
+              
+            </div>
+          </div>
+        </div>
+        <!-- End of LVAC Modal and Row for now... -->
+        
+      </div>
+      
+    </div>
+  
+  <!-- Footer Starts Here -->
+  <nav class="navbar navbar-default navbar-fixed-bottom" id="foot01" style="color: #fff; text-align: right; padding-right: 5px; padding-top: 15px;">
+    <script>document.getElementById("foot01").innerHTML =
+	  "<p>&copy;  " + new Date().getFullYear() + " Union Village. All rights reserved.</p>";</script>
+  </nav>
+  <!-- Footer Ends Here -->
+  
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  
+  </body>
+</html>

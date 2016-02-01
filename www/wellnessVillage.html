@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Union Village</title>
+
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- CSS Style Sheet -->
+    <link href="css/site.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  
+  <body ng-app="unionVillage">
+    
+    <!-- Beginning of Header/Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+  
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><span class="union">Union</span><span class="village">Village</span></a>
+              </div>
+             <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href='integratedVillage.html'>Integrated Health Village</a></li>
+                  <li class="active"><a href='#'>Wellness Village</a></li>
+                  <!-- Comming Soon <li><a href='floorPlans.html'>Floor Plans</a></li> -->
+                  <li><a href='location.html'>Location</a></li>
+                  <li><a href='leaseInfo.html'>Leasing Info</a></li>
+                  <li><a href='project.html'>Village Partners</a></li>
+                  <li><a href='ourCompany.html'>Our Company</a></li>
+                  <li><a href='photos.html'>Photos</a></li>
+                  <!--<li><a href='amenities.html'>Amenities</a></li>-->
+                  <li><a href='map.html'>Site Plan</a></li>
+                  <li><a href='press.html'>Press</a></li>
+                  <!-- COMING SOON <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Login
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="">Login</a></li>
+                      <li><a href="#">Apply</a></li>
+                      <li><a href="#">Pay Rent</a></li>
+                      <li><a href="#">Submit Service Request</a></li> 
+                    </ul>
+                  </li> -->
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="officeHours.html">Office Hours</a></li>
+                      <li><a href="drivingDirections.html">Driving Directions</a></li>
+                      <li><a href="mailto:info@unionvillage.net">Email Us</a></li>
+                      <li><a href="#">Call Us</a></li> 
+                    </ul>
+                  </li>
+                  <!--<li><a href='scheduleVisit.html'><span style="border: 1px solid blue; padding: 10px;">Schedule a Visit</span></a></li>-->
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- End of Header/Navbar -->
+  
+    <!-- Beginning of Carousel -->
+    <section class="block" style="height: 100vh;">
+        
+        <!-- Beginning of wellnessVillage Carousel -->
+        <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="15000">
+          
+          <!-- Wrapper for Slides -->
+          <div class="carousel-inner" style="height: 100vh;">
+              <div class="item active">
+                <img src="img/retirement-Happy.jpg" class="homeimg" alt="Introducing Wellness Village">
+                <div class="carousel-caption" style="background-color: rgba(87, 87, 87, 0.5)">
+                  <p id="carousel-paragraph" style="font-size: 24px; color: #fff;">Senior Living is about to change....
+                    <br><br><br><b><span style="font-size: 36px;">Introducing the Wellness Village!</span></b></p>
+                </div>
+              </div>
+          
+              <div class="item">
+                <img src="img/pie chart-sample.png" class="homeimg" alt="Wellness Village Concept">
+                <div class="carousel-caption" style="background-color: rgba(87, 87, 87, 0.5)">
+                  <p id="carousel-paragraph" style="font-size: 18px; color: #fff;"><b>THE WELLNESS VILLAGE CONCEPT:</b>
+                  <br><br>The "Wellness Village" is a place where Seniors focus on the right things which enable them to have better health...we call it "Power Aging".
+                  </p>
+                </div>
+              </div>
+          
+              <div class="item">
+                <img src="img/wellness village goal.png" class="homeimg" alt="Wellness Village Goal">
+                <div class="carousel-caption" style="background-color: rgba(87, 87, 87, 0.5)">
+                  <p id="carousel-paragraph" style="font-size: 18px; color: #fff;"><b>THE WELLNESS VILLAGE GOAL:</b>
+                  <br><br><br>The goal of the Wellness Village is to keep Seniors in their Townhome Apartments as long as possible....longer than anyone thought possible.</p>
+                </div>
+              </div>
+          
+              <div class="item">
+                <img src="img/wellness village partners.png" class="homeimg" alt="Wellness Village Partners">
+                <div class="carousel-caption" style="background-color: rgba(87, 87, 87, 0.5)">
+                  <p id="carousel-paragraph" style="font-size: 18px; color: #fff;"><b>THE WELLNESS VILLAGE PARTNERS:</b>
+                  <br><br><br>The Wellness Village has world class partners providing integrated service to our Villages.</p>
+                </div>
+              </div>
+
+          </div>
+          <!-- End of Carousel Inner -->
+          
+            <!-- Left and right controls, the top section is the left carousel control -->
+            <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!-- End of left and right controls -->
+            
+        </div>
+        <!-- End of wellnessVillage Carousel -->
+        
+    </section>
+
+
+  
+  <!-- Footer Starts Here -->
+  <nav class="navbar navbar-default navbar-fixed-bottom" id="foot01" style="color: #fff; text-align: right; padding-right: 5px; padding-top: 15px;">
+    <script>document.getElementById("foot01").innerHTML =
+	  "<p>&copy;  " + new Date().getFullYear() + " Union Village. All rights reserved.</p>";</script>
+  </nav>
+  <!-- Footer Ends Here -->
+  
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  
+  </body>
+</html>
