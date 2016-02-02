@@ -112,7 +112,7 @@
                   <img src="img/UnionVillage GH.png" class="homeimg" alt="UnionVillage Overview">
                   <div class="carousel-caption">
                     <h1 style="margin-bottom: 5%; color: #fff;">Integrated Health Village</h1>
-                    <a href="#two" style="font-size: 20px; color: #fff; text-decoration: none;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                    <a id="scroll" style="font-size: 20px; color: #fff; text-decoration: none; cursor: pointer;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                   </div>
                 </div>
             
@@ -120,7 +120,7 @@
                   <img src="img/UnionCentre.png" class="homeimg" alt="UnionCentre">
                   <div class="carousel-caption">
                     <h1 style="margin-bottom: 5%; color: #fff;">VillageCentre</h1>
-                    <a href="#two" style="font-size: 20px; color: #fff; text-decoration: none;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                    <a id="scroll1" style="font-size: 20px; color: #fff; text-decoration: none; cursor: pointer;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                   </div>
                 </div>
             
@@ -128,7 +128,7 @@
                   <img src="img/UnionPlace.png" class="homeimg" alt="UnionPlace">
                   <div class="carousel-caption">
                     <h1 style="margin-bottom: 5%; color: #fff;">VillagePlace</h1>
-                    <a href="#two" style="font-size: 20px; color: #fff; text-decoration: none;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                    <a id="scroll2" style="font-size: 20px; color: #fff; text-decoration: none; cursor: pointer;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                   </div>
                 </div>
             
@@ -136,7 +136,7 @@
                   <img src="img/UnionPlaza.png" class="homeimg" alt="UnionPlaza">
                   <div class="carousel-caption">
                     <h1 style="margin-bottom: 5%; color: #fff;">VillagePlaza</h1>
-                    <a href="#two" style="font-size: 20px; color: #fff; text-decoration: none;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                    <a id="scroll3" style="font-size: 20px; color: #fff; text-decoration: none; cursor: pointer;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                   </div>
                 </div>
                 
@@ -144,7 +144,7 @@
                   <img src="img/UnionSquare.png" class="homeimg" alt="UnionSquare">
                   <div class="carousel-caption">
                     <h1 style="margin-bottom: 5%; color: #fff;">VillageSquare</h1>
-                    <a href="#two" style="font-size: 20px; color: #fff; text-decoration: none;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                    <a id="scroll4" style="font-size: 20px; color: #fff; text-decoration: none; cursor: pointer;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                   </div>
                 </div>
             </div>
@@ -200,7 +200,7 @@
           <a href="integratedVillage.html" style="text-decoration: none;"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
         </div>
         <div class="col-sm-7" style="height: 100%; text-align: left;">
-          <a href="#three" style="font-size: 20px; color: #000; text-align: center; margin-top: 3%; padding-left: 10%; text-decoration: none;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding-left: 16%;"></span></a>
+          <a id="scroll5" style="font-size: 20px; color: #000; text-align: center; margin-top: 3%; padding-left: 10%; text-decoration: none; cursor: pointer;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding-left: 16%;"></span></a>
         </div>
       </div>
     </section>
@@ -230,7 +230,7 @@
       
       <div class="row" style="height: 10%; width: 100%; text-align: right;">
         <div class="col-sm-7" style="height: 100%; text-align: right;">
-          <a href="#four" style="font-size: 20px; color: #000; margin-top: 3%; padding-right: 6%; text-decoration: none;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+          <a id="scroll6" style="font-size: 20px; color: #000; margin-top: 3%; padding-right: 6%; text-decoration: none; cursor: pointer;">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
         </div>
         <div class="col-sm-5" style="height: 100%; padding: 0px; text-align: center;">
           <a href="wellnessVillage.html" style="text-decoration: none;"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
@@ -254,7 +254,75 @@
     </section>
     <!-- End of Fourth Section -->
 
-
+  <script>
+    jQuery(document).ready(function(){
+      // 'scrollPosition' is the amount of pixels #two
+      // is from the top of the document
+      var scrollPosition1 = jQuery('#two').offset().top;
+      var scrollPosition2 = jQuery('#two').offset().top;
+      var scrollPosition3 = jQuery('#two').offset().top;
+      var scrollPosition4 = jQuery('#two').offset().top;
+      var scrollPosition5 = jQuery('#two').offset().top;
+      var scrollPosition6 = jQuery('#three').offset().top;
+      var scrollPosition7 = jQuery('#four').offset().top;
+      
+      // When #scroll is clicked
+      jQuery('#scroll').click(function(){
+        // Scroll down to 'scrollPosition'
+        jQuery('html, body').animate({scrollTop:scrollPosition1}, 'slow');
+        // Stop the link from acting like a normal anchor link
+        return false;
+      });
+      
+      // When #scroll is clicked
+      jQuery('#scroll1').click(function(){
+        // Scroll down to 'scrollPosition'
+        jQuery('html, body').animate({scrollTop:scrollPosition2}, 'slow');
+        // Stop the link from acting like a normal anchor link
+        return false;
+      });
+      
+      // When #scroll is clicked
+      jQuery('#scroll2').click(function(){
+        // Scroll down to 'scrollPosition'
+        jQuery('html, body').animate({scrollTop:scrollPosition3}, 'slow');
+        // Stop the link from acting like a normal anchor link
+        return false;
+      });
+      
+      // When #scroll is clicked
+      jQuery('#scroll3').click(function(){
+        // Scroll down to 'scrollPosition'
+        jQuery('html, body').animate({scrollTop:scrollPosition4}, 'slow');
+        // Stop the link from acting like a normal anchor link
+        return false;
+      });
+      
+      // When #scroll is clicked
+      jQuery('#scroll4').click(function(){
+        // Scroll down to 'scrollPosition'
+        jQuery('html, body').animate({scrollTop:scrollPosition5}, 'slow');
+        // Stop the link from acting like a normal anchor link
+        return false;
+      });
+      
+      // When #scroll is clicked
+      jQuery('#scroll5').click(function(){
+        // Scroll down to 'scrollPosition'
+        jQuery('html, body').animate({scrollTop:scrollPosition6}, 'slow');
+        // Stop the link from acting like a normal anchor link
+        return false;
+      });
+      
+      // When #scroll is clicked
+      jQuery('#scroll6').click(function(){
+        // Scroll down to 'scrollPosition'
+        jQuery('html, body').animate({scrollTop:scrollPosition7}, 'slow');
+        // Stop the link from acting like a normal anchor link
+        return false;
+      });
+    });
+    </script>
   
   <!-- Footer Starts Here -->
   <nav class="navbar navbar-default navbar-fixed-bottom" id="foot01" style="color: #fff; text-align: right; padding-right: 5px; padding-top: 15px;">
