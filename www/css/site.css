@@ -345,6 +345,8 @@ section#sec-loc .item {
     padding-right: 5px;
 }
 
+
+/* Page Loader (Only being used on Location Page) */
 #page {
     display: none;
 }
