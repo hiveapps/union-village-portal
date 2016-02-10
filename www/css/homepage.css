@@ -1,0 +1,86 @@
+/* Carousel Styling for Home Page/First Section */
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 590px; /*slider height*/
+}
+
+.carousel .carousel-inner .item img.homeimg {
+    width: 100%; /*img width*/
+    height: 100vh; /*img height*/
+}
+
+/* Styling for carousel "Scroll Down" button */
+.carousel .item .carousel-caption .hp-scroll {
+    font-size: 20px; 
+    color: #fff; 
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+/* End of Carousel Styling and full page styling for Home Page */
+
+/* Beginning of Homepage Sections Styling */
+
+/* Section 1 */
+#one{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    margin-left: 0px;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+/* Section 2 */
+#two{
+    width: 100%;
+    height: 100vh;
+    top: 640px;
+    position: relative;
+    padding-top: 40px;
+    z-index: 2;
+    margin-left: 0px;
+    background: #fff;
+}
+#hp-header2 {
+	margin-top: 1%;
+	color: #000;
+}
+
+
+
+/* Section 3 */
+#three{
+    width: 100%;
+    height: 100vh;
+    top: 640px;
+    position: relative;
+    padding-top: 40px;
+    z-index: 2;
+    margin-left: 0px;
+    background: #74b0d2;
+}
+
+/* Section 4 */
+#four{
+    width: 100%;
+    height: 100vh;
+    top: 640px;
+    position: relative;
+    padding-top: 40px;
+    z-index: 2;
+    margin-left: 0px;
+    background: #fff;
+}
+#hp-header4 {
+	margin-top: 1%;
+	color: #000;
+}
+/* End of all Home Page Styling */
