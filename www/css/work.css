@@ -1,0 +1,69 @@
+/* Top Rows Styling */
+.work-page-wrapper .top-rows {
+	width: 100%;
+	padding: 2%;
+	margin: 0px;
+}
+
+.work-page-wrapper .top-rows .col-sm-4 .inner-wrapper {
+	min-height: 300px;
+	width: 90%;
+	margin: 5%;
+	position: relative;
+	z-index: 1;
+}
+
+.work-page-wrapper .top-rows .col-sm-4 .inner-wrapper a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.work-page-wrapper .top-rows .col-sm-4 .inner-wrapper a img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+}
+
+.work-page-wrapper .top-rows .col-sm-4 .inner-wrapper a div#overlay_text {
+	position: relative;
+	top: 0px;
+	z-index: 3;
+	font-size: 24px;
+	width: 100%;
+	background-color: rgba(87, 87, 87, 0.85);
+}
+/* End of Top Row Styling */
+
+
+/* Bottom Row Styling */
+.work-page-wrapper .bottom-row {
+	width: 100%;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-left: 0px;
+	margin-bottom: 5%;
+}
+
+/* Prev Bottom Nav */
+.work-page-wrapper .bottom-row .prev-nav-wrapper {
+	text-align: left;
+}
+
+.work-page-wrapper .bottom-row .prev-nav-wrapper a {
+	text-decoration: none;
+	color: #000;
+}
+/* End of Prev Bottom Nav */
+
+/* Next Bottom Nav */
+.work-page-wrapper .bottom-row .nxt-nav-wrapper {
+	text-align: right;
+}
+
+.work-page-wrapper .bottom-row .nxt-nav-wrapper a {
+	text-decoration: none;
+	color: #000;
+}
+/* End of Next Bottom Nav */
+/* End of Bottom Row Styling */
