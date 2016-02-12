@@ -1,4 +1,13 @@
 /* Carousel Styling for Home Page/First Section */
+#one{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    margin-left: 0px;
+    margin-top: 0px;
+    z-index: 1;
+}
+
 .carousel .item {
     width: 100%; /*slider width*/
     max-height: 590px; /*slider height*/
@@ -28,17 +37,18 @@
 
 /* Beginning of Homepage Sections Styling */
 
-/* Section 1 */
-#one{
-    width: 100%;
+/* Top Section/Section 1 */
+.top-section .block div#homeCarousel .carousel-inner {
     height: 100vh;
-    position: fixed;
-    margin-left: 0px;
-    margin-top: 0px;
-    z-index: 1;
 }
 
-/* Section 2 */
+.top-section .block div#homeCarousel .carousel-inner .item .carousel-caption h1 {
+    margin-bottom: 5%;
+    color: #fff;
+}
+
+
+/* Section 2 - Top Rows */
 #two{
     width: 100%;
     height: 100vh;
@@ -48,15 +58,67 @@
     z-index: 2;
     margin-left: 0px;
     background: #fff;
+    text-align: center;
 }
+
+.second-section .top-village-row {
+    height: 40%;
+    width: 100%;
+}
+
+.second-section .top-village-row .vill-col-5 {
+    height: 100%;
+    padding-left: 3%;
+}
+
+.second-section .top-village-row .vill-col-7 {
+    height: 100%;
+    padding: 3%;
+}
+
+.second-section .top-village-row .vill-col-5 .vill-col-img {
+    width: 100%;
+    height: 100%;
+}
+/* End of Top Rows */
+
+/* Beginning of The Village Bottom Row */
 #hp-header2 {
 	margin-top: 1%;
 	color: #000;
 }
 
+.second-section .bottom-village-row {
+    height: 10%;
+    width: 100%;
+    text-align: right;
+}
+
+.second-section .bottom-village-row .bot-col-5 {
+    height: 100%;
+    padding: 0px;
+    text-align: center;
+}
+
+.second-section .bottom-village-row .bot-col-7 {
+    height: 100%;
+    text-align: left;
+}
+
+.second-section .bottom-village-row .bot-col-7 a {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin-top: 3%;
+    padding-left: 10%;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* End of Section 2 */
 
 
-/* Section 3 */
+
+/* Beginning of Section 3 */
 #three{
     width: 100%;
     height: 100vh;
@@ -66,9 +128,70 @@
     z-index: 2;
     margin-left: 0px;
     background: #74b0d2;
+    text-align: center;
 }
 
-/* Section 4 */
+.third-section h2.hp-header3 {
+    margin-top: 1%;
+	color: #fff;
+}
+
+/* Top Wellness Center Row */
+.third-section .top-well-row {
+    height: 80%;
+    width: 100%;
+}
+
+.third-section .top-well-row .lft-col-6 {
+    height: 100%;
+    padding: 3%;
+}
+
+.third-section .top-well-row .lft-col-6 .well-img {
+    width: 100%;
+    height: 100%;
+}
+
+.third-section .top-well-row .rgt-col-6 {
+    height: 100%;
+    text-align: center;
+    padding: 3%;
+}
+/* End of Top Wellness Center Row */
+
+
+/* Beginning of Bottom Wellness Center Row */
+.third-section .bot-well-row {
+    height: 10%;
+    width: 100%;
+    text-align: right;
+}
+
+.third-section .bot-well-row .well-col-7 {
+    height: 100%;
+    text-align: right;
+}
+
+.third-section .bot-well-row .well-col-7 a {
+    font-size: 20px;
+    color: #000;
+    margin-top: 3%;
+    padding-right: 6%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.third-section .bot-well-row .well-col-5 {
+    height: 100%;
+    padding: 0px;
+    text-align: center;
+}
+/* End of Wellness Center Bottom Row */
+/* End of Third Section */
+
+
+
+/* Beginning of Section 4 */
 #four{
     width: 100%;
     height: 100vh;
@@ -78,9 +201,25 @@
     z-index: 2;
     margin-left: 0px;
     background: #fff;
+    text-align: center;
 }
-#hp-header4 {
+
+.fourth-section .hp-header4 {
 	margin-top: 1%;
 	color: #000;
+}
+
+.fourth-section .mission-row {
+    height: 85%;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.fourth-section .mission-row iframe {
+    margin-top: 3%;
+}
+
+.fourth-section .mission-row p {
+    padding: 3%;
 }
 /* End of all Home Page Styling */
