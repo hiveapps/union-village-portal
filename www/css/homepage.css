@@ -18,6 +18,10 @@
     height: 100vh; /*img height*/
 }
 
+.carousel .carousel-inner .item .carousel-caption {
+    background-color: rgba(87, 87, 87, 0.5);
+}
+
 /* Styling for carousel "Scroll Down" button */
 .carousel .item .carousel-caption .hp-scroll {
     font-size: 20px; 
