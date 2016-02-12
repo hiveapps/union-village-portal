@@ -18,7 +18,7 @@
     height: 100vh; /*img height*/
 }
 
-.carousel .carousel-inner .item .carousel-caption {
+.carousel .carousel-inner-home .item .carousel-caption {
     background-color: rgba(87, 87, 87, 0.5);
 }
 
