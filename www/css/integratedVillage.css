@@ -1,0 +1,12 @@
+.iv-main-wrapper .carousel .carousel-inner {
+	height: 100vh;
+}
+
+.iv-main-wrapper .carousel .carousel-inner .item .carousel-caption {
+	background-color: rgba(87, 87, 87, 0.5);
+}
+
+.iv-main-wrapper .carousel .carousel-inner .item .carousel-caption p {
+	font-size: 18px;
+	color: #fff;
+}
