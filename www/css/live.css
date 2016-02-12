@@ -1,0 +1,64 @@
+/* Main Row(s) Styling */
+.live-main-wrapper .row {
+	width: 100%;
+	padding: 2%;
+	margin: 0px;
+}
+
+.live-main-wrapper .row .col-sm-4 .inner-wrapper {
+	min-height: 300px;
+	width: 90%;
+	margin: 5%;
+	position: relative;
+	z-index: 1;
+}
+
+.live-main-wrapper .row .col-sm-4 .inner-wrapper a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.live-main-wrapper .row .col-sm-4 .inner-wrapper a img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+}
+
+.live-main-wrapper .row .col-sm-4 .inner-wrapper a div#overlay_text {
+	position: relative;
+	top: 0px;
+	z-index: 3;
+	font-size: 24px;
+	width: 100%;
+	background-color: rgba(87, 87, 87, 0.85);
+}
+
+
+/* Bottom Row Styling */
+.live-main-wrapper .bottom-row {
+	width: 100%;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-left: 0px;
+	margin-bottom: 5%;
+}
+
+.live-main-wrapper .bottom-row div#prev-button {
+	text-align: left;
+}
+
+.live-main-wrapper .bottom-row div#prev-button a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* Next Page Button */
+.live-main-wrapper .bottom-row div#next-button {
+	text-align: right;
+}
+
+.live-main-wrapper .bottom-row div#next-button a {
+	text-decoration: none;
+	color: #000;
+}

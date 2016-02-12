@@ -2,6 +2,8 @@
 @import 'drivingDirections.css';
 @import 'integratedVillage.css';
 @import 'leaseInfo.css';
+@import 'live.css';
+@import 'location.css';
 @import 'ourCompany.css';
 
 
@@ -66,6 +68,7 @@ nav.navbar div ul ul.dropdown-menu li a {
   transition: 0.7s all linear;
 	height: 100%;
 }
+/* End of Navbar Styling */
 
 
 
@@ -80,30 +83,11 @@ nav.navbar div ul ul.dropdown-menu li a {
 
 
 
-/* Styling for Location Page */
-section#sec-loc .item {
-  width: 100%;
-  height: 100vh;
-}
+/* Styling for Site Plan Page */
 
-/* Page Loader (Only being used on Location Page) */
-#page {
-  display: none;
-}
-#loading {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(192, 192, 192, 0.5);
-  background-image: url("http://i.stack.imgur.com/MnyxU.gif");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-/* End of Location Page */
+/* Need new photo before adding styling */
+
+/* End of Styling for Site Plan Page */
 
 
 

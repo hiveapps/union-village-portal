@@ -1,3 +1,24 @@
+.oc-page-wrapper div#cofounder-row {
+  width: 100%;
+  margin-left: 0px;
+}
+
+.oc-page-wrapper div#cofounder-row .col-md-4 {
+  height: 100%;
+  text-align: center;
+}
+
+.oc-page-wrapper div#cofounder-row .col-md-4 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.oc-page-wrapper div#cofounder-row .col-md-4 a img {
+  width: 250px;
+  height: 300px;
+}
+
+
 /* ---- Our Company Timeline Styling ---- */
 
 .timeline {
