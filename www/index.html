@@ -94,7 +94,7 @@
       <section class="block" style="height: 100vh;">
           
           <!-- Beginning of homeCarousel -->
-          <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="16900">
+          <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="17500">
 
 
             <!-- Wrapper for Slides -->
@@ -111,42 +111,42 @@
                 </div>
             
                 <div class="item">
-                  <img src="img/kindred hospital.png" class="homeimg" alt="UnionCentre">
+                  <img src="img/kindred hp.jpg" class="homeimg" alt="Kindred Hospital">
                   <div class="carousel-caption">
-                    <h1>SOON UNDER CONSTRUCTION <br> Long Term Acute Care Hospital <br> & <br> Skilled Nursing Facility</h1>
+                    <h1>COMING SOON <br> Long Term Acute Care Hospital <br> & <br> Skilled Nursing Facility</h1>
                     <a class="hp-scroll" id="scroll1">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                   </div>
                 </div>
             
                 <div class="item">
-                  <img src="img/UnionSquare.png" class="homeimg" alt="UnionPlace">
+                  <img src="img/franklin park hp.jpg" class="homeimg" alt="Franklin Park">
                   <div class="carousel-caption">
-                    <h1>SOON UNDER CONSTRUCTION <br> Franklin Park Independent Living, Assisted Living, Memory Care</h1>
+                    <h1>COMING SOON <br> Franklin Park Independent Living, Assisted Living, Memory Care</h1>
                     <a class="hp-scroll" id="scroll2">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                   </div>
                 </div>
             
                 <div class="item">
-                  <img src="img/townhome apartments.png" class="homeimg" alt="UnionPlaza">
+                  <img src="img/franklin park hp 2.jpg" class="homeimg" alt="Franklin Park Assisted Living">
                   <div class="carousel-caption">
-                    <h1>SOON UNDER CONSTRUCTION <br> 400 Townhome Apartments</h1>
+                    <h1>COMING SOON <br> 400 Townhome Apartments</h1>
                     <a class="hp-scroll" id="scroll3">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                   </div>
                 </div>
                 
                 <div class="item">
-                  <img src="img/lvac coming soon.png" class="homeimg" alt="UnionSquare">
+                  <img src="img/lvac hp.jpg" class="homeimg" alt="Las Vegas Athletic Club">
                   <div class="carousel-caption">
-                    <h1>SOON UNDER CONSTRUCTION <br> Las Vegas Athletic Club</h1>
+                    <h1>COMING SOON <br> Las Vegas Athletic Club</h1>
                     <a class="hp-scroll" id="scroll4">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                   </div>
                 </div>
                 
                 <div class="item">
-                  <img src="img/power aging center hp.png" class="homeimg" alt="UnionSquare">
+                  <img src="img/virtua image.jpg" class="homeimg" alt="Wellness & Power Aging Center">
                   <div class="carousel-caption">
-                    <h1>SOON UNDER CONSTRUCTION <br> Wellness & Power Aging Center</h1>
-                    <a class="hp-scroll" id="scroll4">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                    <h1>COMING SOON <br> Wellness & Power Aging Center</h1>
+                    <a class="hp-scroll" id="scroll5">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                   </div>
                 </div>
             </div>
@@ -204,7 +204,7 @@
           <a href="integratedVillage.html"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
         </div>
         <div class="col-xs-7 bot-col-7">
-          <a id="scroll5">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding-left: 16%;"></span></a>
+          <a id="scroll6">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="padding-left: 16%;"></span></a>
         </div>
       </div>
     </section>
@@ -236,7 +236,7 @@
       
       <div class="row bot-well-row">
         <div class="col-sm-7 well-col-7">
-          <a id="scroll6">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+          <a id="scroll7">Scroll Down<br><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
         </div>
         <div class="col-sm-5 well-col-5">
           <a href="wellnessVillage.html"><button type="button" class="btn btn-primary btn-lg">Learn More</button></a>
@@ -269,8 +269,9 @@
       var scrollPosition3 = jQuery('#two').offset().top;
       var scrollPosition4 = jQuery('#two').offset().top;
       var scrollPosition5 = jQuery('#two').offset().top;
-      var scrollPosition6 = jQuery('#three').offset().top;
-      var scrollPosition7 = jQuery('#four').offset().top;
+      var scrollPosition6 = jQuery('#two').offset().top;
+      var scrollPosition7 = jQuery('#three').offset().top;
+      var scrollPosition8 = jQuery('#four').offset().top;
       
       // When #scroll is clicked
       jQuery('#scroll').click(function(){
@@ -324,6 +325,14 @@
       jQuery('#scroll6').click(function(){
         // Scroll down to 'scrollPosition'
         jQuery('html, body').animate({scrollTop:scrollPosition7}, 'slow');
+        // Stop the link from acting like a normal anchor link
+        return false;
+      });
+      
+      // When #scroll is clicked
+      jQuery('#scroll7').click(function(){
+        // Scroll down to 'scrollPosition'
+        jQuery('html, body').animate({scrollTop:scrollPosition8}, 'slow');
         // Stop the link from acting like a normal anchor link
         return false;
       });

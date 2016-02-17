@@ -318,6 +318,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/www\/img\/franklin park hp 2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 106243,
+		"inputAbbreviatedPath": "\/www\/img\/franklin park hp 2.jpg",
+		"outputAbbreviatedPath": "\/www\/img\/franklin park hp 2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/franklin park hp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.21451e+06,
+		"inputAbbreviatedPath": "\/www\/img\/franklin park hp.jpg",
+		"outputAbbreviatedPath": "\/www\/img\/franklin park hp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/www\/img\/franklin park memory care.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -380,6 +402,17 @@
 		"initialSize": 9185,
 		"inputAbbreviatedPath": "\/www\/img\/governor sandoval.jpg",
 		"outputAbbreviatedPath": "\/www\/img\/governor sandoval.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/www\/img\/henderson hospital final.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.41828e+06,
+		"inputAbbreviatedPath": "\/www\/img\/henderson hospital final.jpeg",
+		"outputAbbreviatedPath": "\/www\/img\/henderson hospital final.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -461,6 +494,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/www\/img\/kindred hp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 928415,
+		"inputAbbreviatedPath": "\/www\/img\/kindred hp.jpg",
+		"outputAbbreviatedPath": "\/www\/img\/kindred hp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/www\/img\/latch overview.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -537,6 +581,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/www\/img\/lvac hp.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 637483,
+		"inputAbbreviatedPath": "\/www\/img\/lvac hp.jpg",
+		"outputAbbreviatedPath": "\/www\/img\/lvac hp.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/www\/img\/lvac overview.jpg": {
 		"fileType": 16384,
@@ -622,6 +677,17 @@
 		"initialSize": 99173,
 		"inputAbbreviatedPath": "\/www\/img\/power aging center.png",
 		"outputAbbreviatedPath": "\/www\/img\/power aging center.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/www\/img\/power aging lobby.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 256733,
+		"inputAbbreviatedPath": "\/www\/img\/power aging lobby.jpg",
+		"outputAbbreviatedPath": "\/www\/img\/power aging lobby.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -890,6 +956,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/www\/img\/virtua Image.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 396035,
+		"inputAbbreviatedPath": "\/www\/img\/virtua Image.jpg",
+		"outputAbbreviatedPath": "\/www\/img\/virtua Image.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/www\/img\/virtua interior 1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.33615e+06,
+		"inputAbbreviatedPath": "\/www\/img\/virtua interior 1.jpg",
+		"outputAbbreviatedPath": "\/www\/img\/virtua interior 1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/www\/img\/wellness center overview.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -908,6 +996,17 @@
 		"initialSize": 77391,
 		"inputAbbreviatedPath": "\/www\/img\/wellness center.png",
 		"outputAbbreviatedPath": "\/www\/img\/wellness center.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/www\/img\/wellness sample 1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 83079,
+		"inputAbbreviatedPath": "\/www\/img\/wellness sample 1.jpg",
+		"outputAbbreviatedPath": "\/www\/img\/wellness sample 1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
