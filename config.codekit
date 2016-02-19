@@ -806,12 +806,12 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 631336,
+		"initialSize": 2.34279e+06,
 		"inputAbbreviatedPath": "\/www\/img\/sitemap.png",
 		"outputAbbreviatedPath": "\/www\/img\/sitemap.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/www\/img\/siteplan.png": {
 		"fileType": 32768,
