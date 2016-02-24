@@ -1,5 +1,25 @@
+div.desktopHP {
+    width: 100%;
+    height: 100vh;
+}
+@media (max-width: 1000px){
+    div.desktopHP {
+        display: none;
+    }
+}
+
+div.mobileHP {
+    width: 100%;
+    height: 100vh;
+}
+@media (min-width: 1000px){
+    div.mobileHP {
+        display: none;
+    }
+}
+
 /* Carousel Styling for Home Page/First Section */
-#one{
+div.desktopHP #one{
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -53,7 +73,7 @@
 
 
 /* Section 2 - Top Rows */
-#two{
+div.desktopHP #two{
     width: 100%;
     height: 100vh;
     top: 640px;
@@ -123,7 +143,7 @@
 
 
 /* Beginning of Section 3 */
-#three{
+div.desktopHP #three{
     width: 100%;
     height: 100vh;
     top: 640px;
@@ -196,7 +216,7 @@
 
 
 /* Beginning of Section 4 */
-#four{
+div.desktopHP #four{
     width: 100%;
     height: 100vh;
     top: 640px;
@@ -226,4 +246,126 @@
 .fourth-section .mission-row p {
     padding: 3%;
 }
-/* End of all Home Page Styling */
+/* End of all Home Page Styling for desktop */
+
+
+
+
+
+/* Beginning of Home Page Styling for Mobile */
+/* First Section/Carousel */
+.mobileHP .top-section {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    margin-left: 0px;
+    margin-top: 0px;
+    z-index: 1;
+}
+.mobileHP .carousel .carousel-inner .item video.homevid {
+    width: 100%; /*vid width*/
+    height: 100vh; /*vid height*/
+}
+
+/* Mobile Carousel Caption Styling */
+.mobileHP .carousel .carousel-inner .item .carousel-caption{
+    background-color: rgba(87, 87, 87, 0.5);
+}
+
+/* Mobile Carousel Text Styling */
+.mobileHP .carousel .carousel-inner .item .carousel-caption h1{
+    margin-bottom: 5%;
+    color: #fff;
+}
+/* End of First section and Carousel */
+
+
+/* Beginning of Second Section */ 
+.mobileHP .mob-second-section {
+    width: 100%;
+    height: 100vh;
+    top: 600px !important;
+    position: relative;
+    padding-top: 0px !important;
+    z-index: 2;
+    margin-left: 0px;
+    background: #fff;
+    text-align: center;
+}
+
+/* Top column containing the header and image */
+.mobileHP .mob-second-section .col-top {
+    height: 45%;
+}
+/* top column image */
+.mobileHP .mob-second-section .col-top img {
+    width: 90%;
+}
+
+/* Middle column containing main paragraph */
+.mobileHP .mob-second-section .col-mid {
+    height: 40%;
+}
+
+/* Bottom column containing 'Learn More' button */
+.mobileHP .mob-second-section .col-bot {
+    height: 5%;
+    text-align: center;
+    padding-top: 8%;
+}
+/* End of Second Section */
+
+
+/* Beginning of Third Section */
+.mobileHP .mob-third-section{
+    width: 100%;
+    height: 100vh;
+    top: 600px !important;
+    position: relative;
+    padding-top: 0px !important;
+    z-index: 2;
+    margin-left: 0px;
+    background: #74b0d2;
+    text-align: center;
+}
+
+/* Top column containing the header and image */
+.mobileHP .mob-third-section .col-top {
+    height: 45%;
+}
+/* top column image */
+.mobileHP .mob-third-section .col-top img {
+    width: 90%;
+}
+
+/* Middle column containing main paragraph */
+.mobileHP .mob-third-section .col-mid {
+    height: 40%;
+}
+
+/* Bottom column containing 'Learn More' button */
+.mobileHP .mob-third-section .col-bot {
+    height: 5%;
+    text-align: center;
+    padding-top: 8%;
+}
+/* End of Third Section */
+
+
+/* Beginning of Fourth Section */
+.mobileHP .mob-fourth-section{
+    width: 100%;
+    height: 100vh;
+    top: 600px !important;
+    position: relative;
+    padding-top: 0px !important;
+    z-index: 2;
+    margin-left: 0px;
+    background: #fff;
+    text-align: center;
+}
+
+.mobileHP .mob-fourth-section .col-bot {
+    padding-top: 5%;
+}
+/* End of Fourth Section */
