@@ -186,17 +186,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/www\/img\/cat.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 106599,
-		"inputAbbreviatedPath": "\/www\/img\/cat.png",
-		"outputAbbreviatedPath": "\/www\/img\/cat.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
 	"\/www\/img\/cinema.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -933,6 +922,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/www\/img\/uv wellness 1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 568682,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 1.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/www\/img\/vegas-seven.jpg": {
 		"fileType": 16384,
