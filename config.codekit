@@ -175,17 +175,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/www\/img\/assisted living.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 191556,
-		"inputAbbreviatedPath": "\/www\/img\/assisted living.jpg",
-		"outputAbbreviatedPath": "\/www\/img\/assisted living.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
 	"\/www\/img\/cinema.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -204,17 +193,6 @@
 		"initialSize": 571430,
 		"inputAbbreviatedPath": "\/www\/img\/civicuses.png",
 		"outputAbbreviatedPath": "\/www\/img\/civicuses.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/www\/img\/cofounder profile.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 48361,
-		"inputAbbreviatedPath": "\/www\/img\/cofounder profile.jpg",
-		"outputAbbreviatedPath": "\/www\/img\/cofounder profile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -813,28 +791,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/www\/img\/townhome apartments overview.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10643,
-		"inputAbbreviatedPath": "\/www\/img\/townhome apartments overview.jpg",
-		"outputAbbreviatedPath": "\/www\/img\/townhome apartments overview.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/www\/img\/townhome apartments.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 391636,
-		"inputAbbreviatedPath": "\/www\/img\/townhome apartments.png",
-		"outputAbbreviatedPath": "\/www\/img\/townhome apartments.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
 	"\/www\/img\/travel-weekly.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -934,6 +890,127 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/www\/img\/uv wellness 10.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.13318e+06,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 10.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 10.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/uv wellness 11.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 871018,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 11.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 11.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/uv wellness 12.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 978343,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 12.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 12.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/uv wellness 2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 866649,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 2.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/uv wellness 3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.06016e+06,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 3.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/uv wellness 4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.15892e+06,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 4.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/uv wellness 5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 983022,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 5.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/uv wellness 6.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 837419,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 6.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 6.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/uv wellness 7.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 727368,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 7.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 7.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/uv wellness 8.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 917927,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 8.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 8.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/uv wellness 9.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 953836,
+		"inputAbbreviatedPath": "\/www\/img\/uv wellness 9.png",
+		"outputAbbreviatedPath": "\/www\/img\/uv wellness 9.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/www\/img\/vegas-seven.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1007,28 +1084,6 @@
 		"initialSize": 83079,
 		"inputAbbreviatedPath": "\/www\/img\/wellness sample 1.jpg",
 		"outputAbbreviatedPath": "\/www\/img\/wellness sample 1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/www\/img\/wellness village goal.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 98969,
-		"inputAbbreviatedPath": "\/www\/img\/wellness village goal.png",
-		"outputAbbreviatedPath": "\/www\/img\/wellness village goal.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/www\/img\/wellness village partners.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 122918,
-		"inputAbbreviatedPath": "\/www\/img\/wellness village partners.png",
-		"outputAbbreviatedPath": "\/www\/img\/wellness village partners.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
