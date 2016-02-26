@@ -4,6 +4,17 @@
 
 .iv-main-wrapper .carousel .carousel-inner .item .carousel-caption {
 	background-color: rgba(87, 87, 87, 0.5);
+	color: black;
+    right: 10%;
+    text-align: center;
+    max-width: 500px;
+	width: 300px;
+    left: auto;
+    /*top: auto;*/
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+	padding: 2%;
 }
 
 .iv-main-wrapper .carousel .carousel-inner .item .carousel-caption p {
