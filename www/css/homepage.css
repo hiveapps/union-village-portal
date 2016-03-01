@@ -84,57 +84,33 @@ div.desktopHP #two{
     background: #fff;
     text-align: center;
 }
-
-.second-section .top-village-row {
-    height: 40%;
-    width: 100%;
-}
-
-.second-section .top-village-row .vill-col-5 {
-    height: 100%;
-    padding-left: 3%;
-}
-
-.second-section .top-village-row .vill-col-7 {
-    height: 100%;
-    padding: 3%;
-}
-
-.second-section .top-village-row .vill-col-5 .vill-col-img {
-    width: 100%;
-    height: 100%;
-}
-/* End of Top Rows */
-
-/* Beginning of The Village Bottom Row */
-#hp-header2 {
+.second-section .hp-header2 {
 	margin-top: 1%;
 	color: #000;
 }
 
-.second-section .bottom-village-row {
-    height: 10%;
+.second-section .mission-row {
+    height: 70%;
     width: 100%;
-    text-align: right;
+    margin-left: 0px;
 }
 
-.second-section .bottom-village-row .bot-col-5 {
-    height: 100%;
-    padding: 0px;
+.second-section .mission-row iframe {
+    margin-top: 3%;
+}
+
+.second-section .mission-row p {
+    padding: 3%;
+}
+
+.second-section .bot-col-7 {
     text-align: center;
 }
 
-.second-section .bottom-village-row .bot-col-7 {
-    height: 100%;
-    text-align: left;
-}
-
-.second-section .bottom-village-row .bot-col-7 a {
+.second-section .bot-col-7 a {
     font-size: 20px;
     color: #000;
-    text-align: center;
     margin-top: 3%;
-    padding-left: 10%;
     text-decoration: none;
     cursor: pointer;
 }
@@ -152,65 +128,35 @@ div.desktopHP #three{
     z-index: 2;
     margin-left: 0px;
     background: #74b0d2;
+    color: #fff;
     text-align: center;
 }
 
-.third-section h2.hp-header3 {
-    margin-top: 1%;
-	color: #fff;
+.third-section .hp-header3 {
+	margin-top: 1%;
 }
 
-/* Top Wellness Center Row */
-.third-section .top-well-row {
-    height: 80%;
+.third-section .vision-row {
+    height: 75%;
     width: 100%;
+    margin-left: 0px;
 }
 
-.third-section .top-well-row .lft-col-6 {
-    height: 100%;
+.third-section .vision-row h4 {
     padding: 3%;
 }
 
-.third-section .top-well-row .lft-col-6 .well-img {
-    width: 100%;
-    height: 100%;
-}
-
-.third-section .top-well-row .rgt-col-6 {
-    height: 100%;
+.third-section .bot-col-7 {
     text-align: center;
-    padding: 3%;
-}
-/* End of Top Wellness Center Row */
-
-
-/* Beginning of Bottom Wellness Center Row */
-.third-section .bot-well-row {
-    height: 10%;
-    width: 100%;
-    text-align: right;
 }
 
-.third-section .bot-well-row .well-col-7 {
-    height: 100%;
-    text-align: right;
-}
-
-.third-section .bot-well-row .well-col-7 a {
+.third-section .bot-col-7 a {
     font-size: 20px;
-    color: #000;
+    color: #fff;
     margin-top: 3%;
-    padding-right: 6%;
     text-decoration: none;
     cursor: pointer;
 }
-
-.third-section .bot-well-row .well-col-5 {
-    height: 100%;
-    padding: 0px;
-    text-align: center;
-}
-/* End of Wellness Center Bottom Row */
 /* End of Third Section */
 
 
@@ -228,23 +174,21 @@ div.desktopHP #four{
     text-align: center;
 }
 
-.fourth-section .hp-header4 {
-	margin-top: 1%;
-	color: #000;
+.fourth-section .values-row {
+    text-align: left;
 }
 
-.fourth-section .mission-row {
-    height: 85%;
+.fourth-section .values-row div .valuesList {
+    margin-top: 25%;
+    margin-left: 10%;
+}
+
+.fourth-section .values-row div .valuesList .valuesListItem {
+    font-size: 20px;
+}
+
+.fourth-section .values-row div .coreImg {
     width: 100%;
-    margin-left: 0px;
-}
-
-.fourth-section .mission-row iframe {
-    margin-top: 3%;
-}
-
-.fourth-section .mission-row p {
-    padding: 3%;
 }
 /* End of all Home Page Styling for desktop */
 
@@ -280,6 +224,7 @@ div.desktopHP #four{
 /* End of First section and Carousel */
 
 
+
 /* Beginning of Second Section */ 
 .mobileHP .mob-second-section {
     width: 100%;
@@ -291,6 +236,12 @@ div.desktopHP #four{
     margin-left: 0px;
     background: #fff;
     text-align: center;
+}
+/* Header Styling for iphone6 and larger */
+@media (min-width: 350px){
+    .mobileHP .mob-second-section .col-top .missionHead {
+        font-size: 36px;
+    }
 }
 
 /* Top column containing the header and image */
@@ -307,13 +258,37 @@ div.desktopHP #four{
     height: 40%;
 }
 
-/* Bottom column containing 'Learn More' button */
+/* Bottom column containing main paragraph */
 .mobileHP .mob-second-section .col-bot {
     height: 5%;
     text-align: center;
     padding-top: 8%;
 }
+
+.mobileHP .mob-second-section .col-bot p {
+    font-size: 20px;
+}
+
+/* Font Styling for iphone4 screen sizes */
+@media (max-height: 500px){
+    .mobileHP .mob-second-section .col-bot p {
+        font-size: 14px;
+    }
+}
+/* Font Styling for iphone5 screen sizes */
+@media (min-height: 550px){
+    .mobileHP .mob-second-section .col-bot p {
+        font-size: 16px;
+    }
+}
+/* Font Styling for iphone6 screen sizes */
+@media (min-width: 350px){
+    .mobileHP .mob-second-section .col-bot p {
+        font-size: 18px;
+    }
+}
 /* End of Second Section */
+
 
 
 /* Beginning of Third Section */
@@ -328,6 +303,12 @@ div.desktopHP #four{
     background: #74b0d2;
     text-align: center;
 }
+/* Header Styling for iphone6 and larger */
+@media (min-width: 350px){
+    .mobileHP .mob-third-section .col-top .visionHead {
+        font-size: 36px;
+    }
+}
 
 /* Top column containing the header and image */
 .mobileHP .mob-third-section .col-top {
@@ -337,19 +318,59 @@ div.desktopHP #four{
 .mobileHP .mob-third-section .col-top img {
     width: 90%;
 }
+/* Image Styling for iphone4 screen sizes */
+@media (max-height: 500px){
+    .mobileHP .mob-third-section .col-top img {
+        width: 100%;
+        height: 75%;
+    }
+}
+/* Image Styling for iphone5 screen sizes */
+@media (min-height: 550px){
+    .mobileHP .mob-third-section .col-top img {
+        width: 100%;
+        height: 75%;
+    }
+}
+/* Image Styling for iphone6 screen sizes */
+@media (min-width: 350px){
+    .mobileHP .mob-third-section .col-top img {
+        width: 100%;
+        height: 75%;
+    }
+}
 
 /* Middle column containing main paragraph */
 .mobileHP .mob-third-section .col-mid {
     height: 40%;
 }
 
-/* Bottom column containing 'Learn More' button */
-.mobileHP .mob-third-section .col-bot {
-    height: 5%;
-    text-align: center;
-    padding-top: 8%;
+.mobileHP .mob-third-section .col-mid p {
+    font-size: 20px;
+}
+/* Font Styling for iphone4 screen sizes */
+@media (max-height: 500px){
+    .mobileHP .mob-third-section .col-mid p {
+        font-size: 20px;
+        margin-top: 3%;
+    }
+}
+/* Font Styling for iphone5 screen sizes */
+@media (min-height: 550px){
+    .mobileHP .mob-third-section .col-mid p {
+        font-size: 22px;
+        margin-top: 3%;
+    }
+}
+/* Font Styling for iphone6 screen sizes */
+@media (min-width: 350px){
+    .mobileHP .mob-third-section .col-mid p {
+        font-size: 26px;
+        margin-top: 3%;
+    }
 }
 /* End of Third Section */
+
 
 
 /* Beginning of Fourth Section */
@@ -364,8 +385,71 @@ div.desktopHP #four{
     background: #fff;
     text-align: center;
 }
+/* Header Styling for iphone6 and larger */
+@media (min-width: 350px){
+    .mobileHP .mob-fourth-section .valuesHead {
+        font-size: 36px;
+    }
+}
 
-.mobileHP .mob-fourth-section .col-bot {
-    padding-top: 5%;
+.mobileHP .mob-fourth-section .values-row {
+    text-align: left;
+}
+
+
+/* Unordered List Styling */
+.mobileHP .mob-fourth-section .values-row div .valuesList {
+    margin-top: 25%;
+    margin-left: 10%;
+}
+/* Font Styling for iphone4 screen sizes */
+@media (max-height: 500px){
+    .mobileHP .mob-fourth-section .values-row div .valuesList {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+}
+/* Font Styling for iphone5 screen sizes */
+@media (min-height: 550px){
+    .mobileHP .mob-fourth-section .values-row div .valuesList {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+}
+/* Font Styling for iphone6 screen sizes */
+@media (min-width: 350px){
+    .mobileHP .mob-fourth-section .values-row div .valuesList {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+}
+
+
+/* List Item Styling */
+.mobileHP .mob-fourth-section .values-row div .valuesList .valuesListItem {
+    font-size: 14px;
+}
+
+/* Font Styling for iphone4 screen sizes */
+@media (max-height: 500px){
+    .mobileHP .mob-fourth-section .values-row div .valuesList .valuesListItem {
+        font-size: 16px;
+    }
+}
+/* Font Styling for iphone5 screen sizes */
+@media (min-height: 550px){
+    .mobileHP .mob-fourth-section .values-row div .valuesList .valuesListItem {
+        font-size: 20px;
+    }
+}
+/* Font Styling for iphone6 screen sizes */
+@media (min-width: 350px){
+    .mobileHP .mob-fourth-section .values-row div .valuesList .valuesListItem {
+        font-size: 26px;
+    }
+}
+
+.mobileHP .mob-fourth-section .values-row div .coreImg {
+    width: 100%;
 }
 /* End of Fourth Section */

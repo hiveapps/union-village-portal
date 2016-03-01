@@ -219,6 +219,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/www\/img\/coreValues.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 196502,
+		"inputAbbreviatedPath": "\/www\/img\/coreValues.jpeg",
+		"outputAbbreviatedPath": "\/www\/img\/coreValues.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/www\/img\/craig johnson profile.png": {
 		"fileType": 32768,
 		"ignore": 0,
