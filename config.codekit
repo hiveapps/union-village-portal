@@ -1053,7 +1053,7 @@
 		"outputAbbreviatedPath": "\/www\/img\/virtua Image.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/www\/img\/virtua interior 1.jpg": {
 		"fileType": 16384,
