@@ -8,6 +8,10 @@
 	text-align: center;
 }
 
+.dd-main-wrapper .row .col-md-4 .drivingDirectionsList {
+	text-align: left;
+}
+
 .dd-main-wrapper .row .col-md-4 p {
 	font-size: 14px;
 }
