@@ -29,13 +29,18 @@ div.desktopHP #one{
 }
 
 .carousel .item {
-    width: 100%; /*slider width*/
-    max-height: 590px; /*slider height*/
+    min-width: 100%; /*slider width*/
+    max-height: 90%; /*slider height*/
 }
 
 .carousel .carousel-inner .item img.homeimg {
-    width: 100%; /*img width*/
+    min-width: 100%; /*img width*/
     height: 100vh; /*img height*/
+}
+
+.carousel .carousel-inner .item video.homevid {
+    min-width: 100%; /*vid width*/
+    height: 100vh; /*vid height*/
 }
 
 .carousel .carousel-inner-home .item .carousel-caption {
@@ -76,7 +81,7 @@ div.desktopHP #one{
 div.desktopHP #two{
     width: 100%;
     height: 100vh;
-    top: 640px;
+    top: 95%;
     position: relative;
     padding-top: 40px;
     z-index: 2;
@@ -122,7 +127,7 @@ div.desktopHP #two{
 div.desktopHP #three{
     width: 100%;
     height: 100vh;
-    top: 640px;
+    top: 95%;
     position: relative;
     padding-top: 40px;
     z-index: 2;
@@ -165,7 +170,7 @@ div.desktopHP #three{
 div.desktopHP #four{
     width: 100%;
     height: 100vh;
-    top: 640px;
+    top: 95%;
     position: relative;
     padding-top: 40px;
     z-index: 2;
@@ -229,7 +234,7 @@ div.desktopHP #four{
 .mobileHP .mob-second-section {
     width: 100%;
     height: 100vh;
-    top: 600px !important;
+    top: 95%;
     position: relative;
     padding-top: 0px !important;
     z-index: 2;
@@ -295,7 +300,7 @@ div.desktopHP #four{
 .mobileHP .mob-third-section{
     width: 100%;
     height: 100vh;
-    top: 600px !important;
+    top: 95%;
     position: relative;
     padding-top: 0px !important;
     z-index: 2;
@@ -377,7 +382,7 @@ div.desktopHP #four{
 .mobileHP .mob-fourth-section{
     width: 100%;
     height: 100vh;
-    top: 600px !important;
+    top: 95%;
     position: relative;
     padding-top: 0px !important;
     z-index: 2;
