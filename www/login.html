@@ -15,9 +15,9 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   
-  <body ng-app="unionVillage" ng-controller="LocationCtrl">
+  <body ng-app="unionVillage" style="background-color: rgba(192, 192, 192, 0.5);">
     
-    <div id="page">
+    <div style="width: 100%; height: 100vh;">
     
       <!-- Beginning of Header/Navbar -->
       <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -41,7 +41,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href='integratedVillage.html'>Integrated Health Village</a></li>
                     <li><a href='wellnessVillage.html'>Wellness Village</a></li>
-                    <li class="active"><a href='#'>Location</a></li>
+                    <li><a href='location.html'>Location</a></li>
                     <li><a href='leaseInfo.html'>Leasing Info</a></li>
                     <li><a href='project.html'>Live, Work, Play</a></li>
                     <li><a href='ourCompany.html'>Our Company</a></li>
@@ -57,40 +57,24 @@
                       <li><a href="mailto:info@unionvillage.net">Email Us</a></li> 
                       </ul>
                     </li>
-                    <li><a href='login.html'>Login</a></li>
+                    <li class="active"><a href='login.html'>Login</a></li>
                 </ul>
             </div>
         </div>
       </nav>
       <!-- End of Header/Navbar -->
       
-      
-      <!-- Beginning of body contents -->
-      <section class="block loc-page-wrapper" id="sec-loc page">
-        
-        <div class="row">
-          
-          <!-- This column holds the text on the page -->
-          <div class="col-lg-4 col-xs-12" id="par-col">
-            <div class="item">
-              <p>Located in Henderson, Nev., Union Village will be the first Integrated Health Village in the world. Listed as the <b>LARGEST HEALTHCARE BUILDING PROJECT IN THE US</b> by <i>Health Facilities Management</i>, the visionary model for health care will offer a world-class hospital complex and health center, residential, entertainment and specialty retail space, a vibrant senior retirement community and a civic and cultural arts center integrated into a master-planned community. The first of the three phases of the architecturally aesthetic, technologically innovative and environmentally sustainable village to be developed on 155 acres, will include <b>VillageCentre</b>, featuring a state-of-the-art hospital and healthcare complex; <b>VillagePlaza</b>, a specialty retail center with medical offices, residential apartments, entertainment and a mid-range all-suite hotel; <b>VillagePlace</b>, home to a vibrant Senior Village; and <b>VillageSquare</b>, serving as the village’s cultural center complete with a space and science center and a possible performing arts theater.</p>
-            </div>
-          </div>
-          <!-- End of Text Column -->
-          
-          <!-- This is the Image Column -->
-          <div class="col-lg-8 col-xs-12">
-            
-            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="450" style="margin-right: 0px;" src="https://maps.google.com/maps?hl=en&q=1050 W Galleria Dr Henderson, NV 89011&ie=UTF8&t=roadmap&z=10&iwloc=B&output=embed">
-            </iframe>
+	  <div class="login-main-wrapper">
+		  <div class="row">
+        <div class="col-xs-12" style="height: 75vh;">
+          <div style="border: 1px solid black; border-radius: 10px; background-color: #fff; width: 60%; height: 75%; margin: 5% auto;">
             
           </div>
-          <!-- End of Image Column -->
-          
         </div>
-          
-      </section>
-      <!-- End of body contents -->
+      </div>
+	  </div>
+      
+     
     
     
       <!-- Footer Starts Here -->
@@ -99,31 +83,9 @@
         "<p>&copy;  " + new Date().getFullYear() + " Union Village. All rights reserved.</p>";</script>
       </nav>
       <!-- Footer Ends Here -->
-    </div>
-    <div id="loading"></div>
-  
-    <script>
-      function onReady(callback) {
-            var intervalID = window.setInterval(checkReady, 1000);
-        
-            function checkReady() {
-                if (document.getElementsByTagName('body')[0] !== undefined) {
-                    window.clearInterval(intervalID);
-                    callback.call(this);
-                }
-            }
-        }
-        
-        function show(id, value) {
-            document.getElementById(id).style.display = value ? 'block' : 'none';
-        }
-        
-        onReady(function () {
-            show('page', true);
-            show('loading', false);
-        });
-    </script>
-  
+	
+	</div>
+	
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
   
