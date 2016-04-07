@@ -1,0 +1,39 @@
+/* Page Loader (Only being used on Location Page) */
+#page {
+  display: none;
+}
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.5);
+  background-image: url("http://i.stack.imgur.com/MnyxU.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Main Page Row */
+section.loc-page-wrapper .row {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+section.loc-page-wrapper .row div#par-col {
+  margin: 5% auto;
+}
+
+section.loc-page-wrapper .row div#par-col div.item {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Map Column */
+section.loc-page-wrapper .row .col-lg-8 {
+  margin: 3% auto;
+  text-align: center;
+}

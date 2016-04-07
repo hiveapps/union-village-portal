@@ -1,0 +1,53 @@
+/* Top Row Styling */
+.play-page-wrapper .top-row {
+	width: 100%;
+	padding: 2%;
+	margin: 0px;
+}
+
+.play-page-wrapper .top-row .col-sm-4 .inner-wrapper {
+	min-height: 300px;
+	width: 90%;
+	margin: 5%;
+	position: relative;
+	z-index: 1;
+}
+
+.play-page-wrapper .top-row .col-sm-4 .inner-wrapper a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.play-page-wrapper .top-row .col-sm-4 .inner-wrapper a img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+}
+
+.play-page-wrapper .top-row .col-sm-4 .inner-wrapper a div#overlay_text {
+	position: relative;
+	top: 0px;
+	z-index: 3;
+	font-size: 24px;
+	width: 100%;
+	background-color: rgba(87, 87, 87, 0.85);
+}
+/* End of Top Row Styling */
+
+
+
+/* Beginning of Bottom Row Styling */
+.play-page-wrapper .bottom-row {
+	width: 100%;
+	padding-left: 5%;
+	margin-left: 0px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+
+.play-page-wrapper .bottom-row a {
+	text-decoration: none;
+	color: #000;
+}
+/* End of Bottom Row Styling */
