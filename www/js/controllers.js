@@ -1,11 +1,13 @@
-var uv = angular.module('unionVillage.controllers', [])
+var hive = angular.module('unionVillage.controllers', []);
 
-uv.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
-var users = new Firebase("https://unionvillage.firebaseio.com/");
+
+//Totally functioning simple login
+hive.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
+var users = new Firebase("https://threadtemplate.firebaseio.com/");
   
   //This is going to get and log the user status, this could be copied and/or used for the beginning framework to build
   //a functioning profile page
-  var status = new Firebase("https://unionvillage.firebaseio.com/");
+  var status = new Firebase("https://threadtemplate.firebaseio.com/");
   var authData = status.getAuth();
   
   if (authData) {
@@ -60,7 +62,7 @@ var users = new Firebase("https://unionvillage.firebaseio.com/");
   // here we will just simulate this with an isNewUser boolean
   var isNewUser = true;
   
-  var ref = new Firebase("https://unionvillage.firebaseio.com/");
+  var ref = new Firebase("https://threadtemplate.firebaseio.com/");
   ref.onAuth(function(authData) {
     if (authData && isNewUser) {
       // save the user's profile into the database so we can list users,
@@ -90,4 +92,58 @@ var users = new Firebase("https://unionvillage.firebaseio.com/");
     $state.go('hive.login');
   };
   
+});
+
+
+
+//Thread Page Controller
+hive.controller("threadCtrl", function($scope, $firebaseArray, $timeout) {
+
+var ref = new Firebase("https://threadtemplate.firebaseio.com/");
+
+    // Get Stored Posts
+    var ratesRef = new Firebase('https://threadtemplate.firebaseio.com/posts');
+  
+    ratesRef.on("value", function (snapshot) {
+      $timeout(function () {
+        update(snapshot);
+        console.log(snapshot);
+      });
+    });
+    
+    function update (snapshot) {
+      $scope.todos = $firebaseArray(ratesRef);
+    };
+    
+    
+    //Submit posts
+    var postsRef = ref.child("posts")
+    $scope.addItem = function(){
+      
+        // Create a unique ID
+        var timestamp = new Date().valueOf()
+  
+        postsRef.push({
+          id: timestamp,
+          description: $scope.postDescription,
+          liked: false
+        });
+        
+        $scope.postDescription = "";
+    };
+    
+    // Update the "like" status to 'liked'
+    $scope.changeStatus   = function (item) {
+
+        // Get the Firebase reference of the item
+        var itemRef = new  Firebase(ref + item.id);
+
+        // Firebase : Update the item
+        itemRef.update({
+            id: item.id,
+            description : item.description,
+        });
+
+    };
+    
 });

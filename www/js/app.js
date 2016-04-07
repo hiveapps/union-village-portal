@@ -1,20 +1,36 @@
-var uv = angular.module('unionVillage', ['unionVillage.controllers'])
+var hive = angular.module('unionVillage', ['ui.router', 'unionVillage.controllers', 'unionVillage.services', 'unionVillage.directives', 'firebase']);
 
-/*
-uv.config(function($stateProvider, $urlRouterProvider) {
-
-  // Learn more here: https://github.com/angular-ui/ui-router
-  // Each state's controller can be found in controllers.js
+hive.config(function($stateProvider, $urlRouterProvider) {
+      
   $stateProvider
+  
+  // setup an abstract state for the tabs directive   
+  .state('hive', {
+        abstract: true,
+        views: {
+            'header': {
+                templateUrl: 'templates/header.html'
+            },
+        }
+    })
+    .state("hive.login", {
+        url: "/",
+        views: {
+            'content@': {
+                templateUrl: 'templates/login.html'
+            }
+        }
+    })
+    .state('hive.thread', {
+        url: "/thread",
+        views: {
+            'content@': {
+                templateUrl: 'templates/thread.html'
+            }
+        }
+    });
 
-  // Each tab has its own nav history stack:
-  .state('login', {
-      url: '/login',
-      templateUrl: 'templates/login.html',
-      controller: 'AppCtrl'
-  })
-
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/thread');
-
-});*/
+    
+    $urlRouterProvider.otherwise("/");
+    
+});

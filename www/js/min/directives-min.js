@@ -1,0 +1,1 @@
+var hive=angular.module("hive.directives",[]);

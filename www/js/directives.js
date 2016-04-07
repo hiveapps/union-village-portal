@@ -1,0 +1,1 @@
+var hive = angular.module('unionVillage.directives', []);

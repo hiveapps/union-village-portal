@@ -1,0 +1,19 @@
+<div ng-controller="LoginCtrl" class="loginWrapper">
+	
+	<!-- Username and Password input fields -->
+	<div class="list">
+		<input class="has-header" type="text" placeholder="Email" ng-model="username" />
+		<input type="password" placeholder="Password" ng-model="password" />
+	</div>
+	
+	<!-- Login Button -->
+	<button type="button" class="btn btn-primary" ng-click="login(username, password)"> 
+		Login 
+	</button>
+	
+	<!-- Sign Up Button -->
+	<button type="button" class="btn btn-danger" ng-click="register(username, password)"> 
+		Sign Up 
+	</button>
+
+</div>
