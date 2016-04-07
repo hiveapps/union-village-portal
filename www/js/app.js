@@ -24,6 +24,14 @@ hive.config(function($stateProvider, $urlRouterProvider) {
             }
         }
     })
+    .state("unionVillage.integratedVillage", {
+        url: "/integratedVillage",
+        views: {
+            'content@': {
+                templateUrl: 'templates/integratedVillage.html'
+            }
+        }
+    })
     .state("unionVillage.login", {
         url: "/login",
         views: {
