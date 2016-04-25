@@ -1,0 +1,27 @@
+<div class="pgWrapper" ng-controller="threadCtrl" style="height: 100vh; width: 100%;">
+	<div class="row" style="height: 100%; margin-top: 50px;">
+		<div class="col-sm-12 col-md-4" style="height: 40%; border-radius: 10px; margin-left: 2%; margin-top: 69px; padding: 5px; border: 1px solid black;">
+			<img src="#" alt="Profile Picture" style="width: 100px; height: 100px; float: left; border: 1px solid black;"/>
+			<h3 style="position: relative;">Jane Doe</h3>
+			
+			<input type="text" class="form-control" ng-model="postDescription" placeholder="Add new post" required />
+		
+			<button ng-click="addItem()" ng-disabled="!postDescription" class="btn btn-primary" type="button">Post</button>
+		</div>
+		
+		<div class="col-sm-12 col-md-6" style="height: 90%; border-radius: 10px; margin-left: 2%; margin-right: 2%; text-align: center;">
+			<h1>Notification Center</h1>
+			<div style="width: 90%; height: 85%; border: 1px solid black; margin: 0px auto; overflow-y: auto; border-radius: 10px;">
+				<div class="card text-xs-center" ng-repeat="item in todos | orderBy:'-id'">
+					<div class="card-block">
+						<p class="card-text">{{item.description}}</p><small  class="text-warning"> [ {{item.id}} ]</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-sm-12 col-md-1" style="height: 76%; border-radius: 10px; margin-top: 69px; border: 1px solid black;">
+			
+		</div>
+	</div>
+</div>

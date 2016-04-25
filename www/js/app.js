@@ -1,6 +1,6 @@
-var hive = angular.module('unionVillage', ['ui.router', 'unionVillage.controllers', 'unionVillage.services', 'unionVillage.directives', 'firebase']);
+var unionVillage = angular.module('unionVillage', ['ui.router', 'unionVillage.controllers', 'unionVillage.services', 'unionVillage.directives', 'firebase']);
 
-hive.config(function($stateProvider, $urlRouterProvider) {
+unionVillage.config(function($stateProvider, $urlRouterProvider) {
       
   $stateProvider
   
@@ -20,31 +20,15 @@ hive.config(function($stateProvider, $urlRouterProvider) {
         url: "/",
         views: {
             'content@': {
-                templateUrl: 'templates/home.html'
+                templateUrl: 'templates/index.html'
             }
         }
     })
-    .state("unionVillage.integratedVillage", {
-        url: "/integratedVillage",
+    .state("unionVillage.dashboard", {
+        url: "/dashboard",
         views: {
             'content@': {
-                templateUrl: 'templates/integratedVillage.html'
-            }
-        }
-    })
-    .state("unionVillage.login", {
-        url: "/login",
-        views: {
-            'content@': {
-                templateUrl: 'templates/login.html'
-            }
-        }
-    })
-    .state('unionVillage.thread', {
-        url: "/thread",
-        views: {
-            'content@': {
-                templateUrl: 'templates/thread.html'
+                templateUrl: 'templates/dashboard.html'
             }
         }
     });

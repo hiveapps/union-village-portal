@@ -1,1 +1,1 @@
-var hive = angular.module('unionVillage.directives', []);
+var unionVillage = angular.module('unionVillage.directives', []);
