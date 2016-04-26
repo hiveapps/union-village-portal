@@ -12,11 +12,20 @@
 		<div class="col-sm-12 col-md-6" style="height: 90%; border-radius: 10px; margin-left: 2%; margin-right: 2%; text-align: center;">
 			<h1>Notification Center</h1>
 			<div style="width: 90%; height: 85%; border: 1px solid black; margin: 0px auto; overflow-y: auto; border-radius: 10px;">
+				
+				<!-- Beginning of the Card -->
 				<div class="card text-xs-center" ng-repeat="item in todos | orderBy:'-id'">
 					<div class="card-block">
 						<p class="card-text">{{item.description}}</p><small  class="text-warning"> [ {{item.id}} ]</small>
 					</div>
+					
+					<!-- Line break between notifications -->
+					<hr style="width: 50%; color: #aaa;">
+					<!-- End of line break -->
+					
 				</div>
+				<!-- End of the Card -->
+				
 			</div>
 		</div>
 		
