@@ -31,6 +31,14 @@ unionVillage.config(function($stateProvider, $urlRouterProvider) {
                 templateUrl: 'templates/dashboard.html'
             }
         }
+    })
+    .state("unionVillage.medicalPortal", {
+        url: "/medicalPortal",
+        views: {
+            'content@': {
+                templateUrl: 'templates/medicalPortal.html'
+            }
+        }
     });
 
     
