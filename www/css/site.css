@@ -25,9 +25,14 @@ body {
 
 Navbar background color */
 nav.navbar {
-  background-color: #837e72;
+  /*background-color: #837e72;*/
+  background-color: #fff;
   margin: 0px !important;
   border-radius: 0 !important;
+  border-bottom: 1px solid grey;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 10px -6px #999;
 }
 
 
@@ -36,9 +41,6 @@ nav.navbar div a span.union {
   color: #73bb5b; /* Changes the word "Union" in Header to Green */
   margin-right: 3px;
 }
-nav.navbar div a span.village {
-  color: #fff !important; /* Changes the word "Village" in Header to White */
-}
 
 /* Navbar Font Coloring */
 nav.navbar div ul li.active a {
@@ -46,12 +48,12 @@ nav.navbar div ul li.active a {
 }
 
 nav.navbar div ul li a {
-  color: #fff !important; /* Changes font color of main tabs */
-  font-size: 12px; /* Changes font size of main tabs */
+  color: #999 !important; /* Changes font color of main tabs */
+  font-size: 14px; /* Changes font size of main tabs */
 }
 
 nav.navbar div ul ul.dropdown-menu li a {
-  color: #000 !important;
+  color: #999 !important;
 }
 
 /* Styling for hamburger menu transitions on mobile */
@@ -62,48 +64,44 @@ nav.navbar div ul ul.dropdown-menu li a {
 
 /* End of Top Navbar Styling */
 
-
-/* Side Navbar Styling */
-/* make sidebar nav vertical */ 
-@media (min-width: 768px) {
-  .sidebar-nav .navbar .navbar-collapse {
-    padding: 0;
-    max-height: none;
-    width: 100%;
-  }
-  .sidebar-nav .navbar ul {
-    float: none;
-    display: block;
-  }
-  .sidebar-nav .navbar li {
-    float: none;
-    display: block;
-    margin-top: 35px !important;
-  }
-  .sidebar-nav .navbar li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
+/* custom inclusion of right, left and below tabs */
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
 }
-/* End of Side Navbar Styling */
 
-
-/* Carousel Styling for Photos Page */
-.carousel .item div#photos-carousel {
-  top: 0px !important;
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
 }
-.carousel .item div.carousel-caption h1 {
-  color: #000;
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
 }
-/* End of Photos Page */
 
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
 
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
 
-/* Styling for Site Plan Page */
-
-/* Need new photo before adding styling */
-
-/* End of Styling for Site Plan Page */
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+/* End of Tab Left Styling */
 
 
 

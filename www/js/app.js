@@ -20,7 +20,7 @@ unionVillage.config(function($stateProvider, $urlRouterProvider) {
         url: "/",
         views: {
             'content@': {
-                templateUrl: 'templates/index.html'
+                templateUrl: 'templates/home.html'
             }
         }
     })
@@ -37,6 +37,22 @@ unionVillage.config(function($stateProvider, $urlRouterProvider) {
         views: {
             'content@': {
                 templateUrl: 'templates/medicalPortal.html'
+            }
+        }
+    })
+    .state("unionVillage.community", {
+        url: "/community",
+        views: {
+            'content@': {
+                templateUrl: 'templates/community.html'
+            }
+        }
+    })
+    .state("unionVillage.nearby", {
+        url: "/nearby",
+        views: {
+            'content@': {
+                templateUrl: 'templates/nearby.html'
             }
         }
     });
