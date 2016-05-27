@@ -10,6 +10,7 @@ unionVillage.controller("headerCtrl", function($scope, $location) {
   });
 });
 
+// !!!FIREBASE 2.0!!! NEED TO UPDATE TO 3.0 ONCE ANGULAR FIRE IS UPDATED 
 //Totally functioning simple login
 unionVillage.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
 var users = new Firebase("https://temporaryuv.firebaseio.com/");
@@ -106,7 +107,7 @@ var users = new Firebase("https://temporaryuv.firebaseio.com/");
 
 
 /*Thread Page Controller */
-unionVillage.controller("threadCtrl", function($scope, $firebaseArray, $timeout) {
+unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeout) {
 
 var ref = new Firebase("https://temporaryuv.firebaseio.com/");
 
@@ -157,7 +158,11 @@ var ref = new Firebase("https://temporaryuv.firebaseio.com/");
     
 });
 
-/* Initialize Firebase
+
+
+
+
+/* !!!FIREBASE 3.0!!! Initialize Firebase
   var config = {
     apiKey: "AIzaSyAPonQNzJOgFx-Qg1QT0nuBck3XUch-WAU",
     authDomain: "unionvillage.firebaseapp.com",
