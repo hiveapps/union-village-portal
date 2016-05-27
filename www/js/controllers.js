@@ -112,7 +112,7 @@ unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeo
 var ref = new Firebase("https://temporaryuv.firebaseio.com/");
 
     // Get Stored Posts
-    var ratesRef = new Firebase('https://temporaryuv.firebaseio.com/posts');
+    var ratesRef = new Firebase('https://temporaryuv.firebaseio.com/notificationCenter');
   
     ratesRef.on("value", function (snapshot) {
       $timeout(function () {
@@ -127,7 +127,7 @@ var ref = new Firebase("https://temporaryuv.firebaseio.com/");
     
     
     //Submit posts
-    var postsRef = ref.child("posts")
+    var postsRef = ref.child("notificationCenter")
     $scope.addItem = function(){
       
         // Create a unique ID
