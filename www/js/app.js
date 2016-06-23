@@ -55,6 +55,22 @@ unionVillage.config(function($stateProvider, $urlRouterProvider) {
                 templateUrl: 'templates/nearby.html'
             }
         }
+    })
+    .state("unionVillage.submitRequest", {
+        url: "/submitRequest",
+        views: {
+            'content@': {
+                templateUrl: 'templates/submitRequest.html'
+            }
+        }
+    })
+    .state("unionVillage.success", {
+        url: "/success",
+        views: {
+            'content@': {
+                templateUrl: 'templates/success.html'
+            }
+        }
     });
 
     
