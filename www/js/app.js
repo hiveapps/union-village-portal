@@ -56,11 +56,19 @@ unionVillage.config(function($stateProvider, $urlRouterProvider) {
             }
         }
     })
-    .state("unionVillage.submitRequest", {
-        url: "/submitRequest",
+    .state("unionVillage.myCommunity", {
+        url: "/myCommunity",
         views: {
             'content@': {
-                templateUrl: 'templates/submitRequest.html'
+                templateUrl: 'templates/myCommunity.html'
+            }
+        }
+    })
+    .state("unionVillage.myHome", {
+        url: "/myHome",
+        views: {
+            'content@': {
+                templateUrl: 'templates/myHome.html'
             }
         }
     })

@@ -143,6 +143,115 @@ nav.navbar div ul ul.dropdown-menu li a {
 
 
 
+/* Styling for the Community Calendar in 'My Community' */
+#calendar {
+  width: 400px;
+  height: 250px;
+  border-collapse: collapse;
+  font-size: 10px;
+  font-family: Helvetica, Arial, sans;
+  background-color: white;
+}
+​
+#calendar tbody td {
+  border: 1px solid black;
+  text-align: right;
+  vertical-align: top;
+  width: 14%;
+}
+​
+#calendar td.empty {
+  border: none;
+}
+/* End of styling for the Community Calendar in 'My Community' */
+
+
+/* Styling for the accordion in 'My Community'*/
+.container {
+  margin-bottom: 5%;
+}
+/* styling for the accordion heading */
+.panel-heading {
+  background-color: transparent !important;
+}
+  
+/* styling for the accordion heading after opening - this also controls chevron togle */
+.panel-heading.accordion-toggle:after {
+  /* symbol for "opening" panels */
+  font-family:'Glyphicons Halflings';
+  /* essential for enabling glyphicon */
+  content:"\e114";
+  /* adjust as needed, taken from bootstrap.css */
+  float: right;
+  position: relative;
+  bottom: 20px;
+  color: #2d98c4;
+}
+  
+/* styling for the accordion heading after collapsing - this also controls chevron togle */
+.panel-heading.accordion-toggle.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content:"\e080";
+  /* adjust as needed, taken from bootstrap.css */
+}
+  
+  /* styling for the accordion heading on hover */
+.panel-heading:hover {
+  cursor: pointer;
+}
+.panel-heading:hover h4 {
+  text-decoration: none;
+}
+  
+  /* styling for the title of the accordion heading */
+.panel-title {
+  color: #2d98c4;
+}
+  
+  /* styling for the body of the accordion */
+.panel-body {
+  width: 30% !important;
+  padding: 10px;
+  text-align: left;
+  border-top: 1px solid #aaa;
+}
+  
+/* styling for mobile */
+@media (max-width: 420px) {
+  /* make the font-size of the title in the accordion header smaller */
+  .panel-title {
+    font-size: 10px;
+  }
+  /* make the chevron smaller and closer to the bottom */
+  .panel-heading.accordion-toggle:after {
+    font-size: 12px;
+    bottom: 16px;
+  }
+  .panel-heading.accordion-toggle.collapsed:after {
+    font-size: 12px;
+    bottom: 16px;
+  }
+    
+  /* styling for the body of the accordion to make font size smaller */
+  .panel-body p {
+    font-size: 12px;
+  }
+    
+  /* adjust margin of mainContainer to make it closer to the top of the page */
+  div.mainContainer {
+    margin-top: -40px !important;
+  }
+    
+  /* adjust image size */
+  img#wtfih {
+    margin-top: 3%;
+    height: 150px !important;
+  }
+}
+/* End of Accordion styling for 'My Community' */
+
+
+
 /* Footer Styling for Entire Site */
 .navbar#foot01 {
   min-height:20px !important;
