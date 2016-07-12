@@ -1,18 +1,345 @@
-<div class="pgWrapper" ng-controller="dashboardCtrl" style="height: 100vh; width: 100%;">
+<div class="pgWrapper li-main-wrapper" ng-controller="dashboardCtrl" style="height: 100vh; width: 100%;">
 	<div class="row" style="height: 100%; margin-top: 50px;">
 		
 		<div class="col-md-12" style="padding-top: 2%;">
           	
 			<!-- Top Tab Bar -->
 			<ul class="nav nav-tabs">
-				<li class="active" style="margin-left: 3%;"><a data-target="#additionalSelection" data-toggle="tab">Reservations</a></li>
+				<li class="active" style="margin-left: 3%;"><a data-target="#additionalSelection" data-toggle="tab">Facilities</a></li>
+				<li><a data-target="#additionalSelection" data-toggle="tab">Reservations</a></li>
 				<li><a data-target="#additionalSelection2" data-toggle="tab">Service Requests</a></li>
 				<li><a data-target="#additionalSelection3" data-toggle="tab">Leasing Info</a></li>
 			</ul>
 			<div class="tab-content">
 				
-				<div class="tab-pane active" id="additionalSelection" style="padding-top: 2%; padding-left: 3%;">
-					Testing 1
+				<div class="tab-pane active" id="additionalSelection" style="padding-top: 2%;">
+					<!-- Independent Senior Living Column -->
+					<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="inner-wrapper">
+						<a ui-sref="#" data-toggle="modal" data-target="#seniorLivingModal">
+							<img src="img/lvacLogo.png" alt="Las Vegas Athletic Club at Union Village"/>
+							<div id="overlay_text"><span style="margin-left: 5px;">Las Vegas Athletic Club</span></div>
+						</a>
+						</div>
+					</div>
+					
+					<!-- Independent Senior Living Modal -->
+					<div id="seniorLivingModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+					
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Las Vegas Athletic Club</h4>
+								</div>
+								<div class="modal-body" style="text-align: center;">
+					
+									<iframe src="http://www.lvac.com/vip-free-pass/" style="width: 90%; height: 400px;"></iframe>
+					
+								</div>
+								<!-- End of Modal Content -->
+								
+								<!-- Modal Footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								<!-- End of Modal Footer -->
+								
+							</div>
+						</div>
+					</div>
+					<!-- End of Independent Senior Living Modal -->
+					
+					
+					
+					<!-- Assisted Living Column -->
+					<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="inner-wrapper">
+						<a ui-sref="#" data-toggle="modal" data-target="#assistedLivingModal">
+							<img src="img/jambaLogo.jpg" alt="Jamba Juice at Union Village" />
+							<div id="overlay_text"><span style="margin-left: 5px;">Jamba Juice</span></div>
+						</a>
+						</div>
+					</div>
+					
+					<!-- Assisted Living Modal -->
+					<div id="assistedLivingModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+					
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Jamba Juice</h4>
+								</div>
+								<div class="modal-body">
+									
+									<p>This is where we will enter in things like signing up, ordering, etc.</p>
+									
+								</div>
+								<!-- End of Modal Content -->
+								
+								<!-- Modal Footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								<!-- End of Modal Footer -->
+								
+							</div>
+						</div>
+					</div>
+					
+					
+					<!-- Memory Care Column -->
+					<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="inner-wrapper">
+						<a ui-sref="#" data-toggle="modal" data-target="#memoryCareModal">
+							<img src="img/imaxLogo.jpg" alt="IMAX Theater at Union Village" />
+							<div id="overlay_text"><span style="margin-left: 5px;">IMAX Theater</span></div>
+						</a>
+						</div>
+					</div>
+					
+					<!-- Memory Care Modal -->
+					<div id="memoryCareModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+					
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">IMAX Theater</h4>
+								</div>
+								<div class="modal-body" style="text-align: center;">
+								
+									<iframe src="http://www.fandango.com/regalcrockerparkstadium16andimax_aaeng/theaterpage" style="width: 90%; height: 400px;"></iframe>
+								
+								</div>
+								<!-- End of Modal Content -->
+								
+								<!-- Modal Footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								<!-- End of Modal Footer -->
+								
+							</div>
+						</div>
+					</div>
+					<!-- End of Memory Care Modal -->
+						
+					
+					
+					<!-- Senior Apartments Column -->
+					<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="inner-wrapper">
+						<a ui-sref="#" data-toggle="modal" data-target="#seniorApartmentsModal">
+							<img src="img/bankInterior.jpeg" alt="Chase Bank at Union Village" />
+							<div id="overlay_text"><span style="margin-left: 5px;">Chase Bank</span></div>
+						</a>
+						</div>
+					</div>
+					
+					<!-- Senior Apartments Modal -->
+					<div id="seniorApartmentsModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+					
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Chase Bank</h4>
+								</div>
+								
+								<div class="modal-body" style="text-align: center;">
+								
+									<h2>More Info Coming Soon</h2>
+								
+								</div>
+								<!-- End of Modal Content -->
+								
+								<!-- Modal Footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								<!-- End of Modal Footer -->
+								
+							</div>
+						</div>
+					</div>
+					
+					
+					<!-- Wellness Center Column -->
+					<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="inner-wrapper">
+						<a ui-sref="#" data-toggle="modal" data-target="#wellnessCenterModal">
+							<img src="img/#.png" alt=" at Union Village" />
+							<div id="overlay_text"><span style="margin-left: 5px;">Restaurant</span></div>
+						</a>
+						</div>
+					</div>
+					
+					<!-- Wellness Center Modal -->
+					<div id="wellnessCenterModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+					
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Restaurant</h4>
+								</div>
+								
+								<div class="modal-body">
+									
+								</div>
+								<!-- End of Modal Content -->
+								
+								<!-- Modal Footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								<!-- End of Modal Footer -->
+								
+							</div>
+						</div>
+					</div>
+					<!-- End of Wellness Center Modal -->
+					
+					
+					<!-- Townhome Apartments Column -->
+					<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="inner-wrapper">
+						<a ui-sref="#" data-toggle="modal" data-target="#townhomeApartmentsModal">
+							<img src="img/franklin park townhomes.png" alt="Wellness Mall at Union Village" />
+							<div id="overlay_text"><span style="margin-left: 5px;">Wellness Mall</span></div>
+						</a>
+						</div>
+					</div>
+					
+					<!-- Townhome Apartments Modal -->
+					<div id="townhomeApartmentsModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+					
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Wellness Mall</h4>
+							</div>
+							<div class="modal-body">
+							<p>The Wellness Mall at Union Village is a place where Villagers as well as the community can come to find the best in wellness.  Wellness is much more than healthcare; its goal is to bring all aspects of being human into balance. Most Wellness Centers have one or two centers of excellence.  By providing a “mall concept”, the Wellness Mall at Union Village can coordinate the finest care in numerous centers of excellence. Rental space is available, only to the finest providers, on a yearly, daily and/or hourly basis.</p>
+							<br>
+							<p>Our tenant availability is below:</p>
+							<div class="row">
+								
+								<!-- Left Column -->
+								<div class="col-sm-6 col-xs-12">
+								
+								<label>Wellness Tenants</label>
+								<ul style="margin: 0px; list-style: none;">
+									<li><input type="checkbox" disabled> Pharmacy</li>
+									<li><input type="checkbox" disabled> Telemedicine</li>
+									<li><input type="checkbox" disabled> Outpatient Therapy</li>
+									<li><input type="checkbox" disabled> Eye Clinic</li>
+									<li><input type="checkbox" disabled> Mental Health</li>
+									<li><input type="checkbox" disabled> Home Health Agency</li>
+									<li><input type="checkbox" disabled> Demonstration Kitchen</li>
+									<li><input type="checkbox" disabled> Dental Clinic</li>
+									<li><input type="checkbox" disabled> Vitamin Store</li>
+									<li><input type="checkbox" disabled> Diabetic Clinic</li>
+									<li><input type="checkbox" disabled> Chiropractic Office</li>
+									<li><input type="checkbox" disabled> Molecular-puncture</li>
+									<li><input type="checkbox" disabled> Acupuncture</li>
+									<li><input type="checkbox" disabled> Other Wellness</li>
+								</ul>
+								
+								<br>
+								
+								<label>Notes:</label>
+								<ul style="margin: 0px; list-style: none;">
+									<li><input type="checkbox" disabled> Available</li>
+									<li><input type="checkbox" disabled> Tenants Secured</li>
+								</ul>
+								
+								</div>
+								<!-- End of Left Column -->
+								
+								
+								<!-- Right Column -->
+								<div class="col-sm-6 col-xs-12">
+								
+								<label>Aging Clinic</label>
+								<ul style="margin: 0px; list-style: none;">
+									<li><input type="checkbox" disabled> Power Aging Offices</li>
+									<li><input type="checkbox" disabled> Conference Rooms</li>
+									<li><input type="checkbox" disabled> Wellness Coach</li>
+									<li><input type="checkbox" disabled> Fitness Center</li>
+									<li><input type="checkbox" disabled> Locker Rooms</li>
+									<li><input type="checkbox" disabled> Lap Pool</li>
+									<li><input type="checkbox" disabled> Exercise Pool</li>
+									<li><input type="checkbox" disabled> Warm Water Therapy</li>
+									<li><input type="checkbox" disabled> Spa</li>
+								</ul>
+								
+								<br>
+								
+								<label>Professional Athlete Training & Rehab</label>
+								<ul style="margin: 0px; list-style: none;">
+									<li><input type="checkbox" disabled> Offices</li>
+									<li><input type="checkbox" disabled> Nutrition Office</li>
+									<li><input type="checkbox" disabled> Conference Rooms</li>
+									<li><input type="checkbox" disabled> Treatment/Therapy</li>
+									<li><input type="checkbox" disabled> Lab</li>
+									<li><input type="checkbox" disabled> Turf Practice Area</li>
+									<li><input type="checkbox" disabled> Locker Rooms</li>
+									<li><input type="checkbox" disabled> Nutrition Café</li>
+								</ul>
+								
+								</div>
+								<!-- End of Right Column -->
+								
+							</div>
+							<!--<p style="font-size: 18px; margin-top: 5%;">For more information, or to be put on the waiting list, please click <a ng-href="mailto:leasing@unionvillage.net?subject=Inquiring%20About%20Leasing%20At%20Union%20Village&body=Name:%0D%0DContact%20Info:%0D%0DSpace%20I'm%20Inquiring%20About:%0D%0D">here</a> or email leasing@unionvillage.net</p>-->
+							<span style="text-align: center;"><h3>For more information on leasing Wellness Mall space at Union Village fill out the contact form below</h3></span>
+							
+							<form action="php/leasing_form_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
+								
+								<label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
+								<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
+								
+								<label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
+								<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
+								
+								<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
+								<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+								
+								
+								<label for="message" style="margin-top: 0px;">Message:</label>
+								<textarea class="form-control" ng-model="message" name="message" rows="5" id="message" style="width: 75%; resize: none;"></textarea><br>
+								
+								
+								<label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
+								<select class="form-control" id="facility" name="facility" style="width: 75%;" required>
+									<option value="Wellness Mall" selected>Wellness Mall</option>
+								</select><br>
+								
+								<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+							</form>
+							</div>
+							<!-- End of Modal Content -->
+							
+							<!-- Modal Footer -->
+							<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+							<!-- End of Modal Footer -->
+							
+						</div>
+						</div>
+					</div>
+					<!-- End of Townhome Modal -->
 				</div>
 				
 				<div class="tab-pane" id="additionalSelection2" style="padding-top: 2%; padding-left: 3%;">
