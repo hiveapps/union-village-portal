@@ -1,4 +1,4 @@
-<div class="pgWrapper" ng-controller="nearbyCtrl" style="height: 100vh; width: 100%;">
+<div class="pgWrapper" style="height: 100vh; width: 100%;">
 
 	<div class="row" style="height: 100%; margin-top: 50px; margin-bottom: 200px;">
 		
@@ -13,7 +13,7 @@
 				</ul>
 				<div class="tab-content">
 				
-					<div class="tab-pane active" id="additionalSelection" style="padding-left: 15%;">
+					<div class="tab-pane active" id="additionalSelection" style="padding-left: 15%;" ng-controller="nearbyCtrl">
 						<div class="col-xs-12 col-md-3" ng-repeat="item in todos | orderBy:'-id'" style="height: 350px; margin-top: 20px; padding-left: 2%; padding-right: 2%;">
 			
 							<div class="card" style="background-color: #e9e9e9; height: 100%; box-shadow: -6px 8px 10px -4px #999;">
