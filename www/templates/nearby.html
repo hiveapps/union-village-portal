@@ -2,14 +2,84 @@
 
 	<div class="row" style="height: 100%; margin-top: 50px; margin-bottom: 200px;">
 		
-		<!-- Left Column -->
+		<div class="col-md-12" style="padding-top: 2%;">
+          	
+			<!-- tabs left -->
+			<div class="tabbable tabs-left">
+				<ul class="nav nav-tabs" style="height: 500px; margin-left: 15px;">
+					<li class="active"><a data-target="#additionalSelection" data-toggle="tab">Restaurants</a></li>
+					<li><a data-target="#additionalSelection2" data-toggle="tab">Gambling</a></li>
+					<li><a data-target="#additionalSelection3" data-toggle="tab">Sight Seeing</a></li>
+				</ul>
+				<div class="tab-content">
+				
+					<div class="tab-pane active" id="additionalSelection" style="padding-left: 15%;">
+						<div class="col-xs-12 col-md-3" ng-repeat="item in todos | orderBy:'-id'" style="height: 350px; margin-top: 20px; padding-left: 2%; padding-right: 2%;">
+			
+							<div class="card" style="background-color: #e9e9e9; height: 100%; box-shadow: -6px 8px 10px -4px #999;">
+								<img class="card-img-top" src="img/mgmAd.jpg" alt="Card image cap" style="width: 100%; height: 150px;">
+								<div class="card-block" style="height: 50%; text-align: center; padding: 5px; color: #000;">
+									<!-- Should assign a max Char count of 25 to this Header --><h4 class="card-title" style="color: #000;">{{item.header}}</h4>
+									<!-- Should assign a max Char count of 175 to this Paragraph --><p class="card-text" style="color: #7e7e7e;">{{item.description}}</p>
+								</div>
+								
+								<div class="card-footer text-muted" style="margin-top: -5%; text-align: center;">
+									<a href="#" class="btn btn-primary">Learn More</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="tab-pane" id="additionalSelection2" style="padding-left: 15%;">
+						<div class="col-xs-12 col-md-3" ng-repeat="item in todos | orderBy:'-id'" style="height: 350px; margin-top: 20px; padding-left: 2%; padding-right: 2%;">
+			
+							<div class="card" style="background-color: #e9e9e9; height: 100%; box-shadow: -6px 8px 10px -4px #999;">
+								<img class="card-img-top" src="img/mgmAd.jpg" alt="Card image cap" style="width: 100%; height: 150px;">
+								<div class="card-block" style="height: 50%; text-align: center; padding: 5px; color: #000;">
+									<!-- Should assign a max Char count of 25 to this Header --><h4 class="card-title" style="color: #000;">{{item.header}}</h4>
+									<!-- Should assign a max Char count of 175 to this Paragraph --><p class="card-text" style="color: #7e7e7e;">{{item.description}}</p>
+								</div>
+								
+								<div class="card-footer text-muted" style="margin-top: -5%; text-align: center;">
+									<a href="#" class="btn btn-primary">Learn More</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="tab-pane" id="additionalSelection3" style="padding-left: 15%;">
+						<div class="col-xs-12 col-md-3" ng-repeat="item in todos | orderBy:'-id'" style="height: 350px; margin-top: 20px; padding-left: 2%; padding-right: 2%;">
+			
+							<div class="card" style="background-color: #e9e9e9; height: 100%; box-shadow: -6px 8px 10px -4px #999;">
+								<img class="card-img-top" src="img/mgmAd.jpg" alt="Card image cap" style="width: 100%; height: 150px;">
+								<div class="card-block" style="height: 50%; text-align: center; padding: 5px; color: #000;">
+									<!-- Should assign a max Char count of 25 to this Header --><h4 class="card-title" style="color: #000;">{{item.header}}</h4>
+									<!-- Should assign a max Char count of 175 to this Paragraph --><p class="card-text" style="color: #7e7e7e;">{{item.description}}</p>
+								</div>
+								
+								<div class="card-footer text-muted" style="margin-top: -5%; text-align: center;">
+									<a href="#" class="btn btn-primary">Learn More</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /tabs -->
+		
+		</div>
+		
+		<!-- Left Column -
 		<div class="col-xs-12 col-md-3" ng-repeat="item in todos | orderBy:'-id'" style="height: 350px; margin-top: 5%; padding-left: 2%; padding-right: 2%;">
 			
 			<div class="card" style="background-color: #e9e9e9; height: 100%; box-shadow: -6px 8px 10px -4px #999;">
 				<img class="card-img-top" src="img/mgmAd.jpg" alt="Card image cap" style="width: 100%; height: 150px;">
 				<div class="card-block" style="height: 50%; text-align: center; padding: 5px; color: #000;">
-					<!-- Should assign a max Char count of 25 to this Header --><h4 class="card-title" style="color: #000;">{{item.header}}</h4>
-					<!-- Should assign a max Char count of 175 to this Paragraph --><p class="card-text" style="color: #7e7e7e;">{{item.description}}</p>
+					<!-- Should assign a max Char count of 25 to this Header --<h4 class="card-title" style="color: #000;">{{item.header}}</h4>
+					<!-- Should assign a max Char count of 175 to this Paragraph --<p class="card-text" style="color: #7e7e7e;">{{item.description}}</p>
 				</div>
 				
 				<div class="card-footer text-muted" style="margin-top: -5%; text-align: center;">
@@ -18,6 +88,20 @@
 			</div>
 			
 		</div>
+		
+		
+		
+		<div class="card" style="background-color: #e9e9e9; height: 350px; width: 250px; box-shadow: -6px 8px 10px -4px #999;">
+							<img class="card-img-top" src="img/mgmAd.jpg" alt="Card image cap" style="width: 100%; height: 150px;">
+							<div class="card-block" style="height: 50%; text-align: center; padding: 5px; color: #000;">
+								<!-- Should assign a max Char count of 25 to this Header --<h4 class="card-title" style="color: #000;">{{item.header}}</h4>
+								<!-- Should assign a max Char count of 175 to this Paragraph --<p class="card-text" style="color: #7e7e7e;">{{item.description}}</p>
+							</div>
+							
+							<div class="card-footer text-muted" style="margin-top: -5%; text-align: center;">
+								<a href="#" class="btn btn-primary">Learn More</a>
+							</div>
+						</div>
 		<!-- End of Left Column -->
 		
 	</div>

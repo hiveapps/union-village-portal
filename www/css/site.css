@@ -29,7 +29,7 @@ nav.navbar {
   background-color: #fff;
   margin: 0px !important;
   border-radius: 0 !important;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #aaa;
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
   box-shadow: 0 8px 10px -6px #999;

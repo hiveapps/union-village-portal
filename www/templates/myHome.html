@@ -1,28 +1,31 @@
 <div class="pgWrapper" ng-controller="dashboardCtrl" style="height: 100vh; width: 100%;">
-	<div class="row" style="height: 100%; margin-top: 50px; border: 1px solid black;">
+	<div class="row" style="height: 100%; margin-top: 50px;">
 		
-		<div class="col-sm-12" style="height: 100%; text-align: center;">
-          
-			<h3>Fill out the form to contact Union Village about any general inquiries that you have.</h3>
-			<h5>If you have questions about leasing please visit our 'Leasing Info' page or our 'Live', 'Work', or 'Play' pages.</h5>
-			
-			<form action="php/service_email.php" method="post" style="text-align: left; padding-left: 3%;" enctype="multipart/form-data">
+		<div class="col-md-12" style="padding-top: 2%;">
+          	
+			<!-- tabs left -->
+			<div class="tabbable tabs-left">
+				<ul class="nav nav-tabs" style="height: 500px; margin-left: 15px;">
+					<li class="active"><a data-target="#additionalSelection" data-toggle="tab">Reservations</a></li>
+					<li><a data-target="#additionalSelection2" data-toggle="tab">Service Requests</a></li>
+					<li><a data-target="#additionalSelection3" data-toggle="tab">Leasing Info</a></li>
+				</ul>
+				<div class="tab-content">
 				
-				<label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
-				<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
-				
-				<label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
-				<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
-				
-				<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
-				<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
-				
-				
-				<label for="message" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Message:</label>
-				<textarea class="form-control" ng-model="message" name="message" rows="5" id="message" style="width: 75%; resize: none;" required></textarea><br>
-				
-				<input class="btn btn-primary" type="submit" name="submit" value="Submit">
-			</form>
+					<div class="tab-pane active" id="additionalSelection">
+						Testing 1
+					</div>
+					
+					<div class="tab-pane" id="additionalSelection2">
+						Testing 2
+					</div>
+					
+					<div class="tab-pane" id="additionalSelection3">
+						Testing 3
+					</div>
+				</div>
+			</div>
+			<!-- /tabs -->
 		
 		</div>
 		
