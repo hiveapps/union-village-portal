@@ -1,84 +1,268 @@
-<div class="pgWrapper" style="height: 100vh; width: 100%;">
+<div class="pgWrapper li-main-wrapper" style="height: 100vh; width: 100%;">
 	<div class="row" style="height: 100%; margin-top: 45px;">
+		<div class="col-md-12" style="padding-top: 2%;">
+          	
+			<!-- Top Tab Bar -->
+			<ul class="nav nav-tabs">
+				<li class="active" style="margin-left: 3%;"><a data-target="#additionalSelection" data-toggle="tab">Facilities</a></li>
+				<li><a data-target="#additionalSelection2" data-toggle="tab">Community Calendar</a></li>
+				<li><a data-target="#additionalSelection3" data-toggle="tab">Management Team</a></li>
+				<li><a data-target="#additionalSelection4" data-toggle="tab">Community Resources</a></li>
+			</ul>
+			<div class="tab-content">
+				
+				<div class="tab-pane active" id="additionalSelection" style="padding-top: 2%;">
+					<!-- Independent Senior Living Column -->
+					<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="inner-wrapper">
+						<a ui-sref="#" data-toggle="modal" data-target="#seniorLivingModal">
+							<img src="img/lvacLogo.png" alt="Las Vegas Athletic Club at Union Village"/>
+							<div id="overlay_text"><span style="margin-left: 5px;">Las Vegas Athletic Club</span></div>
+						</a>
+						</div>
+					</div>
+					
+					<!-- Independent Senior Living Modal -->
+					<div id="seniorLivingModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+					
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Las Vegas Athletic Club</h4>
+								</div>
+								<div class="modal-body" style="text-align: center;">
+					
+									<iframe src="http://www.lvac.com/vip-free-pass/" style="width: 90%; height: 400px;"></iframe>
+					
+								</div>
+								<!-- End of Modal Content -->
+								
+								<!-- Modal Footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								<!-- End of Modal Footer -->
+								
+							</div>
+						</div>
+					</div>
+					<!-- End of Independent Senior Living Modal -->
+					
+					
+					
+					<!-- Assisted Living Column -->
+					<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="inner-wrapper">
+						<a ui-sref="#" data-toggle="modal" data-target="#assistedLivingModal">
+							<img src="img/jambaLogo.jpg" alt="Jamba Juice at Union Village" />
+							<div id="overlay_text"><span style="margin-left: 5px;">Jamba Juice</span></div>
+						</a>
+						</div>
+					</div>
+					
+					<!-- Assisted Living Modal -->
+					<div id="assistedLivingModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+					
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Jamba Juice</h4>
+								</div>
+								<div class="modal-body">
+									
+									<p>This is where we will enter in things like signing up, ordering, etc.</p>
+									
+								</div>
+								<!-- End of Modal Content -->
+								
+								<!-- Modal Footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								<!-- End of Modal Footer -->
+								
+							</div>
+						</div>
+					</div>
+					
+					
+					<!-- Memory Care Column -->
+					<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="inner-wrapper">
+						<a ui-sref="#" data-toggle="modal" data-target="#memoryCareModal">
+							<img src="img/imaxLogo.jpg" alt="IMAX Theater at Union Village" />
+							<div id="overlay_text"><span style="margin-left: 5px;">IMAX Theater</span></div>
+						</a>
+						</div>
+					</div>
+					
+					<!-- Memory Care Modal -->
+					<div id="memoryCareModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+					
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">IMAX Theater</h4>
+								</div>
+								<div class="modal-body" style="text-align: center;">
+								
+									<iframe src="http://www.fandango.com/regalcrockerparkstadium16andimax_aaeng/theaterpage" style="width: 90%; height: 400px;"></iframe>
+								
+								</div>
+								<!-- End of Modal Content -->
+								
+								<!-- Modal Footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								<!-- End of Modal Footer -->
+								
+							</div>
+						</div>
+					</div>
+					<!-- End of Memory Care Modal -->
+						
+					
+					
+					<!-- Senior Apartments Column -->
+					<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="inner-wrapper">
+						<a ui-sref="#" data-toggle="modal" data-target="#seniorApartmentsModal">
+							<img src="img/bankInterior.jpeg" alt="Chase Bank at Union Village" />
+							<div id="overlay_text"><span style="margin-left: 5px;">Chase Bank</span></div>
+						</a>
+						</div>
+					</div>
+					
+					<!-- Senior Apartments Modal -->
+					<div id="seniorApartmentsModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+					
+							<!-- Modal content-->
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Chase Bank</h4>
+								</div>
+								
+								<div class="modal-body" style="text-align: center;">
+								
+									<h2>More Info Coming Soon</h2>
+								
+								</div>
+								<!-- End of Modal Content -->
+								
+								<!-- Modal Footer -->
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+								<!-- End of Modal Footer -->
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="tab-pane" id="additionalSelection2" style="padding-top: 2%; padding-left: 3%;">
+					Community Calendar
+				</div>
+				
+				<div class="tab-pane" id="additionalSelection3" style="padding-top: 2%; padding-left: 3%;">
+					Management Team
+				</div>
+				
+				<div class="tab-pane" id="additionalSelection4" style="padding-top: 2%; padding-left: 3%;">
+					Community Resources
+				</div>
+			</div>
+			<!-- end of top tab bar -->
 		
-		<!-- Management Team Column -->
+		</div>
+		<!-- Management Team Column -
 		<div class="col-md-4" style="margin: 5px auto; padding: 0px; height: 100%; text-align: center;">
 			<h2>Management Team</h2>
 			
-			<!-- Community Manager Section -->
+			<!-- Community Manager Section --
 			<div style="border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; height: 125px; text-align: left; padding-left: 20px;">
 				<h2 style="margin-bottom: 0px;">Gary Holland</h2>
 				<h3 style="margin-top: 0px;">Partner</h3>
 				<h4 style="margin-top: 8px; color: #aaa;">gh@unionvillage.net</h4>
 			</div>
-			<!-- End of Community Manager Section -->
+			<!-- End of Community Manager Section --
 			
 			
-			<!-- Community Manager Section -->
+			<!-- Community Manager Section --
 			<div style="border-bottom: 1px solid #aaa; height: 125px; text-align: left; padding-left: 20px;">
 				<h2 style="margin-bottom: 0px;">Craig Johnson</h2>
 				<h3 style="margin-top: 0px;">Partner</h3>
 				<h4 style="margin-top: 8px; color: #aaa;">cj@unionvillage.net</h4>
 			</div>
-			<!-- End of Community Manager Section -->
+			<!-- End of Community Manager Section --
 			
 			
-			<!-- Community Manager Section -->
+			<!-- Community Manager Section --
 			<div style="border-bottom: 1px solid #aaa; height: 125px; text-align: left; padding-left: 20px;">
 				<h2 style="margin-bottom: 0px;">Misc.</h2>
 				<h3 style="margin-top: 0px;">Grounds</h3>
 				<h4 style="margin-top: 8px; color: #aaa;">grounds@unionvillage.net</h4>
 			</div>
-			<!-- End of Community Manager Section -->
+			<!-- End of Community Manager Section --
 			
 			
-			<!-- Community Manager Section -->
+			<!-- Community Manager Section --
 			<div style="height: 125px; text-align: left; padding-left: 20px;">
 				<h2 style="margin-bottom: 0px;">Austin Tans</h2>
 				<h3 style="margin-top: 0px;">Software & IT</h3>
 				<h4 style="margin-top: 8px; color: #aaa;">at@unionvillage.net</h4>
 			</div>
-			<!-- End of Community Manager Section -->
+			<!-- End of Community Manager Section --
 			
 		</div>
-		<!-- End of Management Team Column -->
+		<!-- End of Management Team Column --
 		
 		
 		
-		<!-- Community Calendar Column -->
+		<!-- Community Calendar Column --
 		<div class="col-md-4" style="margin: 5px auto; border: 1px solid black; height: 98%; text-align: center;">
 			<h2>Community Calendar</h2>
 			
 			
 			
 		</div>
-		<!-- End of Community Calendar Column -->
+		<!-- End of Community Calendar Column --
 		
 		
 		
-		<!-- Community Resources Column -->
+		<!-- Community Resources Column --
 		<div class="col-md-4" style="margin: 5px auto; height: 90%; padding: 0px; text-align: center;">
 			<h2>Community Resources</h2>
 			
-			<!-- Community Policies Section -->
+			<!-- Community Policies Section --
 			<a href="#" target="_blank" style="text-decoration: none;">
 				<div style="border-top: 1px solid #aaa; height: 75px; text-align: left; padding-left: 20px;">
 					<h4 style="color: #aaa; margin-top: 6%;">Community Policies<i class="glyphicon glyphicon-chevron-right pull-right" style="margin-right: 20px; margin-top: 2px;"></i></h4>
 				</div>
 			</a>
-			<!-- End of Community Policies Section -->
+			<!-- End of Community Policies Section --
 			
 			
-			<!-- Utilities Directory Section -->
+			<!-- Utilities Directory Section --
 			<a href="#" target="_blank" style="text-decoration: none;">
 				<div style="border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; height: 75px; text-align: left; padding-left: 20px;">
 					<h4 style="color: #aaa; margin-top: 6%;">Utilities Directory<i class="glyphicon glyphicon-chevron-right pull-right" style="margin-right: 20px; margin-top: 2px;"></i></h4>
 				</div>
 			</a>
-			<!-- End of Utilities Directory Section -->
+			<!-- End of Utilities Directory Section --
 			
 		</div>
-		<!-- End of Community Resources Column -->
+		<!-- End of Community Resources Column --
 		
 	</div>
-</div>
+</div> -->
