@@ -90,13 +90,83 @@ var ref = new Firebase("https://temporaryuv.firebaseio.com/");
 
 
 
-/* Nearby Controller */
-unionVillage.controller("nearbyCtrl", function($scope, $firebaseArray, $timeout) {
+/* My Neighbors Controllers */
+unionVillage.controller("restaurantsCtrl", function($scope, $firebaseArray, $timeout) {
 
 var ref = new Firebase("https://temporaryuv.firebaseio.com/");
 
     // Get Stored Posts
-    var ratesRef = new Firebase('https://temporaryuv.firebaseio.com/nearby');
+    var ratesRef = new Firebase('https://temporaryuv.firebaseio.com/restaurants');
+  
+    ratesRef.on("value", function (snapshot) {
+      $timeout(function () {
+        update(snapshot);
+        console.log(snapshot);
+      });
+    });
+    
+    function update (snapshot) {
+      $scope.todos = $firebaseArray(ratesRef);
+    };
+    
+    
+    // Update the "like" status to 'liked'
+    $scope.changeStatus   = function (item) {
+
+        // Get the Firebase reference of the item
+        var itemRef = new  Firebase(ref + item.id);
+
+        // Firebase : Update the item
+        itemRef.update({
+            id: item.id,
+            description : item.description,
+        });
+
+    };
+    
+});
+
+unionVillage.controller("gamblingCtrl", function($scope, $firebaseArray, $timeout) {
+
+var ref = new Firebase("https://temporaryuv.firebaseio.com/");
+
+    // Get Stored Posts
+    var ratesRef = new Firebase('https://temporaryuv.firebaseio.com/gambling');
+  
+    ratesRef.on("value", function (snapshot) {
+      $timeout(function () {
+        update(snapshot);
+        console.log(snapshot);
+      });
+    });
+    
+    function update (snapshot) {
+      $scope.todos = $firebaseArray(ratesRef);
+    };
+    
+    
+    // Update the "like" status to 'liked'
+    $scope.changeStatus   = function (item) {
+
+        // Get the Firebase reference of the item
+        var itemRef = new  Firebase(ref + item.id);
+
+        // Firebase : Update the item
+        itemRef.update({
+            id: item.id,
+            description : item.description,
+        });
+
+    };
+    
+});
+
+unionVillage.controller("sightsCtrl", function($scope, $firebaseArray, $timeout) {
+
+var ref = new Firebase("https://temporaryuv.firebaseio.com/");
+
+    // Get Stored Posts
+    var ratesRef = new Firebase('https://temporaryuv.firebaseio.com/sights');
   
     ratesRef.on("value", function (snapshot) {
       $timeout(function () {
