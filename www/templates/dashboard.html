@@ -1,9 +1,52 @@
 <div class="pgWrapper" ng-controller="dashboardCtrl" style="height: 100vh; width: 100%;">
 	<div class="row" style="height: 100%; margin-top: 50px; border: 1px solid black;">
 		
+		
+		<!-- Column Containing Community Info -->
 		<div class="col-xs-12 col-md-8" style="height: 100%; border-right: 1px solid black;">
-			
+			<h1 style="margin-left: 10px;">Community Info</h1>
+			<br><br>
+			<div style="width: 100%; padding-left: 10px; padding-right: 10px; margin-top: -50px;">
+				
+				<hr>
+				
+				<!-- Resident Resources Section -->
+				<h3>Resident Resources</h3>
+				
+				<p><a>UV Welcome Video</a></p>
+				<br>
+				
+				<p><a>UV Move Out Video</a></p>
+				<br>
+				
+				<p><a>UV Move Out Guide</a></p>
+				<!-- End of Resident Resources Section -->
+				
+				<hr>
+				
+				<!-- Paying Rent By Check Section -->
+				<h3>Paying Rent By Check</h3>
+				<p>Please mail any rent payments to "........." and ensure your check arrives by the first of the month to avoid any late fees. If using this service, please remember to add a $10 courtesy fee to your total balance due and make sure all checks or money orders are made payable to "......". If you have any questions regarding this fee, please reach out to your Community Team.</p>
+				<!-- End of Paying Rent By Check Section -->
+				
+				<hr>
+				
+				<!-- Paying Rent By Direct Debit Section -->
+				<h3>Paying Rent by Direct Debit, 24/7</h3>
+				<p>Recurring or one- time payments via ACH are available and our most popular methods of payments.</p>
+				<!-- End of Paying Rent By Direct Debit Section -->
+				
+				<hr>
+				
+				<!-- Paying Rent By Credit Card Section -->
+				<h3>Paying Rent by Credit Card</h3>
+				<p>You are able to pay your rent with your Visa, MasterCard or Discover card. There is a courtesy fee of $36 each time you use this fee; however it’s great in a pinch and the payment will be made through the 800 number located on your portal. All you need to do is obtain the reusable payment coupon via the link located in the Print Payment Coupon section of the Payments tab, follow the prompts, and your payment will post real-time to your account.</p>
+				<!-- End of Paying Rent By Credit Card Section -->
+				
+			</div>
 		</div>
+		<!-- End of Column Containing Community Info -->
+		
 		
 		
 		<!-- Column holding Notification Center -->
@@ -59,76 +102,12 @@
 		<!-- End of column containing Notification Center -->
 		
 		
-		<div class="col-xs-12" style="height: 50%;"></div>
+		
+		<!-- Community Calendar Section -->
+		<div class="col-xs-12" style="height: 50%;">
+			<h1>Community Calendar</h1>
+		</div>
+		<!-- End of Community Calendar Section -->
 		
 	</div>
 </div>
-
-		<!-- Welcome Column --
-		<div class="col-xs-12" style="text-align: center;">
-			<h2 style="color: #aaa;">Welcome to the Union Village resident portal</h2>
-		</div>
-		<!-- End of Welcome Column --
-		
-		<!-- Beginning of Left Column (Notification Center) --
-		<div class="col-xs-12 col-md-5" style="height: 85%; border-radius: 10px; margin-left: 6%; text-align: center;">
-			<h1>Notification Center</h1>
-			<div style="width: 90%; height: 85%; border: 1px solid black; margin: 0px auto; overflow-y: auto; border-radius: 5px;">
-				
-				<!-- Beginning of the Card --
-				<div class="card text-xs-center" ng-repeat="item in todos | orderBy:'-id'">
-					
-					<a ui-sref="#" data-toggle="modal" data-target="#postModal" style="text-decoration: none; color: #000; cursor: pointer;">
-						<div class="card-block">
-							<p class="card-text" style="padding-left: 5px; padding-right: 5px; padding-top: 5px;">{{item.description}}</p>
-						<!--<small  class="text-warning"> [ {{item.id}} ]</small>--
-						</div>
-					</a>
-					
-					<!-- Line break between notifications --
-					<hr style="width: 50%; color: #aaa;">
-					<!-- End of line break --
-					
-				</div>
-				<!-- End of the Card --
-				
-				<!-- Notification Cetner Post Modal --
-				<div id="postModal" class="modal fade" role="dialog">
-					<div class="modal-dialog">
-					
-						<!-- Modal content--
-						<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title">Post</h4>
-						</div>
-						<div class="modal-body">
-							<p>This does not work yet</p>
-						</div>
-						<!-- End of Modal Content --
-						
-						<!-- Modal Footer --
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-						<!-- End of Modal Footer --
-						
-						</div>
-					</div>
-				</div>
-				<!-- End of Retail Modal --
-				
-			</div>
-		</div>
-		<!-- End of Lef Column (Notification Center) -->
-		
-		
-		
-		<!-- Beginning of Right Column (Notification Center) --
-		<div class="col-xs-12 col-md-5" style="height: 85%; border-radius: 10px; margin-left: 6%; text-align: center;">
-			<h1>Community Info</h1>
-			<div style="width: 90%; height: 85%; border: 1px solid black; margin: 0px auto; overflow-y: auto; border-radius: 5px;">
-				
-			</div>
-		</div>
-		<!-- End of Right Column (Notification Center) -->
