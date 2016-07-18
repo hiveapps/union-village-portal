@@ -12,7 +12,7 @@ unionVillage.controller("headerCtrl", function($scope, $location) {
 
 // !!!FIREBASE 2.0!!! NEED TO UPDATE TO 3.0 ONCE ANGULAR FIRE IS UPDATED 
 //Totally functioning simple login
-unionVillage.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
+/*unionVillage.controller("LoginCtrl", function($scope, $firebaseAuth, $state){
 var users = new Firebase("https://temporaryuv.firebaseio.com/");
   
   //This is going to get and log the user status, this could be copied and/or used for the beginning framework to build
@@ -52,7 +52,7 @@ var users = new Firebase("https://temporaryuv.firebaseio.com/");
 
 
 
-/* Notification Center Controller */
+/* Notification Center Controller 
 unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeout) {
 
 var ref = new Firebase("https://temporaryuv.firebaseio.com/");
@@ -90,7 +90,14 @@ var ref = new Firebase("https://temporaryuv.firebaseio.com/");
 
 
 
-/* My Neighbors Controllers */
+/* Calendar Controller *
+unionVillage.controller("calendarCtrl", function($scope, $firebaseArray, $timeout) {
+
+});
+
+
+
+/* My Neighbors Controllers *
 unionVillage.controller("restaurantsCtrl", function($scope, $firebaseArray, $timeout) {
 
 var ref = new Firebase("https://temporaryuv.firebaseio.com/");
@@ -194,14 +201,15 @@ var ref = new Firebase("https://temporaryuv.firebaseio.com/");
 
     };
     
-});
+});*/
 
-/* !!!FIREBASE 3.0!!! Initialize Firebase
+/* !!!FIREBASE 3.0!!! Initialize Firebase */
+// Initialize Firebase
   var config = {
-    apiKey: "AIzaSyAPonQNzJOgFx-Qg1QT0nuBck3XUch-WAU",
-    authDomain: "unionvillage.firebaseapp.com",
-    databaseURL: "https://unionvillage.firebaseio.com",
-    storageBucket: "project-8228738253020726929.appspot.com",
+    apiKey: "AIzaSyDEQLgoUIz4JcggXiURBVPylAq0pJYrgi0",
+    authDomain: "temporaryuv.firebaseapp.com",
+    databaseURL: "https://temporaryuv.firebaseio.com",
+    storageBucket: "",
   };
   firebase.initializeApp(config);
 
@@ -261,7 +269,7 @@ unionVillage.controller("LoginCtrl", function($scope, $state){
     };
   };
   
-  /*Logout Functionality
+  /*Logout Functionality*/
   $scope.logout = function() {
     firebase.auth().signOut().then(function() {
       // Sign-out successful.
@@ -275,26 +283,11 @@ unionVillage.controller("LoginCtrl", function($scope, $state){
 
 
 
-/*Thread Page Controller
-unionVillage.controller("threadCtrl", function($scope, $firebaseArray, $timeout) {
+/*Thread Page Controller*/
+unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeout) {
 
-    
-    /*var ratesRef = firebase.database().ref('posts');
-    ratesRef.on('value', function(snapshot) {
-      //$scope.todos = snapshot.val().todos;
-      $timeout(function () {
-        update(snapshot);
-        console.log(snapshot);
-      });
-    });
-    function update (snapshot) {
-      //$scope.todos = $firebaseArray(ratesRef);
-      //$scope.todos = firebase.database().ratesRef;
-      $scope.todos = snapshot.val().todos;
-    };*/
-
-    /* Get Stored Posts
-    var ratesRef = firebase.database().ref('posts');
+    /* Get Stored Posts*/
+    var ratesRef = firebase.database().ref('notificationCenter');
   
     ratesRef.on("value", function (snapshot) {
       $timeout(function () {
@@ -305,20 +298,122 @@ unionVillage.controller("threadCtrl", function($scope, $firebaseArray, $timeout)
     
     function update (snapshot) {
       $scope.todos = $firebaseArray(ratesRef);
-      //$scope.todos = firebase.database().ratesRef;
     };
     
-    /* Add posts
+    /* Add posts*
     $scope.addItem = function writeUserData(userId, name, email) {
       var timestamp = new Date().valueOf()
       
-      firebase.database().ref('posts').push({
+      firebase.database().ref('notificationCenter').push({
         id: timestamp,
         description: $scope.postDescription,
         liked: false
       });
       
       $scope.postDescription = "";
+    };*/
+    
+});
+
+
+
+/* My Neighbors Controllers */
+unionVillage.controller("restaurantsCtrl", function($scope, $firebaseArray, $timeout) {
+
+    /* Get Stored Posts*/
+    var ratesRef = firebase.database().ref('restaurants');
+  
+    ratesRef.on("value", function (snapshot) {
+      $timeout(function () {
+        update(snapshot);
+        console.log(snapshot);
+      });
+    });
+    
+    function update (snapshot) {
+      $scope.todos = $firebaseArray(ratesRef);
     };
     
-});*/
+    
+    /* Update the "like" status to 'liked'
+    $scope.changeStatus   = function (item) {
+
+        // Get the Firebase reference of the item
+        var itemRef = new  Firebase(ref + item.id);
+
+        // Firebase : Update the item
+        itemRef.update({
+            id: item.id,
+            description : item.description,
+        });
+
+    };*/
+    
+});
+
+unionVillage.controller("gamblingCtrl", function($scope, $firebaseArray, $timeout) {
+
+    /* Get Stored Posts*/
+    var ratesRef = firebase.database().ref('gambling');
+  
+    ratesRef.on("value", function (snapshot) {
+      $timeout(function () {
+        update(snapshot);
+        console.log(snapshot);
+      });
+    });
+    
+    function update (snapshot) {
+      $scope.todos = $firebaseArray(ratesRef);
+    };
+    
+    
+    /* Update the "like" status to 'liked'
+    $scope.changeStatus   = function (item) {
+
+        // Get the Firebase reference of the item
+        var itemRef = new  Firebase(ref + item.id);
+
+        // Firebase : Update the item
+        itemRef.update({
+            id: item.id,
+            description : item.description,
+        });
+
+    };*/
+    
+});
+
+unionVillage.controller("sightsCtrl", function($scope, $firebaseArray, $timeout) {
+
+    /* Get Stored Posts*/
+    var ratesRef = firebase.database().ref('sights');
+  
+    ratesRef.on("value", function (snapshot) {
+      $timeout(function () {
+        update(snapshot);
+        console.log(snapshot);
+      });
+    });
+    
+    function update (snapshot) {
+      $scope.todos = $firebaseArray(ratesRef);
+    };
+    
+    
+    
+    /* Update the "like" status to 'liked'
+    $scope.changeStatus   = function (item) {
+
+        // Get the Firebase reference of the item
+        var itemRef = new  Firebase(ref + item.id);
+
+        // Firebase : Update the item
+        itemRef.update({
+            id: item.id,
+            description : item.description,
+        });
+
+    };*/
+    
+});
