@@ -9,8 +9,6 @@
 	min-height:300px;
 	text-align:left;
 	background: #ffffff;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 	color:#2d98c4;
 	line-height: 1;
@@ -21,6 +19,9 @@
 	padding:20px;
 	text-align:center;
 	background:url(../images/dp_calendar/bg_top.jpg) 0 100% repeat-x #f6f6f6;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-top: 1px solid #aaa;
 }
 
 .dp_calendar .main_date {
@@ -50,6 +51,8 @@
 .dp_calendar .div_dates {
 	text-align:center;
 	background:url(../images/dp_calendar/box_border.jpg) 0 100% repeat-x;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
 }
 
 .dp_calendar .div_dates ul {
@@ -93,7 +96,7 @@
 
 .dp_calendar .div_dates li.has_events {
 	background:url(../images/dp_calendar/hover_dates_has_event.png) no-repeat 50% 0;
-	color:#3679B5 !important;
+	color:#2d98c4 !important;
 	padding-left:5px !important;
 }
 
@@ -136,6 +139,9 @@
 	text-align:left;
 	padding:20px;
 	clear:left;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
 }
 
 .dp_calendar .calendar_list h2 {
