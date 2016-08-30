@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simple Events Calendar</title>
+<link href="../css/reset.css" type="text/css" rel="stylesheet" />
+<link href="../css/dp_calendar.css" type="text/css" rel="stylesheet" />
+<link href="../css/demo.css" type="text/css" rel="stylesheet" />
+<link href="../themes/base/jquery.ui.all.css" type="text/css" rel="stylesheet" />
+
+<script type='text/javascript' src='../js/jquery-1.11.1.min.js'></script> 
+<script type="text/javascript" src="../ui/jquery.ui.core.js"></script> 
+<script type="text/javascript" src="../ui/jquery.ui.position.js"></script>
+<script type="text/javascript" src="../ui/jquery.ui.datepicker.js"></script> 
+<script type="text/javascript" src="../js/date.js"></script>
+<script type="text/javascript" src="../js/jquery.dp_calendar.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){    
+	
+	$("#calendar").dp_calendar({
+		json: 'json-data.html'
+	}); 
+	
+});  
+</script>
+</head>
+
+<body>
+	<div id="content">
+    	<div class="title_h1">
+        	<h1>Simple Events Calendar</h1>
+        </div>
+		<div id="calendar"></div>
+        <div class="txt_description">
+        	<a href="javascript:history.back()">&laquo; Back</a>
+            <h2>json</h2>
+            <p>
+           <h3>Signature: </h3>
+ <pre>
+$("#calendar").dp_calendar({ 
+      json: "json_data.html"
+})
+</pre>           <br />
+            Set the json url to load the settings and events.<br />
+
+
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>

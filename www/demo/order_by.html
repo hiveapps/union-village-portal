@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simple Events Calendar</title>
+<link href="../css/reset.css" type="text/css" rel="stylesheet" />
+<link href="../css/dp_calendar.css" type="text/css" rel="stylesheet" />
+<link href="../css/demo.css" type="text/css" rel="stylesheet" />
+<link href="../themes/base/jquery.ui.all.css" type="text/css" rel="stylesheet" />
+
+<script type='text/javascript' src='../js/jquery-1.11.1.min.js'></script> 
+<script type="text/javascript" src="../ui/jquery.ui.core.js"></script> 
+<script type="text/javascript" src="../ui/jquery.ui.position.js"></script>
+<script type="text/javascript" src="../ui/jquery.ui.datepicker.js"></script> 
+<script type="text/javascript" src="../js/date.js"></script>
+<script type="text/javascript" src="../js/jquery.dp_calendar.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){    
+	var events_array = new Array(
+		{
+			startDate: new Date(2011,07, 20, 15, 50),
+			endDate: new Date(2012,00, 10),
+			title: "Event 1",
+			description: "Description 1",
+			priority: 2, // 1 = Low, 2 = Medium, 3 = Urgent
+			frecuency: 1 // 1 = Daily, 2 = Weekly, 3 = Monthly, 4 = Yearly
+		},
+		{
+			startDate: new Date(2011,07, 20, 16, 50),
+			title: "Event 2",
+			description: "Description 2",
+			priority: 1
+		},
+		{
+			startDate: new Date(2011,07, 20, 9, 50),
+			endDate: new Date(2012,00, 20),
+			title: "Event 3",
+			description: "Description 3",
+			priority: 3,
+			frecuency:3
+		}
+	);	
+	
+	$("#calendar").dp_calendar({
+		order_by:2,
+		events_array: events_array
+	}); 
+});  
+</script>
+</head>
+
+<body>
+	<div id="content">
+    	<div class="title_h1">
+        	<h1>Simple Events Calendar</h1>
+        </div>
+		<div id="calendar"></div>
+        <div class="txt_description">
+        	<a href="javascript:history.back()">&laquo; Back</a>
+            <h2>order_by</h2>
+            <p>
+           <h3>Signature: </h3>
+ <pre>
+$("#calendar").dp_calendar({ 
+      order_by: 2 
+})
+</pre>           <br />
+            Set the default order parameter.<br />
+1 = Time<br />
+2 = Title<br />
+3 = Priority<br /><br />
+<strong>Default 1.</strong>
+
+
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>

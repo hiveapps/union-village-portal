@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simple Events Calendar</title>
+<link href="../css/reset.css" type="text/css" rel="stylesheet" />
+<link href="../css/dp_calendar.css" type="text/css" rel="stylesheet" />
+<link href="../css/demo.css" type="text/css" rel="stylesheet" />
+<link href="../themes/base/jquery.ui.all.css" type="text/css" rel="stylesheet" />
+
+<script type='text/javascript' src='../js/jquery-1.11.1.min.js'></script> 
+<script type="text/javascript" src="../ui/jquery.ui.core.js"></script> 
+<script type="text/javascript" src="../ui/jquery.ui.position.js"></script>
+<script type="text/javascript" src="../ui/jquery.ui.datepicker.js"></script> 
+<script type="text/javascript" src="../js/date.js"></script>
+<script type="text/javascript" src="../js/jquery.dp_calendar.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){    
+	
+	var events_array = new Array(
+		{
+			startDate: new Date(2011,07, 20, 15, 50),
+			endDate: new Date(2012,00, 10),
+			title: "Event 1",
+			description: "Description 1",
+			priority: 2, // 1 = Low, 2 = Medium, 3 = Urgent
+			frecuency: 1 // 1 = Daily, 2 = Weekly, 3 = Monthly, 4 = Yearly
+		},
+		{
+			startDate: new Date(2011,07, 20, 16, 50),
+			title: "Event 2",
+			description: "Description 2",
+			priority: 1
+		},
+		{
+			startDate: new Date(2011,07, 20, 9, 50),
+			endDate: new Date(2012,00, 20),
+			title: "Event 3",
+			description: "Description 3",
+			priority: 3,
+			frecuency:3
+		}
+	);	
+	
+	$("#calendar").dp_calendar({
+		events_array: events_array,
+		onChangeMonth: function() {
+			alert("onChangeMonth Event Triggered!");
+		},
+		onChangeDay: function() {
+			alert("onChangeDay Event Triggered!");
+		},
+		onClickMonthName: function() {
+			alert("onClickMonthName Event Triggered!");
+		},
+		onClickEvents: function(obj) {
+			alert("onClickEvents Event Triggered!");
+			alert("Event Data: \nTitle: "+obj.title+" \nDescription: "+obj.description+" \nTime: "+obj.time);
+		}
+	}); 
+});  
+</script>
+</head>
+
+<body>
+	<div id="content">
+    	<div class="title_h1">
+        	<h1>Simple Events Calendar</h1>
+        </div>
+		<div id="calendar"></div>
+        <div class="txt_description">
+        	<a href="javascript:history.back()">&laquo; Back</a>
+            <h2>Events</h2>
+            <br />
+            <p>
+            <i>onChangeMonth</i>
+           <h3>Signature: </h3>
+ <pre>
+$("#calendar").dp_calendar({
+    onChangeMonth: function() {
+        alert("onChangeMonth Triggered!");
+    }
+})
+</pre>           <br />
+            This event is triggered when the next and prev months buttons are clicked.
+
+
+            </p>
+            <br />
+            <p>
+            <i>onChangeDay</i>
+           <h3>Signature: </h3>
+ <pre>
+$("#calendar").dp_calendar({
+    onChangeDay: function() {
+        alert("onChangeDay Triggered!");
+    }
+})
+</pre>           <br />
+            This event is triggered when a different day is clicked.
+
+
+            </p>
+            <br />
+            <p>
+            <i>onClickMonthName</i>
+           <h3>Signature: </h3>
+ <pre>
+$("#calendar").dp_calendar({
+    onClickMonthName: function() {
+        alert("onClickMonthName Triggered!");
+    }
+})
+</pre>           <br />
+            This event is triggered when the name of the month at the top of the calendar is clicked.
+
+
+            </p>
+            <br />
+            <p>
+            <i>onClickEvents</i>
+           <h3>Signature: </h3>
+ <pre>
+$("#calendar").dp_calendar({
+    onClickEvents: function() {
+        alert("onClickEvents Triggered!");
+    }
+})
+</pre>           <br />
+            This event is triggered when any event in the list is clicked.
+
+
+            </p>
+            
+        </div>
+    </div>
+</body>
+</html>

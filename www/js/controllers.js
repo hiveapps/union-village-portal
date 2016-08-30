@@ -315,9 +315,44 @@ var ref = new Firebase("https://temporaryuv.firebaseio.com/");
 
 
 
-/* Calendar Controller *
-unionVillage.controller("calendarCtrl", function($scope, $firebaseArray, $timeout) {
-
+/* Calendar Controller */
+unionVillage.controller("calendarCtrl", function($scope) {
+  $(document).ready(function(){  
+						
+    var events_array = new Array(
+      {
+        startDate: new Date(2016, 07, 20),
+        endDate: new Date(2016, 0, 20),
+        title: "Event 1",
+        description: "Description 1",
+        allDay: true,
+        priority: 1, // 1 = Low, 2 = Medium, 3 = Urgent
+        frecuency: 1 // 1 = Daily, 2 = Weekly, 3 = Monthly, 4 = Yearly
+      },
+      {
+        startDate: new Date(2016,07, 20, 19, 50),
+        endDate: new Date(2016,07, 20, 21, 00),
+        title: "Event 2",
+        description: "Description 2",
+        priority: 3,
+        frecuency:1
+      },
+      {
+        startDate: new Date(2011,07, 20, 18, 0),
+        endDate: new Date(2012,00, 20, 21, 30),
+        title: "Event 3",
+        description: "Description 3",
+        priority: 3,
+        frecuency:1
+      }
+    );	
+    $("#calendar").dp_calendar({
+      format_ampm: true,
+      events_array: events_array
+    });
+    
+    
+  });
 });
 
 
