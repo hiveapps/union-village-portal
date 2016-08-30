@@ -12,7 +12,7 @@
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	color:#272727;
+	color:#2d98c4;
 	line-height: 1;
 	padding:1px;
 }
@@ -66,11 +66,14 @@
 
 .dp_calendar .div_dates li {
 	background:none;
-	padding:5px;
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+	padding-right:18px !important;
+	padding-left:5px !important;
 	line-height:100% !important;
 	width:14px;
-	font-size:15px;
-	color: #929292;
+	font-size:18px;
+	color: #2d98c4;
 	float:left;
 	font-family: 'Open Sans Condensed', sans-serif;
 	padding-top:10px;
@@ -91,7 +94,7 @@
 .dp_calendar .div_dates li.has_events {
 	background:url(../images/dp_calendar/hover_dates_has_event.png) no-repeat 50% 0;
 	color:#3679B5 !important;
-	padding-left: 5px !important;
+	padding-left:5px !important;
 }
 
 .dp_calendar .div_dates .day_name {
