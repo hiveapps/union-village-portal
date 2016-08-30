@@ -12,7 +12,33 @@
 			<div class="tab-content">
 				
 				<div class="tab-pane active" id="additionalSelection" style="padding-top: 2%; padding-left: 3%;">
-					Testing 1
+					<form action="php/service_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
+                    
+						<label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
+						<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
+						
+						<label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
+						<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
+						
+						<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Address</label>
+						<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+						
+						<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
+						<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+						
+						<label for="message" style="margin-top: 0px;">Brief Message:</label>
+						<textarea class="form-control" ng-model="message" name="message" rows="3" id="message" style="width: 75%; resize: none;"></textarea><br>
+						
+						
+						<label for="facility" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Facility:</label>
+						<select class="form-control" id="facility" name="facility" style="width: 75%;" required>
+						<option value="Apartment Homes" selected>Apartment Homes</option>
+						</select>
+						
+						<br>
+						
+						<input class="btn btn-primary" type="submit" name="submit" value="Submit">
+					</form>
 				</div>
 				
 				<div class="tab-pane" id="additionalSelection2" style="padding-top: 2%; padding-left: 3%;">

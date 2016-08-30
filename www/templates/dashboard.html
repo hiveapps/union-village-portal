@@ -1,17 +1,19 @@
 <div class="pgWrapper" ng-controller="dashboardCtrl" style="height: 100vh; width: 100%;">
-	<div class="row" style="height: 100%; margin-top: 50px; border: 1px solid black;">
+	<div class="row" style="height: 100%; margin-top: 50px;">
 		
 		
 		<!-- Column Containing Community Info -->
-		<div class="col-xs-12 col-md-8" style="height: 100%; border-right: 1px solid black;">
-			<h1 style="margin-left: 10px;">Community Info</h1>
+		<div class="col-xs-12 col-md-8" style="height: 100%;">
+			<div style="width: 100%; height: 45px; background-color: #837e72;">
+				<h1 style="margin-left: 10px; color: #fff;">Community Info</h1>
+			</div>
 			<br><br>
 			<div style="width: 100%; padding-left: 10px; padding-right: 10px; margin-top: -50px;">
 				
-				<hr>
-				
 				<!-- Resident Resources Section -->
-				<h3>Resident Resources</h3>
+				<h3 style="color: #369;">Resident Resources</h3>
+				
+				<p><b>Apartment Search:</b> Are you relocating? <a>Search</a> for other Union Village communities throughout the country.</p>
 				
 				<p><a>UV Welcome Video</a></p>
 				<br>
@@ -25,23 +27,25 @@
 				<hr>
 				
 				<!-- Paying Rent By Check Section -->
-				<h3>Paying Rent By Check</h3>
+				<h3 style="color: #369;">Paying Rent By Check</h3>
 				<p>Please mail any rent payments to "........." and ensure your check arrives by the first of the month to avoid any late fees. If using this service, please remember to add a $10 courtesy fee to your total balance due and make sure all checks or money orders are made payable to "......". If you have any questions regarding this fee, please reach out to your Community Team.</p>
 				<!-- End of Paying Rent By Check Section -->
 				
 				<hr>
 				
 				<!-- Paying Rent By Direct Debit Section -->
-				<h3>Paying Rent by Direct Debit, 24/7</h3>
+				<h3 style="color: #369;">Paying Rent by Direct Debit, 24/7</h3>
 				<p>Recurring or one- time payments via ACH are available and our most popular methods of payments.</p>
 				<!-- End of Paying Rent By Direct Debit Section -->
 				
 				<hr>
 				
 				<!-- Paying Rent By Credit Card Section -->
-				<h3>Paying Rent by Credit Card</h3>
+				<h3 style="color: #369;">Paying Rent by Credit Card</h3>
 				<p>You are able to pay your rent with your Visa, MasterCard or Discover card. There is a courtesy fee of $36 each time you use this fee; however it’s great in a pinch and the payment will be made through the 800 number located on your portal. All you need to do is obtain the reusable payment coupon via the link located in the Print Payment Coupon section of the Payments tab, follow the prompts, and your payment will post real-time to your account.</p>
 				<!-- End of Paying Rent By Credit Card Section -->
+				
+				<hr>
 				
 			</div>
 		</div>
@@ -50,7 +54,7 @@
 		
 		
 		<!-- Column holding Notification Center -->
-		<div class="col-xs-12 col-md-4" style="height: 100%; text-align: center; border-left: 1px solid black;">
+		<div class="col-xs-12 col-md-4" style="height: 100%; text-align: center; border-left: 1px solid #aaa;">
 			<h1>Notification Center</h1>
 			<div style="width: 90%; height: 85%; border: 1px solid black; margin: 0px auto; overflow-y: auto; border-radius: 5px;">
 				
@@ -104,41 +108,11 @@
 		
 		
 		<!-- Community Calendar Section -->
-		<div class="col-xs-12" style="height: 50%;" ng-controller="calendarCtrl">
-			<div style="width: 100%; margin: 0px; text-align: center;"><h1>Community Calendar</h1></div>
-			<div id="cal"> 
-				
-				<div class="header"> 
-					<span class="left button" id="prev"> &lang; </span> 
-					<span class="left hook"></span> 
-					<span class="month-year" id="label"> June 20&0 </span> 
-					<span class="right hook"></span> 
-					<span class="right button" id="next"> &rang; </span>
-				</div> 
-				
-				<table id="days"> 
-					<td>sun</td> 
-					<td>mon</td> 
-					<td>tue</td> 
-					<td>wed</td> 
-					<td>thu</td> 
-					<td>fri</td> 
-					<td>sat</td>	
-				</table> 
-				
-				<div id="cal-frame"> 
-					<table class="curr"> 
-						<tbody> 
-							<tr><td class="nil"></td><td class="nil"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr> 
-							<tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td class="today">11</td><td>12</td></tr> 
-							<tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr> 
-							<tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr> 
-							<tr><td>27</td><td>28</td><td>29</td><td>30</td><td class="nil"></td><td class="nil"></td><td class="nil"></td></tr> 
-						</tbody> 
-					</table>
-				</div> 
-				
+		<div class="col-xs-12" style="height: 50%; margin-top: 10px;"> <!-- add in ng-controller="calendarCtrl" once ready -->
+			<div style="width: 100%; margin: 0px; padding-left: 10px;">
+				<h1>Community Calendar</h1>
 			</div>
+			
 		</div>
 		<!-- End of Community Calendar Section -->
 		
