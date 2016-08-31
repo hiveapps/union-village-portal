@@ -354,6 +354,36 @@ unionVillage.controller("calendarCtrl", function($scope) {
     
   });
 });
+/* End of calendar controller */
+
+
+
+/* Weather Controller */
+unionVillage.controller("weatherCtrl", function($scope) {
+  // Docs at http://simpleweatherjs.com
+  $(document).ready(function() {
+    $.simpleWeather({
+      woeid: '2357536', //2357536
+      location: 'Henderson, NV',
+      unit: 'f',
+      success: function(weather) {
+        html = '<h2>'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+        html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+        html += '<li class="currently">'+weather.currently+'</li>';
+        html += '<li>'+weather.alt.temp+'&deg;C</li></ul>';
+        
+        for(var i=0;i<5;i++) {
+          html += '<p>'+weather.forecast[i].day+': '+weather.forecast[i].high+'</p>';
+        }
+    
+        $("#weather").html(html);
+      },
+      error: function(error) {
+        $("#weather").html('<p>'+error+'</p>');
+      }
+    });
+  });
+});
 
 
 
