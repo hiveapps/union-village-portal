@@ -338,10 +338,11 @@ unionVillage.controller("calendarCtrl", function($scope) {
         frecuency:1
       },
       {
-        startDate: new Date(2011,07, 20, 18, 0),
-        endDate: new Date(2012,00, 20, 21, 30),
-        title: "Event 3",
-        description: "Description 3",
+        startDate: new Date(2016,09, 31),
+        endDate: new Date(2016,09, 31),
+        title: "Henderson Hospital Opens!",
+        description: "After years of development Henderson Hospital is open for business and Union Village officially kicks off!",
+        allDay: true,
         priority: 3,
         frecuency:1
       }
@@ -371,8 +372,9 @@ unionVillage.controller("weatherCtrl", function($scope) {
         html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
         html += '<li class="currently">'+weather.currently+'</li>';
         html += '<li>'+weather.alt.temp+'&deg;C</li></ul>';
+        html += '<li><p style="float: left; margin-right: 10px;">Todays High:</p>'+weather.high+'&deg</li></ul>';
         
-        for(var i=0;i<5;i++) {
+        for(var i=1;i<6;i++) {
           html += '<p>'+weather.forecast[i].day+': '+weather.forecast[i].high+'</p>';
         }
     
