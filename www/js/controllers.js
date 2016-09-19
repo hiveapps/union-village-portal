@@ -371,11 +371,11 @@ unionVillage.controller("weatherCtrl", function($scope) {
         html = '<h2>'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
         html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
         html += '<li class="currently">'+weather.currently+'</li>';
-        html += '<li>'+weather.alt.temp+'&deg;C</li></ul>';
-        html += '<li><p style="float: left; margin-right: 10px;">Todays High:</p>'+weather.high+'&deg</li></ul>';
+        html += '<li>'+weather.alt.temp+'&deg;C</li>';
+        html += '<li><p style="float: left; margin-right: 10px;">Today&#39;s High/Low:</p>'+weather.high+'&deg / '+weather.low+'&deg</li></ul>';
         
         for(var i=1;i<6;i++) {
-          html += '<p>'+weather.forecast[i].day+': '+weather.forecast[i].high+'</p>';
+          html += '<p>'+weather.forecast[i].day+' H/L: '+weather.forecast[i].high+ '/' +weather.forecast[i].low+'</p>';
         }
     
         $("#weather").html(html);
