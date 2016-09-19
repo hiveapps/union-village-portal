@@ -2821,6 +2821,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/www\/img\/restaurantSample.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 84971,
+		"inputAbbreviatedPath": "\/www\/img\/restaurantSample.jpg",
+		"outputAbbreviatedPath": "\/www\/img\/restaurantSample.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/www\/img\/sample profile pic.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2828,6 +2839,28 @@
 		"initialSize": 37639,
 		"inputAbbreviatedPath": "\/www\/img\/sample profile pic.jpg",
 		"outputAbbreviatedPath": "\/www\/img\/sample profile pic.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/samsung_smartTV.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 169253,
+		"inputAbbreviatedPath": "\/www\/img\/samsung_smartTV.jpg",
+		"outputAbbreviatedPath": "\/www\/img\/samsung_smartTV.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/www\/img\/sightseeing.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40070,
+		"inputAbbreviatedPath": "\/www\/img\/sightseeing.jpg",
+		"outputAbbreviatedPath": "\/www\/img\/sightseeing.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
