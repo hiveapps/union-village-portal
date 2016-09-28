@@ -14,11 +14,13 @@ unionVillage.controller("headerCtrl", function($scope, $location) {
 
 /* !!!FIREBASE 3.0!!! Initialize Firebase */
 // Initialize Firebase
+  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyDEQLgoUIz4JcggXiURBVPylAq0pJYrgi0",
     authDomain: "temporaryuv.firebaseapp.com",
     databaseURL: "https://temporaryuv.firebaseio.com",
-    storageBucket: "",
+    storageBucket: "temporaryuv.appspot.com",
+    messagingSenderId: "1020616732436"
   };
   firebase.initializeApp(config);
 
@@ -126,6 +128,12 @@ unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeo
 
 
 
+unionVillage.controller("communityCtrl", function() {
+  $('#mapsvg').mapSvg({source: '/maps/usa.svg'});
+});
+
+
+
 /* My Neighbors Controllers */
 unionVillage.controller("restaurantsCtrl", function($scope, $firebaseArray, $timeout) {
 
@@ -143,6 +151,18 @@ unionVillage.controller("restaurantsCtrl", function($scope, $firebaseArray, $tim
       $scope.todos = $firebaseArray(ratesRef);
     };
     
+    // Create a root reference
+    var storageRef = firebase.storage().ref();
+
+    // Create a reference to 'mountains.jpg'
+    var mountainsRef = storageRef.child('mountains.jpg');
+
+    // Create a reference to 'images/mountains.jpg'
+    var mountainImagesRef = storageRef.child('images/mountains.jpg');
+
+    // While the file names are the same, the references point to different files
+    mountainsRef.name === mountainImagesRef.name            // true
+    mountainsRef.fullPath === mountainImagesRef.fullPath    // false
     
     /* Update the "like" status to 'liked'
     $scope.changeStatus   = function (item) {

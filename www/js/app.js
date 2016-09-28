@@ -68,7 +68,8 @@ unionVillage.config(function($stateProvider, $urlRouterProvider) {
         url: "/myCommunity",
         views: {
             'content@': {
-                templateUrl: 'templates/myCommunity.html'
+                templateUrl: 'templates/myCommunity.html',
+                controllers: 'communityCtrl'
             }
         }
     })
