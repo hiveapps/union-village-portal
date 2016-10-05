@@ -74,18 +74,20 @@
     <header ui-view="header"></header>
     <main ui-view="content"></main>
     <footer ui-view="footer"></footer>
-    <span style="color: #0000FF; text-decoration: underline; cursor: pointer; position: fixed; bottom: 0px; right: 0px; z-index: 1000000;" id="phplive_btn_1475559961" onclick="phplive_launch_chat_0(0)"></span>
-    <script type="text/javascript">
+    <div ng-controller="appCtrl">
+      <span ng-hide="$state.includes('unionVillage.home')" style="color: #0000FF; text-decoration: underline; cursor: pointer; position: fixed; bottom: 0px; right: 0px; z-index: 1000000;" id="phplive_btn_1475559961" onclick="phplive_launch_chat_0(0)"></span>
+      <script type="text/javascript">
 
-    (function() {
-    var phplive_e_1475559961 = document.createElement("script") ;
-    phplive_e_1475559961.type = "text/javascript" ;
-    phplive_e_1475559961.async = true ;
-    phplive_e_1475559961.src = "//t2.phplivesupport.com/atans2468/js/phplive_v2.js.php?v=0|1475559961|0|" ;
-    document.getElementById("phplive_btn_1475559961").appendChild( phplive_e_1475559961 ) ;
-    })() ;
+      (function() {
+      var phplive_e_1475559961 = document.createElement("script") ;
+      phplive_e_1475559961.type = "text/javascript" ;
+      phplive_e_1475559961.async = true ;
+      phplive_e_1475559961.src = "//t2.phplivesupport.com/atans2468/js/phplive_v2.js.php?v=0|1475559961|0|" ;
+      document.getElementById("phplive_btn_1475559961").appendChild( phplive_e_1475559961 ) ;
+      })() ;
 
-    </script>
+      </script>
+    </div>
   </body>
 
 </html>
