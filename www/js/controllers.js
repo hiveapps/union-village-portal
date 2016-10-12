@@ -117,33 +117,25 @@ unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeo
 
 unionVillage.controller("mapCtrl", function() {
   $('#mapsvg').mapSvg({
-    source: '/maps/usa.svg',
+    source: '/maps/sitemap.svg',
     colors: {
       background: "#fff",
       selected: 40,
       hover: 20
     },
     tooltips: {mode: "id"},
-    //popovers: {mode: 'title'},
+    popovers: {mode: function(region){
+        return '<b>' + region.label + '</b>' + region.title }
+    },
     zoom: {
-      on: false,
+      on: true,
       buttons: {position: "right"},
       limit: [0,10]
     },
-    scroll: {on: false},
+    scroll: {on: true},
     responsive: true,
     loadingText: 'Loading map...',
-    markers: [
-      {
-        src:  '/markers/pin1_red.png',
-      },
-      {
-        id: 'Union Village',
-        geoCoords: [36.071138, -115.030244],
-        tooltip: 'Union Village',
-        href: 'http://unionvillage.net'
-      }
-  ]
+
   });
 });
 
