@@ -3037,6 +3037,39 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/www\/js\/jquery.vmap.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/js\/jquery.vmap.js",
+		"outputAbbreviatedPath": "\/www\/js\/min\/jquery.vmap-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/www\/js\/jquery.vmap.sampledata.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/js\/jquery.vmap.sampledata.js",
+		"outputAbbreviatedPath": "\/www\/js\/min\/jquery.vmap.sampledata-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/www\/js\/jquery.vmap.world.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/js\/jquery.vmap.world.js",
+		"outputAbbreviatedPath": "\/www\/js\/min\/jquery.vmap.world-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/www\/js\/mapsvg.min.js": {
 		"fileType": 64,
 		"ignore": 0,

@@ -9,7 +9,7 @@
     
     <!-- Your Stylesheet -->
     <link href="css/site.css" rel="stylesheet" />
-    <link href="css/mapsvg.css" rel="stylesheet">
+    <link href="css/mapsvg.css" rel="stylesheet" />
     
     <!-- Page Icon (for browser tab) -->
     <link rel="icon" href="img/union_village_tab_icon.png">
@@ -42,8 +42,10 @@
     <!-- Google API -->
     <script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
 
+    <!-- Map SVG -->
     <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="js/mapsvg.min.js"></script>
+
     
     <!-- Your Apps JS -->
     <script src="js/app.js"></script>
@@ -66,6 +68,7 @@
     <!-- Simple Weather CDNJS -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
     
+    
   </head>
   
   <!-- This is the main App body, notice the ui-view tag which enables us 
@@ -75,6 +78,7 @@
     <main ui-view="content"></main>
     <footer ui-view="footer"></footer>
     <div ng-controller="appCtrl">
+
       <span ng-hide="$state.includes('unionVillage.home')" style="color: #0000FF; text-decoration: underline; cursor: pointer; position: fixed; bottom: 0px; right: 0px; z-index: 1000000;" id="phplive_btn_1475559961" onclick="phplive_launch_chat_0(0)"></span>
       <script type="text/javascript">
 
