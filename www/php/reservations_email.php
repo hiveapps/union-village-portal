@@ -25,28 +25,28 @@ if(isset($_POST['submit'])){
     //Enable SMTP debugging. 
     //$mail->SMTPDebug = 2;
     //Set PHPMailer to use SMTP.
-    $mail->isSMTP();            
+    //$mail->isSMTP();            
     //Set SMTP host name                          
-    $mail->Host = "smtpout.secureserver.net"; //Use "smtpout.secureserver.net" (in quotations) if in development or 'localhost' for production
+    //$mail->Host = "smtpout.secureserver.net"; //Use "smtpout.secureserver.net" (in quotations) if in development or 'localhost' for production
     //Set this to true if SMTP host requires authentication to send email
-    $mail->SMTPAuth = true;                          
+    //$mail->SMTPAuth = true;                          
     //Provide username and password     
-    $mail->Username = "service@unionvillage.net";                 
-    $mail->Password = "unionvillage1A";                           
+    //$mail->Username = "austintans7@gmail.com";                 
+    //$mail->Password = "bigmoney2";                           
     //If SMTP requires TLS encryption then set it
-    $mail->SMTPSecure = "ssl";                           
+    //$mail->SMTPSecure = "ssl";                           
     //Set TCP port to connect to 
-    $mail->Port = 465;
+    //$mail->Port = 465;
     
     $mail->From = $_POST['email'];
-    $mail->FromName = $_POST['first_name'] . " " . $_POST['last_name'];
+    $mail->FromName = $_POST['name'];
     
-    $mail->addAddress("service@unionvillage.net", "Craig");
+    $mail->addAddress("leasing@unionvillage.net", "Craig");
     
     $mail->isHTML(true);
     
-    $mail->Subject ="Union Village - Service Request";
-    $mail->Body = $_POST['message'];
+    $mail->Subject ="Union Village - Reservation Request";
+    $mail->Body = $_POST['facility'] . ' ' . $_POST['date'];
     $mail->AltBody = "This is the plain text version of the email content";
     
     if(!$mail->send()) 

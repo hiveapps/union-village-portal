@@ -3771,6 +3771,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/www\/markers\/pin1_red.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3732,
+		"inputAbbreviatedPath": "\/www\/markers\/pin1_red.png",
+		"outputAbbreviatedPath": "\/www\/markers\/pin1_red.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/www\/php\/reservations_email.php": {
 		"fileType": 8192,
 		"ignore": 0,

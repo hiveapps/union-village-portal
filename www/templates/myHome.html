@@ -14,11 +14,9 @@
 				<div class="tab-pane active" id="additionalSelection" style="padding-top: 2%; padding-left: 3%;">
 					<form action="php/service_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
                     
-						<label for="fname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>First Name:</label>
-						<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%;" required/><br>
+						<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%; display: none;" required/><br>
 						
-						<label for="lname" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Last Name:</label>
-						<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%;" required/><br>
+						<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%; display: none;" required/><br>
 						
 						<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Address</label>
 						<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
@@ -41,10 +39,16 @@
 					</form>
 				</div>
 				
+
+
+				<!-- Section 2 -->
 				<div class="tab-pane" id="additionalSelection2" style="padding-top: 2%; padding-left: 3%;">
+					<p id="displayName"></p>
 					<h1>More Info Coming Soon</h1>
 				</div>
 				
+
+				<!-- Section 3 -->
 				<div class="tab-pane" id="additionalSelection3" style="padding-top: 2%; padding-left: 3%;">
 					<h2>Click on an item to learn more</h2>
 					<!-- Independent Senior Living Column -->

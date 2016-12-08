@@ -66,6 +66,7 @@ unionVillage.controller("LoginCtrl", function($scope, $state, $timeout, $firebas
       if (user) {
         // User is signed in.
         $state.go('unionVillage.dashboard');
+        document.getElementById('displayName').textContent = user.displayName;
       };
     });
     
@@ -96,7 +97,9 @@ unionVillage.controller("LoginCtrl", function($scope, $state, $timeout, $firebas
 
 /*Thread Page Controller*/
 unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeout) {
+    var user = firebase.auth().currentUser;
 
+    document.getElementsByName('first_name').value= user.displayName;
     /* Get Stored Posts*/
     var ratesRef = firebase.database().ref('notificationCenter');
   
@@ -116,16 +119,17 @@ unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeo
 
 
 unionVillage.controller("mapCtrl", function() {
-  $('#mapsvg').mapSvg({
+  /*$('#mapsvg').mapSvg({
     source: '/maps/sitemap.svg',
     colors: {
+      base: "rgba(0,0,0,0.5)",
       background: "#fff",
-      selected: 40,
-      hover: 20
+      hover: 'rgba(255,0,0,0.5)',
+      selected: 'rgba(0,0,0,0.5)'
     },
     tooltips: {mode: "id"},
     popovers: {mode: function(region){
-        return '<b>' + region.label + '</b>' + region.title }
+        return '<b>' + region.id + '</b>' + region.title }
     },
     zoom: {
       on: true,
@@ -136,7 +140,32 @@ unionVillage.controller("mapCtrl", function() {
     responsive: true,
     loadingText: 'Loading map...',
 
-  });
+  });*/
+
+  var mymap = L.map('mapid').setView([36.039524, -114.981720], 13);
+
+  L.tileLayer('https://api.mapbox.com/styles/v1/atans2468/ciwfpyoxm00692ppadp2ppmdo/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYXRhbnMyNDY4IiwiYSI6ImNpd2ZwaTR5MDAwcWoydWtpcjBoZDZlN3MifQ.eG1J9lZ6Wi-7vIfSKm-7Jg', {
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      maxZoom: 18,
+      id: 'ciwfpyoxm00692ppadp2ppmdo',
+      accessToken: 'pk.eyJ1IjoiYXRhbnMyNDY4IiwiYSI6ImNpd2ZwaTR5MDAwcWoydWtpcjBoZDZlN3MifQ.eG1J9lZ6Wi-7vIfSKm-7Jg'
+  }).addTo(mymap);
+
+  var marker = L.marker([36.071123, -115.030247]).addTo(mymap);
+
+  marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+
+});
+
+
+/* reservations controller */
+unionVillage.controller("reservationsCtrl", function() {
+    var user = firebase.auth().currentUser;
+
+
+    $( "#datepicker" ).datepicker();
+
+    document.getElementsById('name').value= user.displayName;
 });
 
 
@@ -315,7 +344,7 @@ unionVillage.controller("weatherCtrl", function($scope) {
         html += '<li>'+weather.alt.temp+'&deg;C</li>';
         html += '<li><p style="float: left; margin-right: 10px;">Today&#39;s High/Low:</p>'+weather.high+'&deg / '+weather.low+'&deg</li></ul>';
         
-        for(var i=1;i<6;i++) {
+        for(var i=1;i<4;i++) {
           html += '<p>'+weather.forecast[i].day+' H/L: '+weather.forecast[i].high+ '/' +weather.forecast[i].low+'</p>';
         }
     
