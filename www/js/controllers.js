@@ -103,6 +103,67 @@ unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeo
     function update (snapshot) {
       $scope.todos = $firebaseArray(ratesRef);
     };
+
+
+    // Weather - Docs at http://simpleweatherjs.com
+    $(document).ready(function() {
+      $.simpleWeather({
+        woeid: '2357536', //2357536
+        location: 'Henderson, NV',
+        unit: 'f',
+        success: function(weather) {
+          html = '<h2>'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+          html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+          html += '<li class="currently">'+weather.currently+'</li>';
+          html += '<li>'+weather.alt.temp+'&deg;C</li>';
+          html += '<li><p style="float: left; margin-right: 10px;">Today&#39;s High/Low:</p>'+weather.high+'&deg / '+weather.low+'&deg</li></ul>';
+          
+          for(var i=1;i<4;i++) {
+            html += '<p>'+weather.forecast[i].day+' H/L: '+weather.forecast[i].high+ '/' +weather.forecast[i].low+'</p>';
+          }
+      
+          $("#weather").html(html);
+        },
+        error: function(error) {
+          $("#weather").html('<p>'+error+'</p>');
+        }
+      });
+    });
+
+
+    // Calendar$(document).ready(function(){  		
+    var events_array = new Array(
+      {
+        startDate: new Date(2016, 07, 20),
+        endDate: new Date(2016, 0, 20),
+        title: "Event 1",
+        description: "Description 1",
+        allDay: true,
+        priority: 1, // 1 = Low, 2 = Medium, 3 = Urgent
+        frecuency: 1 // 1 = Daily, 2 = Weekly, 3 = Monthly, 4 = Yearly
+      },
+      {
+        startDate: new Date(2016,07, 20, 19, 50),
+        endDate: new Date(2016,07, 20, 21, 00),
+        title: "Event 2",
+        description: "Description 2",
+        priority: 3,
+        frecuency:1
+      },
+      {
+        startDate: new Date(2016,09, 31),
+        endDate: new Date(2016,09, 31),
+        title: "Henderson Hospital Opens!",
+        description: "After years of development Henderson Hospital is open for business and Union Village officially kicks off!",
+        allDay: true,
+        priority: 3,
+        frecuency:1
+      }
+    );	
+    $("#calendar").dp_calendar({
+      format_ampm: true,
+      events_array: events_array
+    });
     
 });
 
@@ -274,78 +335,7 @@ unionVillage.controller("sightsCtrl", function($scope, $firebaseArray, $timeout)
 });
 
 
-
-/* Calendar Controller */
-unionVillage.controller("calendarCtrl", function($scope) {
-  $(document).ready(function(){  
-						
-    var events_array = new Array(
-      {
-        startDate: new Date(2016, 07, 20),
-        endDate: new Date(2016, 0, 20),
-        title: "Event 1",
-        description: "Description 1",
-        allDay: true,
-        priority: 1, // 1 = Low, 2 = Medium, 3 = Urgent
-        frecuency: 1 // 1 = Daily, 2 = Weekly, 3 = Monthly, 4 = Yearly
-      },
-      {
-        startDate: new Date(2016,07, 20, 19, 50),
-        endDate: new Date(2016,07, 20, 21, 00),
-        title: "Event 2",
-        description: "Description 2",
-        priority: 3,
-        frecuency:1
-      },
-      {
-        startDate: new Date(2016,09, 31),
-        endDate: new Date(2016,09, 31),
-        title: "Henderson Hospital Opens!",
-        description: "After years of development Henderson Hospital is open for business and Union Village officially kicks off!",
-        allDay: true,
-        priority: 3,
-        frecuency:1
-      }
-    );	
-    $("#calendar").dp_calendar({
-      format_ampm: true,
-      events_array: events_array
-    });
-    
-    
-  });
-});
 /* End of calendar controller */
-
-
-
-/* Weather Controller */
-unionVillage.controller("weatherCtrl", function($scope) {
-  // Docs at http://simpleweatherjs.com
-  $(document).ready(function() {
-    $.simpleWeather({
-      woeid: '2357536', //2357536
-      location: 'Henderson, NV',
-      unit: 'f',
-      success: function(weather) {
-        html = '<h2>'+weather.temp+'&deg;'+weather.units.temp+'</h2>';
-        html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
-        html += '<li class="currently">'+weather.currently+'</li>';
-        html += '<li>'+weather.alt.temp+'&deg;C</li>';
-        html += '<li><p style="float: left; margin-right: 10px;">Today&#39;s High/Low:</p>'+weather.high+'&deg / '+weather.low+'&deg</li></ul>';
-        
-        for(var i=1;i<4;i++) {
-          html += '<p>'+weather.forecast[i].day+' H/L: '+weather.forecast[i].high+ '/' +weather.forecast[i].low+'</p>';
-        }
-    
-        $("#weather").html(html);
-      },
-      error: function(error) {
-        $("#weather").html('<p>'+error+'</p>');
-      }
-    });
-  });
-});
 
 
 /* App Controller */
