@@ -352,12 +352,3 @@ unionVillage.controller("weatherCtrl", function($scope) {
 unionVillage.controller("appCtrl", function($scope, $state) {
   $scope.$state = $state;
 });
-
-
-unionVillage.controller("communityCtrl", function($scope, $state) {
-  $( function() {
-    $( "#accordion" ).accordion({
-      collapsible: true
-    });
-  });
-});
