@@ -113,26 +113,45 @@
 				
 				
 				<!-- Tab Selection 5 -->
-				<div class="tab-pane" id="additionalSelection4" style="padding-top: 2%; padding-left: 3%;">
+				<div class="tab-pane" id="additionalSelection4" style="padding-top: 2%; padding-left: 3%;" ng-controller="accordionCtrl">
 					<div class="col-xs-12">
 						<h2>Community Resources</h2>
 						
-						<!-- Community Policies Section -->
-						<a href="#" target="_blank" style="text-decoration: none;">
-							<div style="border-top: 1px solid #aaa; height: 75px; text-align: left; padding-left: 20px;">
-								<h4 style="color: #aaa;">Community Policies<i class="glyphicon glyphicon-chevron-right pull-right" style="margin-right: 20px; margin-top: 2px;"></i></h4>
+						<div class="container mainContainer">
+							
+							<!-- 'What is Hive?' Section -->
+							<div class="panel-group" id="accordion">
+								<div class="panel panel-default">
+									<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+									<h4 class="panel-title">Community Policies</h4>
+									</div>
+									
+									<div id="collapse1" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+									</div>
+								</div>
+								<!-- End of 'What is Hive?' Section -->
+								
+								<!-- 'What is a Developer Project/“1 Minute App”?' Section -->
+								<div class="panel panel-default">
+									<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+									<h4 class="panel-title">Utilities Directory</h4>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+									</div>
+								</div>
+								<!-- End of 'What is a Developer Project/“1 Minute App”?' Section -->
+							
 							</div>
-						</a>
-						<!-- End of Community Policies Section -->
+							<!-- End of Panel Group --> 
 						
-						
-						<!-- Utilities Directory Section -->
-						<a href="#" target="_blank" style="text-decoration: none;">
-							<div style="border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; height: 75px; text-align: left; padding-left: 20px;">
-								<h4 style="color: #aaa;">Utilities Directory<i class="glyphicon glyphicon-chevron-right pull-right" style="margin-right: 20px; margin-top: 2px;"></i></h4>
-							</div>
-						</a>
-						<!-- End of Utilities Directory Section -->
+						</div>
+						<!-- End of Container -->
 					</div>
 				</div>
 				<!-- End of Tab Selection 5 -->

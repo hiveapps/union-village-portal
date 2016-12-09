@@ -208,3 +208,79 @@ nav.navbar div ul ul.dropdown-menu li a {
 }
 
 #mapid { height: 100%; }
+
+
+
+/* styling for the accordion heading */
+.li-main-wrapper div#additionalSelection4 .panel-heading {
+  background-color: transparent !important; 
+}
+
+/* styling for the accordion heading after opening - this also controls chevron togle */
+.li-main-wrapper div#additionalSelection4 .panel-heading.accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family:'Glyphicons Halflings';
+    /* essential for enabling glyphicon */
+    content:"\e114";
+    /* adjust as needed, taken from bootstrap.css */
+    float: right;
+    position: relative;
+    bottom: 20px;
+    color: #2d98c4;
+}
+
+/* styling for the accordion heading after collapsing - this also controls chevron togle */
+.li-main-wrapper div#additionalSelection4 .panel-heading.accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content:"\e080";
+    /* adjust as needed, taken from bootstrap.css */
+}
+
+/* styling for the accordion heading on hover */
+.li-main-wrapper div#additionalSelection4 .panel-heading:hover {
+    cursor: pointer;
+}
+.li-main-wrapper div#additionalSelection4 .panel-heading:hover h4 {
+    text-decoration: none;
+}
+
+/* styling for the title of the accordion heading */
+.li-main-wrapper div#additionalSelection4 .panel-title {
+  color: #2d98c4;
+}
+
+/* styling for the body of the accordion */
+.li-main-wrapper div#additionalSelection4 .panel-body {
+  width: 100% !important;
+  padding: 10px;
+  text-align: left;
+  border-top: 1px solid #aaa;
+}
+
+/* styling for mobile */
+@media (max-width: 420px) {
+  /* make the font-size of the title in the accordion header smaller */
+  .li-main-wrapper div#additionalSelection4 .panel-title {
+    font-size: 10px;
+  }
+  /* make the chevron smaller and closer to the bottom */
+  .li-main-wrapper div#additionalSelection4 .panel-heading.accordion-toggle:after {
+    font-size: 12px;
+    bottom: 16px;
+  }
+  .li-main-wrapper div#additionalSelection4 .panel-heading.accordion-toggle.collapsed:after {
+    font-size: 12px;
+    bottom: 16px;
+  }
+  
+  /* styling for the body of the accordion to make font size smaller */
+  .li-main-wrapper div#additionalSelection4 .panel-body p {
+    font-size: 12px;
+  }
+  
+  /* adjust margin of mainContainer to make it closer to the top of the page */
+  .li-main-wrapper div#additionalSelection4 div.mainContainer {
+    margin-top: -40px !important;
+  }
+
+}

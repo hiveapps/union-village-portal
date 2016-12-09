@@ -1,17 +1,5 @@
 var unionVillage = angular.module('unionVillage.controllers', []);
 
-
-unionVillage.controller("headerCtrl", function($scope, $location) {
-  $scope.isActive = function (viewLocation) { 
-        return viewLocation === $location.path();
-    };
-  $('.navbar-collapse a:not(.dropdown-toggle)').click(function(){
-    $(".navbar-collapse").collapse('hide');
-  });
-});
-
-
-
 /* !!!FIREBASE 3.0!!! Initialize Firebase */
 // Initialize Firebase
   // Initialize Firebase
@@ -31,6 +19,7 @@ unionVillage.controller("headerCtrl", function($scope, $location) {
   $('.navbar-collapse a:not(.dropdown-toggle)').click(function(){
     $(".navbar-collapse").collapse('hide');
   });
+
 });
 
 //Totally functioning simple login
@@ -100,6 +89,7 @@ unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeo
     var user = firebase.auth().currentUser;
 
     document.getElementsByName('first_name').value= user.displayName;
+
     /* Get Stored Posts*/
     var ratesRef = firebase.database().ref('notificationCenter');
   
@@ -361,4 +351,13 @@ unionVillage.controller("weatherCtrl", function($scope) {
 /* App Controller */
 unionVillage.controller("appCtrl", function($scope, $state) {
   $scope.$state = $state;
+});
+
+
+unionVillage.controller("communityCtrl", function($scope, $state) {
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  });
 });
