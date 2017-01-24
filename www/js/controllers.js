@@ -13,6 +13,8 @@ var unionVillage = angular.module('unionVillage.controllers', []);
   firebase.initializeApp(config);
 
 unionVillage.controller("headerCtrl", function($scope, $location) {
+  var user = firebase.auth().currentUser;
+
   $scope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
     };
@@ -32,6 +34,7 @@ unionVillage.controller("LoginCtrl", function($scope, $state, $timeout, $firebas
   if (user) {
     console.log("User is logged in");
     $state.go('unionVillage.dashboard');
+    document.getElementById('displayName').textContent = "Welcome " + user.displayName + "!";
   } else {
     console.log("User is logged out");
     $state.go('unionVillage.home');
@@ -55,7 +58,6 @@ unionVillage.controller("LoginCtrl", function($scope, $state, $timeout, $firebas
       if (user) {
         // User is signed in.
         $state.go('unionVillage.dashboard');
-        document.getElementById('displayName').textContent = user.displayName;
       };
     });
     
@@ -87,8 +89,6 @@ unionVillage.controller("LoginCtrl", function($scope, $state, $timeout, $firebas
 /*Thread Page Controller*/
 unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeout) {
     var user = firebase.auth().currentUser;
-
-    document.getElementsByName('first_name').value= user.displayName;
 
     /* Get Stored Posts*/
     var ratesRef = firebase.database().ref('notificationCenter');
@@ -213,10 +213,8 @@ unionVillage.controller("mapCtrl", function() {
 unionVillage.controller("reservationsCtrl", function() {
     var user = firebase.auth().currentUser;
 
-
     $( "#datepicker" ).datepicker();
 
-    document.getElementsById('name').value= user.displayName;
 });
 
 
