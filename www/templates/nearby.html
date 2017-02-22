@@ -14,58 +14,84 @@
 				<div class="tab-content">
 				
 					<div class="tab-pane active" id="additionalSelection" style="padding-left: 15%;" ng-controller="restaurantsCtrl">
-						<div class="col-xs-12 col-md-3" ng-repeat="item in todos | orderBy:'-id'" style="height: 350px; margin-top: 20px; padding-left: 2%; padding-right: 2%;">
-			
-							<div class="card" style="background-color: #e9e9e9; height: 100%; box-shadow: -6px 8px 10px -4px #999;">
-								<img class="card-img-top" src="img/restaurantSample.jpg" alt="Card image cap" style="width: 100%; height: 150px;">
-								<div class="card-block" style="height: 50%; text-align: center; padding: 5px; color: #000;">
-									<!-- Should assign a max Char count of 25 to this Header --><h4 class="card-title" style="color: #000;">{{item.header}}</h4>
-									<!-- Should assign a max Char count of 175 to this Paragraph --><p class="card-text" style="color: #7e7e7e;">{{item.description}}</p>
+						<!-- restaurant card column -->
+						<div class="col-xs-9" style="height: 200px; margin-top: 20px; padding-right: 2%;">
+
+							<div class="card" ng-repeat="item in todos | orderBy:'-id'" style="background-color: #fff; border: 1px solid #aaa; height: 80%; box-shadow: -6px 8px 10px -4px #999; margin-bottom: 3%; border-radius: 5px; position: relative;">
+								<div class="card-block" style="height: 50%; padding: 5px 5px 5px 10px; color: #000;">
+									<h4 class="card-title" style="color: #000;">{{item.header}}</h4>
+									<!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+									<p class="card-text" style="color: #000;">{{item.description}}</p>
 								</div>
-								
-								<div class="card-footer text-muted" style="margin-top: -5%; text-align: center;">
-									<a href="#" class="btn btn-primary">Learn More</a>
+								<div style="position: absolute; bottom: 0; width: 100%; height: 30px; padding-left: 10px;">
+									<a href="#" class="card-link">Card link</a>
+									<a href="#" class="card-link">Another link</a>
 								</div>
 							</div>
 							
 						</div>
+						<!-- end of card column -->
+
+
+						<!-- ad column -->
+
+						<!-- end of ad column -->
 											
 					</div>
+
+					
 					
 					<div class="tab-pane" id="additionalSelection2" style="padding-left: 15%;" ng-controller="gamblingCtrl">
-						<div class="col-xs-12 col-md-3" ng-repeat="item in todos | orderBy:'-id'" style="height: 350px; margin-top: 20px; padding-left: 2%; padding-right: 2%;">
+						
+						<!-- entertainment card column -->
+						<div class="col-xs-9" style="height: 200px; margin-top: 20px; padding-right: 2%;">
 			
-							<div class="card" style="background-color: #e9e9e9; height: 100%; box-shadow: -6px 8px 10px -4px #999;">
-								<img class="card-img-top" src="img/mgmAd.jpg" alt="Card image cap" style="width: 100%; height: 150px;">
-								<div class="card-block" style="height: 50%; text-align: center; padding: 5px; color: #000;">
-									<!-- Should assign a max Char count of 25 to this Header --><h4 class="card-title" style="color: #000;">{{item.header}}</h4>
-									<!-- Should assign a max Char count of 175 to this Paragraph --><p class="card-text" style="color: #7e7e7e;">{{item.description}}</p>
+							<div class="card" ng-repeat="item in todos | orderBy:'-id'" style="background-color: #fff; border: 1px solid #aaa; height: 80%; box-shadow: -6px 8px 10px -4px #999; margin-bottom: 3%; border-radius: 5px; position: relative;">
+								<div class="card-block" style="height: 50%; padding: 5px 5px 5px 10px; color: #000;">
+									<h4 class="card-title" style="color: #000;">{{item.header}}</h4>
+									<!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+									<p class="card-text" style="color: #000;">{{item.description}}</p>
 								</div>
-								
-								<div class="card-footer text-muted" style="margin-top: -5%; text-align: center;">
-									<a href="#" class="btn btn-primary">Learn More</a>
+								<div style="position: absolute; bottom: 0; width: 100%; height: 30px; padding-left: 10px;">
+									<a href="#" class="card-link">Card link</a>
+									<a href="#" class="card-link">Another link</a>
 								</div>
 							</div>
 							
 						</div>
+						<!-- end of card column --> 
+
+
+						<!-- ad column -->
+						
+						<!-- end of ad column -->
 					</div>
 					
 					<div class="tab-pane" id="additionalSelection3" style="padding-left: 15%;" ng-controller="sightsCtrl">
-						<div class="col-xs-12 col-md-3" ng-repeat="item in todos | orderBy:'-id'" style="height: 350px; margin-top: 20px; padding-left: 2%; padding-right: 2%;">
+						
+						<!-- sight seeing card column -->
+						<div class="col-xs-9" style="height: 200px; margin-top: 20px; padding-right: 2%;">
 			
-							<div class="card" style="background-color: #e9e9e9; height: 100%; box-shadow: -6px 8px 10px -4px #999;">
-								<img class="card-img-top" src="img/sightseeing.jpg" alt="Card image cap" style="width: 100%; height: 150px;">
-								<div class="card-block" style="height: 50%; text-align: center; padding: 5px; color: #000;">
-									<!-- Should assign a max Char count of 25 to this Header --><h4 class="card-title" style="color: #000;">{{item.header}}</h4>
-									<!-- Should assign a max Char count of 175 to this Paragraph --><p class="card-text" style="color: #7e7e7e;">{{item.description}}</p>
+							<div class="card" ng-repeat="item in todos | orderBy:'-id'" style="background-color: #fff; border: 1px solid #aaa; height: 80%; box-shadow: -6px 8px 10px -4px #999; margin-bottom: 3%; border-radius: 5px; position: relative;">
+								<div class="card-block" style="height: 50%; padding: 5px 5px 5px 10px; color: #000;">
+									<h4 class="card-title" style="color: #000;">{{item.header}}</h4>
+									<!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+									<p class="card-text" style="color: #000;">{{item.description}}</p>
 								</div>
-								
-								<div class="card-footer text-muted" style="margin-top: -5%; text-align: center;">
-									<a href="#" class="btn btn-primary">Learn More</a>
+								<div style="position: absolute; bottom: 0; width: 100%; height: 30px; padding-left: 10px;">
+									<a href="#" class="card-link">Card link</a>
+									<a href="#" class="card-link">Another link</a>
 								</div>
 							</div>
 							
 						</div>
+						<!-- end of card column -->
+						
+
+						<!-- ad column -->
+						
+						<!-- end of ad column -->
+
 					</div>
 				</div>
 			</div>

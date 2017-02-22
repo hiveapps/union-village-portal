@@ -34,10 +34,8 @@
 				<li ng-class="{ active: isActive('/nearby')}"><a ui-sref="unionVillage.nearby">My Neighbors</a></li>
 			</ul>
 			<div class="pull-right" ng-controller="LoginCtrl">
-				<div>
-					<p id="displayName" style="float: left;"></p>
-					<a ng-href='#' ng-click="ref.unauth(); logout()" style="color: #aaa; text-decoration: none; position: relative; left: 10px; right: 10px;">Logout</a>
-				</div>
+				<!--<p id="displayName" style="float: left;"></p>-->
+				<a ng-href='#' ng-click="ref.unauth(); logout()" style="color: #aaa; text-decoration: none; position: relative; left: 10px; right: 10px; cursor: pointer;">Logout</a>
 			</div>
 		</div>
 	</div>

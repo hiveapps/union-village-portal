@@ -23,6 +23,9 @@
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+    <!-- Emoji CSS -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     
     <!-- jQuery library --
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
@@ -81,6 +84,14 @@
     
     
   </head>
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-3806254277644640",
+      enable_page_level_ads: true
+    });
+  </script>
   
   <!-- This is the main App body, notice the ui-view tag which enables us 
   to use Angular UI-Router -->
@@ -90,7 +101,7 @@
     <footer ui-view="footer"></footer>
     <div ng-controller="appCtrl">
 
-      <!--<span ng-hide="$state.includes('unionVillage.home')" style="color: #0000FF; text-decoration: underline; cursor: pointer; position: fixed; bottom: 0px; right: 0px; z-index: 1000000;" id="phplive_btn_1475559961" onclick="phplive_launch_chat_0(0)"></span>
+      <span ng-hide="$state.includes('unionVillage.home')" style="color: #0000FF; text-decoration: underline; cursor: pointer; position: fixed; bottom: 0px; right: 0px; z-index: 1000000;" id="phplive_btn_1475559961" onclick="phplive_launch_chat_0(0)"></span>
       <script type="text/javascript">
 
       (function() {
@@ -101,13 +112,13 @@
       document.getElementById("phplive_btn_1475559961").appendChild( phplive_e_1475559961 ) ;
       })() ;
 
-      </script>-->
-      <script>
+      </script>
+      <!--<script>
         window.intercomSettings = {
           app_id: "ifmerjjk"
         };
       </script>
-      <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ifmerjjk';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+      <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ifmerjjk';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>-->
     </div>
   </body>
 
