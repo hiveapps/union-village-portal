@@ -34,7 +34,6 @@ unionVillage.controller("LoginCtrl", function($scope, $state, $timeout, $firebas
   if (user) {
     console.log("User is logged in");
     $state.go('unionVillage.dashboard');
-    document.getElementById('displayName').textContent = "Welcome " + user.displayName + "!";
   } else {
     console.log("User is logged out");
     $state.go('unionVillage.home');
