@@ -245,6 +245,7 @@ nav.navbar div ul ul.dropdown-menu li a {
 }
 
 /* styling for the title of the accordion heading */
+.loginWrapper .PortalSupportWrapper .mainContainer .panel-group .panel-default .panel-title,
 .li-main-wrapper div#additionalSelection3 .panel-title {
   color: #2d98c4;
 }
