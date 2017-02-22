@@ -6,25 +6,14 @@
 			<ul class="nav nav-tabs">
 				<li class="active" style="margin-left: 3%;"><a data-target="#additionalSelection" data-toggle="tab">Reservations</a></li>
 				<li><a data-target="#additionalSelection2" data-toggle="tab">Transportation</a></li>
-				<li><a data-target="#additionalSelection3" data-toggle="tab">Resources</a></li>
+				<li><a data-target="#additionalSelection3" data-toggle="tab">Planning</a></li>
+				<li><a data-target="#additionalSelection4" data-toggle="tab">Noise</a></li>
+				<li><a data-target="#additionalSelection5" data-toggle="tab">Resources</a></li>
 			</ul>
 			<div class="tab-content">
 				
 				
-				<!-- Tab Selection 1 --
-				<div class="tab-pane active" id="additionalSelection" style="padding-top: 2%; text-align: center; height: 100%;" ng-controller="mapCtrl">
-					
-					<div class="col-xs-12" style="padding-top: 2%; text-align: center; height: 90%">
-
-						<div id="mapid"></div>
-
-					</div>
-					
-				</div>
-				<!-- End of Tab Selection 1 -->
-				
-				
-				<!-- Tab Selection 2 -->
+				<!-- Tab Selection 1 -->
 				<div class="tab-pane active" id="additionalSelection" style="padding-top: 2%; padding-left: 3%;">
 					<form action="php/reservations_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
 				
@@ -53,11 +42,11 @@
 						<input class="btn btn-primary" type="submit" name="submit" value="Submit" style="margin-top: 3%;">
 					</form>
 				</div>
-				<!-- End of Tab Selection 2 -->
+				<!-- End of Tab Selection 1 -->
 				
 				
 				
-				<!-- Tab Selection 4 -->
+				<!-- Tab Selection 2 -->
 				<div class="tab-pane pane4" id="additionalSelection2" style="padding-top: 2%; padding-left: 3%;">
 					<div class="col-xs-12" style="padding-bottom: 5%;">
 						<h2>Transportation</h2>
@@ -69,18 +58,46 @@
 						
 					</div>
 				</div>
+				<!-- End of Tab Selection 2 -->
+
+
+				<!-- Tab Selection 3 -->
+				<div class="tab-pane" id="additionalSelection3" style="padding-top: 2%; padding-left: 3%;">
+					<div class="col-xs-12" style="padding-bottom: 5%;">
+						<h2>Planning</h2>
+
+						<div class="col-xs-12" style="height: 100vh;">
+							
+						</div>
+
+						
+					</div>
+				</div>
+				<!-- End of Tab Selection 3 -->
+
+
+
+				<!-- Tab Selection 4 -->
+				<div class="tab-pane" id="additionalSelection4" style="padding-top: 2%; padding-left: 3%;">
+					<div class="col-xs-12" style="padding-bottom: 5%;">
+						<h2>Noise</h2>
+
+						
+					</div>
+				</div>
 				<!-- End of Tab Selection 4 -->
 				
 				
 				
 				<!-- Tab Selection 5 -->
-				<div class="tab-pane" id="additionalSelection3" style="padding-top: 2%; padding-left: 3%;" ng-controller="accordionCtrl">
+				<div class="tab-pane" id="additionalSelection5" style="padding-top: 2%; padding-left: 3%;" ng-controller="accordionCtrl">
+					
 					<div class="col-xs-12">
 						<h2>Community Resources</h2>
 						
 						<div class="container mainContainer">
 							
-							<!-- 'What is Hive?' Section -->
+							<!-- Section 1 -->
 							<div class="panel-group" id="accordion">
 								<div class="panel panel-default">
 									<div class="panel-heading accordion-toggle" data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
@@ -88,14 +105,14 @@
 									</div>
 									
 									<div id="collapse1" class="panel-collapse collapse in">
-									<div class="panel-body">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div>
+										<div class="panel-body">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>
 									</div>
 								</div>
-								<!-- End of 'What is Hive?' Section -->
+								<!-- End of Section 1 -->
 								
-								<!-- 'What is a Developer Project/“1 Minute App”?' Section -->
+								<!-- Section 2 -->
 								<div class="panel panel-default">
 									<div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
 									<h4 class="panel-title">Utilities Directory</h4>
@@ -106,7 +123,7 @@
 									</div>
 									</div>
 								</div>
-								<!-- End of 'What is a Developer Project/“1 Minute App”?' Section -->
+								<!-- End of Section 2 -->
 							
 							</div>
 							<!-- End of Panel Group --> 
@@ -114,6 +131,7 @@
 						</div>
 						<!-- End of Container -->
 					</div>
+
 				</div>
 				<!-- End of Tab Selection 5 -->
 				
