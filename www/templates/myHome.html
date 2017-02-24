@@ -163,13 +163,74 @@
 					<!-- want to recycle column -->
 					<div class="col-xs-12 col-md-6 bottomBorder" style="height: 40%;">
 						<h3>Want to recycle?</h3>
+
+						<!-- order recycling bin section -->
+						<div style="width: 50%; height: 75%; position: relative; float: left; padding-top: 2%;">
+							<h4>Order a recycling bin here</h4>
+
+							<!-- Trigger the modal with a button -->
+							<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#reportModal" style="margin-top: 8%;">Order</button>
+
+							<!-- Modal -->
+							<div id="reportModal" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Modal Header</h4>
+										</div>
+
+										<div class="modal-body">
+											<form action="php/missedCollection_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
+							
+												<input type="text" class="form-control" ng-model="firstName" placeholder="First Name" name="first_name" id="fname" style="width: 75%; display: none;" required/><br>
+												
+												<input type="text" class="form-control" ng-model="lastName" placeholder="Last Name" name="last_name" id="lname" style="width: 75%; display: none;" required/><br>
+
+
+												<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Address</label>
+												<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+												
+												<label for="yemail" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
+												<input type="text" class="form-control" ng-model="yourEmail" placeholder="Your Email" name="email" id="yemail" style="width: 75%;" required/><br>
+												
+												<br>
+												
+												<input class="btn btn-primary" type="submit" name="submit" value="Submit" data-dismiss="modal">
+											</form>
+										</div>
+
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+									<!-- end modal content -->
+
+								</div>
+							</div>
+							<!-- end modal -->
+
+						</div>
+						<!-- end of order recycling bin section -->
+
+
+						<!-- want to learn more section -->
+						<div style="width: 50%; height: 75%; float: left; padding-top: 5%;">
+							<p style="font-size: 16px;">Want to learn more about recycling and find out what things you can and can't recycle? Visit the <a href="https://www.recyclenow.com/" target="_blank" style="text-decoration: none;">recyclenow</a> website and help us keep things green!
+						</div>
+						<!-- end of want to learn more section -->
+
 					</div>
 					<!-- end of want to recycle column -->
 
 
-					<div class="col-xs-12 col-md-6 rightBorder" style="height: 40%;">
+					<!-- trash and recycling schedule column -->
+					<div class="col-xs-12" style="height: 40%;">
 						<h4>Want to know when your trash or recycling is picked up?</h4>
 					</div>
+					<!-- end of trash and recycling schedule column -->
 
 
 					<div class="col-xs-12 col-md-6" style="height: 40%;">
