@@ -191,6 +191,7 @@ unionVillage.controller("mapCtrl", function() {
 
   });*/
 
+  /* alternative map - I THINK MAP BOX
   var mymap = L.map('mapid').setView([36.039524, -114.981720], 13);
 
   L.tileLayer('https://api.mapbox.com/styles/v1/atans2468/ciwfpyoxm00692ppadp2ppmdo/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYXRhbnMyNDY4IiwiYSI6ImNpd2ZwaTR5MDAwcWoydWtpcjBoZDZlN3MifQ.eG1J9lZ6Wi-7vIfSKm-7Jg', {
@@ -202,7 +203,7 @@ unionVillage.controller("mapCtrl", function() {
 
   var marker = L.marker([36.071123, -115.030247]).addTo(mymap);
 
-  marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+  marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup(); */
 
 });
 
