@@ -167,7 +167,6 @@ unionVillage.controller("dashboardCtrl", function($scope, $firebaseArray, $timeo
 });
 
 
-
 unionVillage.controller("mapCtrl", function() {
   /*$('#mapsvg').mapSvg({
     source: '/maps/sitemap.svg',
@@ -217,7 +216,6 @@ unionVillage.controller("reservationsCtrl", function() {
 });
 
 
-
 /* My Neighbors Controllers */
 unionVillage.controller("restaurantsCtrl", function($scope, $firebaseArray, $timeout) {
 
@@ -248,21 +246,8 @@ unionVillage.controller("restaurantsCtrl", function($scope, $firebaseArray, $tim
     mountainsRef.name === mountainImagesRef.name            // true
     mountainsRef.fullPath === mountainImagesRef.fullPath    // false
     
-    /* Update the "like" status to 'liked'
-    $scope.changeStatus   = function (item) {
-
-        // Get the Firebase reference of the item
-        var itemRef = new  Firebase(ref + item.id);
-
-        // Firebase : Update the item
-        itemRef.update({
-            id: item.id,
-            description : item.description,
-        });
-
-    };*/
-    
 });
+
 
 unionVillage.controller("gamblingCtrl", function($scope, $firebaseArray, $timeout) {
 
@@ -280,22 +265,8 @@ unionVillage.controller("gamblingCtrl", function($scope, $firebaseArray, $timeou
       $scope.todos = $firebaseArray(ratesRef);
     };
     
-    
-    /* Update the "like" status to 'liked'
-    $scope.changeStatus   = function (item) {
-
-        // Get the Firebase reference of the item
-        var itemRef = new  Firebase(ref + item.id);
-
-        // Firebase : Update the item
-        itemRef.update({
-            id: item.id,
-            description : item.description,
-        });
-
-    };*/
-    
 });
+
 
 unionVillage.controller("sightsCtrl", function($scope, $firebaseArray, $timeout) {
 
@@ -313,29 +284,31 @@ unionVillage.controller("sightsCtrl", function($scope, $firebaseArray, $timeout)
       $scope.todos = $firebaseArray(ratesRef);
     };
     
-    
-    
-    /* Update the "like" status to 'liked'
-    $scope.changeStatus   = function (item) {
-
-        // Get the Firebase reference of the item
-        var itemRef = new  Firebase(ref + item.id);
-
-        // Firebase : Update the item
-        itemRef.update({
-            id: item.id,
-            description : item.description,
-        });
-
-    };*/
-    
 });
 
-
-/* End of calendar controller */
 
 
 /* App Controller */
 unionVillage.controller("appCtrl", function($scope, $state) {
   $scope.$state = $state;
+});
+
+
+
+
+/* Noise Controller */
+unionVillage.controller("noiseCtrl", function($scope, $firebaseArray, $timeout) {
+  /* Get Stored Posts*/
+  var ratesRef = firebase.database().ref('addresses');
+
+  ratesRef.on("value", function (snapshot) {
+    $timeout(function () {
+      update(snapshot);
+      console.log(snapshot);
+    });
+  });
+
+  function update (snapshot) {
+    $scope.todos = $firebaseArray(ratesRef);
+  };
 });

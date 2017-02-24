@@ -81,11 +81,41 @@
 
 
 				<!-- Tab Selection 4 -->
-				<div class="tab-pane" id="additionalSelection4" style="padding-top: 2%; padding-left: 3%;">
+				<div class="tab-pane" id="additionalSelection4" style="padding-top: 2%; padding-left: 3%;" ng-controller="noiseCtrl">
 					<div class="col-xs-12" style="padding-bottom: 5%;">
-						<h2>Noise</h2>
-
 						
+						<form action="php/reservations_email.php" method="post" style="text-align: left;" enctype="multipart/form-data">
+				
+							<input type="text" class="form-control" ng-model="name" name="name" id="name" style="width: 75%; display: none;"/><br>
+
+							
+							<label for="yourAddress" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Address:</label>
+							<input type="text" class="form-control" ng-model="yourAddress" placeholder="Your Address" name="yourAddress" id="yourAddress" style="width: 75%;" required/><br>
+
+
+							<label for="yEmail2" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Your Email:</label>
+							<input type="text" class="form-control" ng-model="yourEmail2" placeholder="Your Email" name="email2" id="yEmail2" style="width: 75%;" required/><br>
+							
+
+							<label for="offender" style="margin-top: 0px;"><span style="color: #ff0000">*</span>Address of Noise Violator:<small style="color: #aaa;"> (suggestions will appear as you type)</small></label>
+							<input type="text" class="form-control" list="offender" name="offender" ng-model="offender" style="width: 75%;" required><br>
+							<datalist id="offender">
+								<option value="1A-W Johnson Ave">
+								<option value="2A-W Johnson Ave">
+								<option value="3A-W Johnson Ave">
+								<option value="4A-W Johnson Ave">
+								<option value="5A-W Johnson Ave">
+								<option value="1B-W Johnson Ave">
+								<option value="2B-W Johnson Ave">
+								<option value="3B-W Johnson Ave">
+								<option value="4B-W Johnson Ave">
+								<option value="5B-W Johnson Ave">
+							</datalist>
+
+
+							<input class="btn btn-primary" type="submit" name="submit" value="Submit" style="margin-top: 3%;">
+						</form>
+
 					</div>
 				</div>
 				<!-- End of Tab Selection 4 -->

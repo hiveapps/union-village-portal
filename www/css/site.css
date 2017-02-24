@@ -285,3 +285,11 @@ nav.navbar div ul ul.dropdown-menu li a {
   }
 
 }
+
+
+.rightBorder {
+  border-right: 2px solid #aaa;
+}
+.bottomBorder {
+  border-bottom: 2px solid #aaa;
+}
