@@ -21,6 +21,7 @@ body {
 }
 
 
+/* global border classes */
 .topBorder {
   border-top: 2px solid #aaa;
 }
@@ -32,6 +33,12 @@ body {
 }
 .bottomBorder {
   border-bottom: 2px solid #aaa;
+}
+
+
+/* global cursor class */
+.cursorPointer {
+  cursor: pointer;
 }
 
 
